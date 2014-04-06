@@ -1,13 +1,15 @@
 //
-//  MMSViewController.h
+//  MMSStyleSheet.h
 //  MichalSmialko
 //
 //  Created by Michal Smialko on 4/6/14.
 //  Copyright (c) 2014 MMS. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface MMSViewController : UIViewController
+@interface MMSStyleSheet : NSObject
+
++ (instancetype)sharedInstance;
 
 @end

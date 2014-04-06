@@ -14,13 +14,15 @@
 		907A615218F1581C00273A57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A615118F1581C00273A57 /* main.m */; };
 		907A615618F1581C00273A57 /* MMSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A615518F1581C00273A57 /* MMSAppDelegate.m */; };
 		907A615918F1581C00273A57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907A615718F1581C00273A57 /* Main.storyboard */; };
-		907A615C18F1581C00273A57 /* MMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A615B18F1581C00273A57 /* MMSViewController.m */; };
+		907A615C18F1581C00273A57 /* MMSHelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A615B18F1581C00273A57 /* MMSHelloViewController.m */; };
 		907A615E18F1581C00273A57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 907A615D18F1581C00273A57 /* Images.xcassets */; };
 		907A616518F1581C00273A57 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A616418F1581C00273A57 /* XCTest.framework */; };
 		907A616618F1581D00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A616718F1581D00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
 		907A616F18F1581D00273A57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 907A616D18F1581D00273A57 /* InfoPlist.strings */; };
 		907A617118F1581D00273A57 /* MichalSmialkoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A617018F1581D00273A57 /* MichalSmialkoTests.m */; };
+		907A617C18F1586B00273A57 /* MMSStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A617B18F1586B00273A57 /* MMSStyleSheet.m */; };
+		907A617F18F1592300273A57 /* MMSHelloView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A617E18F1592300273A57 /* MMSHelloView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,18 @@
 		907A615418F1581C00273A57 /* MMSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMSAppDelegate.h; sourceTree = "<group>"; };
 		907A615518F1581C00273A57 /* MMSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSAppDelegate.m; sourceTree = "<group>"; };
 		907A615818F1581C00273A57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		907A615A18F1581C00273A57 /* MMSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMSViewController.h; sourceTree = "<group>"; };
-		907A615B18F1581C00273A57 /* MMSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSViewController.m; sourceTree = "<group>"; };
+		907A615A18F1581C00273A57 /* MMSHelloViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMSHelloViewController.h; sourceTree = "<group>"; };
+		907A615B18F1581C00273A57 /* MMSHelloViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSHelloViewController.m; sourceTree = "<group>"; };
 		907A615D18F1581C00273A57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		907A616318F1581C00273A57 /* MichalSmialkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MichalSmialkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A616418F1581C00273A57 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		907A616C18F1581D00273A57 /* MichalSmialkoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MichalSmialkoTests-Info.plist"; sourceTree = "<group>"; };
 		907A616E18F1581D00273A57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		907A617018F1581D00273A57 /* MichalSmialkoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MichalSmialkoTests.m; sourceTree = "<group>"; };
+		907A617A18F1586B00273A57 /* MMSStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSStyleSheet.h; path = Classes/MMSStyleSheet.h; sourceTree = "<group>"; };
+		907A617B18F1586B00273A57 /* MMSStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSStyleSheet.m; path = Classes/MMSStyleSheet.m; sourceTree = "<group>"; };
+		907A617D18F1592300273A57 /* MMSHelloView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSHelloView.h; path = Classes/Views/MMSHelloView.h; sourceTree = "<group>"; };
+		907A617E18F1592300273A57 /* MMSHelloView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSHelloView.m; path = Classes/Views/MMSHelloView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +121,11 @@
 				907A615418F1581C00273A57 /* MMSAppDelegate.h */,
 				907A615518F1581C00273A57 /* MMSAppDelegate.m */,
 				907A615718F1581C00273A57 /* Main.storyboard */,
-				907A615A18F1581C00273A57 /* MMSViewController.h */,
-				907A615B18F1581C00273A57 /* MMSViewController.m */,
+				907A615A18F1581C00273A57 /* MMSHelloViewController.h */,
+				907A615B18F1581C00273A57 /* MMSHelloViewController.m */,
+				907A617A18F1586B00273A57 /* MMSStyleSheet.h */,
+				907A617B18F1586B00273A57 /* MMSStyleSheet.m */,
+				907A618018F1592600273A57 /* Views */,
 				907A615D18F1581C00273A57 /* Images.xcassets */,
 				907A614C18F1581C00273A57 /* Supporting Files */,
 			);
@@ -150,6 +159,15 @@
 				907A616D18F1581D00273A57 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		907A618018F1592600273A57 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				907A617D18F1592300273A57 /* MMSHelloView.h */,
+				907A617E18F1592300273A57 /* MMSHelloView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				907A615C18F1581C00273A57 /* MMSViewController.m in Sources */,
+				907A615C18F1581C00273A57 /* MMSHelloViewController.m in Sources */,
+				907A617C18F1586B00273A57 /* MMSStyleSheet.m in Sources */,
+				907A617F18F1592300273A57 /* MMSHelloView.m in Sources */,
 				907A615618F1581C00273A57 /* MMSAppDelegate.m in Sources */,
 				907A615218F1581C00273A57 /* main.m in Sources */,
 			);

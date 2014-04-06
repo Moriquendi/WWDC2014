@@ -1,0 +1,42 @@
+//
+//  MMSStyleSheet.m
+//  MichalSmialko
+//
+//  Created by Michal Smialko on 4/6/14.
+//  Copyright (c) 2014 MMS. All rights reserved.
+//
+
+#import "MMSStyleSheet.h"
+
+@implementation MMSStyleSheet
+
+#pragma mark + MMStyleSheet
+
++ (instancetype)sharedInstance
+{
+    static id sheet;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        sheet = [[self alloc] init];
+    });
+    return sheet;
+}
+
+#pragma mark - NSObject
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        [self _applyAppearanceProxies];
+    }
+    return self;
+}
+
+#pragma mark - MMStyleSheet ()
+
+- (void)_applyAppearanceProxies
+{
+    
+}
+
+@end
