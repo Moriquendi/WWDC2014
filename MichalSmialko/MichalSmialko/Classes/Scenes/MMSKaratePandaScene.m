@@ -11,6 +11,7 @@
 
 @interface MMSKaratePandaScene ()
 
+@property (nonatomic, strong) SKNode *_world;
 @property (nonatomic) CFTimeInterval _previousFrameTime;
 @property (nonatomic, strong) MMSHeroNode *_heroNode;
 
@@ -23,19 +24,9 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
-        
-        [self._heroNode startJump];
-        
         BOOL goRight = location.x > CGRectGetMidX(self.frame);
         self._heroNode.dirrection = CGVectorMake(goRight ? 100 : - 100,
                                                  self._heroNode.dirrection.dy);
-        
-//        self._heroNode.position = location;
-//        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-//        
-//        [sprite runAction:[SKAction repeatActionForever:action]];
-//        
-//        [self addChild:sprite];
     }
 }
 
@@ -46,24 +37,28 @@
     if (self = [super initWithSize:size]) {
         self._previousFrameTime = -1;
         
+        self._world = [SKNode node];
+        [self addChild:self._world];
+        
+        // Bg
+        SKSpriteNode *bgSprite = [SKSpriteNode spriteNodeWithImageNamed:@"bgLas"];
+        bgSprite.position = CGPointMake(CGRectGetMidX(self.frame),
+                                      CGRectGetMidY(self.frame));
+        [self._world addChild:bgSprite];
+        
+        // Title
         SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         myLabel.text = @"Karate Panda";
         myLabel.fontSize = 30;
         myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        [self addChild:myLabel];
-        
-        
-        SKSpriteNode *bgSprite = [SKSpriteNode spriteNodeWithImageNamed:@"bgLas"];
-        bgSprite.position = CGPointMake(CGRectGetMidX(self.frame),
-                                      CGRectGetMidY(self.frame));
-        [self addChild:bgSprite];
+                                       self.frame.size.height - 300);
+        [self._world addChild:myLabel];
         
         // Hero
         self._heroNode = [MMSHeroNode heroNode];
         self._heroNode.position = CGPointMake(CGRectGetMidX(self.frame),
                                               CGRectGetMidY(self.frame));
-        [self addChild:self._heroNode];
+        [self._world addChild:self._heroNode];
     }
     return self;
 }
@@ -80,6 +75,9 @@
     // Logic
     [self._heroNode updateLocation:dt];
     
+    // Camera
+    self._world.position = CGPointMake(-self._heroNode.position.x + self.frame.size.width/2.f,
+                                       -self._heroNode.position.y + self.frame.size.height/2.f);
     
     self._previousFrameTime = currentTime;
 }

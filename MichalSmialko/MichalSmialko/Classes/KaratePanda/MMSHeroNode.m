@@ -49,6 +49,13 @@
 {
     self.position = CGPointMake(self.position.x + dt * self.dirrection.dx,
                                 self.position.y + dt * self.dirrection.dy);
+
+    if (self.dirrection.dx > 0) {
+        self.xScale = 1;
+    }
+    else if (self.dirrection.dx < 0) {
+        self.xScale = -1;
+    }
     
     if (self.jumping) {
         self.dirrection = CGVectorMake(self.dirrection.dx,
