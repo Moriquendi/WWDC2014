@@ -28,7 +28,9 @@
 		907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61D218F1684200273A57 /* MMSKaratePandaVC.m */; };
 		907A61D618F16A0B00273A57 /* MMSKaratePandaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */; };
 		907A61D818F1729A00273A57 /* bgLas.png in Resources */ = {isa = PBXBuildFile; fileRef = 907A61D718F1729A00273A57 /* bgLas.png */; };
-		907A61E318F17B8E00273A57 /* testspri.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 907A61E218F17B8E00273A57 /* testspri.atlas */; };
+		907A61E318F17B8E00273A57 /* lasAtlas.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 907A61E218F17B8E00273A57 /* lasAtlas.atlas */; };
+		907A61E518F1920F00273A57 /* panda.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 907A61E418F1920F00273A57 /* panda.atlas */; };
+		907A61E818F1930400273A57 /* MMSHeroNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61E718F1930400273A57 /* MMSHeroNode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +75,10 @@
 		907A61D418F16A0B00273A57 /* MMSKaratePandaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSKaratePandaView.h; path = Classes/Views/MMSKaratePandaView.h; sourceTree = "<group>"; };
 		907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKaratePandaView.m; path = Classes/Views/MMSKaratePandaView.m; sourceTree = "<group>"; };
 		907A61D718F1729A00273A57 /* bgLas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgLas.png; path = Resources/KaratePanda/bgLas.png; sourceTree = "<group>"; };
-		907A61E218F17B8E00273A57 /* testspri.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = testspri.atlas; path = Resources/KaratePanda/testspri.atlas; sourceTree = "<group>"; };
+		907A61E218F17B8E00273A57 /* lasAtlas.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = lasAtlas.atlas; path = Resources/KaratePanda/lasAtlas.atlas; sourceTree = "<group>"; };
+		907A61E418F1920F00273A57 /* panda.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = panda.atlas; path = Resources/KaratePanda/panda.atlas; sourceTree = "<group>"; };
+		907A61E618F1930400273A57 /* MMSHeroNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSHeroNode.h; path = Classes/KaratePanda/MMSHeroNode.h; sourceTree = "<group>"; };
+		907A61E718F1930400273A57 /* MMSHeroNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSHeroNode.m; path = Classes/KaratePanda/MMSHeroNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +148,7 @@
 				907A617A18F1586B00273A57 /* MMSStyleSheet.h */,
 				907A617B18F1586B00273A57 /* MMSStyleSheet.m */,
 				907A618018F1592600273A57 /* Views */,
+				907A61E918F1931100273A57 /* KaratePanda */,
 				907A615D18F1581C00273A57 /* Images.xcassets */,
 				907A614C18F1581C00273A57 /* Supporting Files */,
 			);
@@ -221,8 +227,18 @@
 		907A61DA18F172A100273A57 /* KaratePanda */ = {
 			isa = PBXGroup;
 			children = (
-				907A61E218F17B8E00273A57 /* testspri.atlas */,
+				907A61E418F1920F00273A57 /* panda.atlas */,
+				907A61E218F17B8E00273A57 /* lasAtlas.atlas */,
 				907A61D718F1729A00273A57 /* bgLas.png */,
+			);
+			name = KaratePanda;
+			sourceTree = "<group>";
+		};
+		907A61E918F1931100273A57 /* KaratePanda */ = {
+			isa = PBXGroup;
+			children = (
+				907A61E618F1930400273A57 /* MMSHeroNode.h */,
+				907A61E718F1930400273A57 /* MMSHeroNode.m */,
 			);
 			name = KaratePanda;
 			sourceTree = "<group>";
@@ -304,10 +320,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907A61E518F1920F00273A57 /* panda.atlas in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
 				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
-				907A61E318F17B8E00273A57 /* testspri.atlas in Resources */,
+				907A61E318F17B8E00273A57 /* lasAtlas.atlas in Resources */,
 				907A615918F1581C00273A57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907A61E818F1930400273A57 /* MMSHeroNode.m in Sources */,
 				907A615C18F1581C00273A57 /* MMSHelloViewController.m in Sources */,
 				907A617C18F1586B00273A57 /* MMSStyleSheet.m in Sources */,
 				907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */,
@@ -465,6 +483,7 @@
 				GCC_PREFIX_HEADER = "MichalSmialko/MichalSmialko-Prefix.pch";
 				INFOPLIST_FILE = "MichalSmialko/MichalSmialko-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -478,6 +497,7 @@
 				GCC_PREFIX_HEADER = "MichalSmialko/MichalSmialko-Prefix.pch";
 				INFOPLIST_FILE = "MichalSmialko/MichalSmialko-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
