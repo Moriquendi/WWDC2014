@@ -8,6 +8,8 @@
 
 #import "MMSKaratePandaScene.h"
 #import "MMSHeroNode.h"
+#import "MMSKeys.h"
+#import "MMSPath.h"
 
 @interface MMSKaratePandaScene () <SKPhysicsContactDelegate>
 
@@ -64,16 +66,10 @@
         [self._world addChild:self._heroNode];
         
         // Path
-        SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"lasAtlas"];
-        SKTexture *texture = [atlas textureNamed:@"sciezka_kamien_zas"];
-        SKSpriteNode *pathNode = [SKSpriteNode spriteNodeWithTexture:texture];
+        MMSPath *pathNode = [MMSPath path];
         pathNode.position = CGPointMake(300, 250);
         
-        pathNode.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:pathNode.frame.size];
-        pathNode.physicsBody.usesPreciseCollisionDetection = YES;
-        pathNode.physicsBody.categoryBitMask = 0x1 << 0;
-        pathNode.physicsBody.dynamic = NO;
-        
+        // Physics set up
         self.physicsWorld.contactDelegate = self;
         self.physicsWorld.gravity = CGVectorMake(0, 0);
         

@@ -7,6 +7,7 @@
 //
 
 #import "MMSHeroNode.h"
+#import "MMSKeys.h"
 
 @interface MMSHeroNode ()
 @property (nonatomic, strong) SKTextureAtlas *_atlas;
@@ -26,20 +27,15 @@
     MMSHeroNode *node = [MMSHeroNode spriteNodeWithTexture:texture];
     node._atlas = atlas;
     
-    
     [node _loadStayAnimation];
     [node _loadRunAnimation];
     
     // Physics
     node.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:node.frame.size];
     node.physicsBody.usesPreciseCollisionDetection = YES;
-    node.physicsBody.categoryBitMask = 0x1 << 1;
-
-    const uint32_t pathCategory = 0x1 << 0;
-    const uint32_t heroCategory = 0x1 << 1;
-
+    node.physicsBody.categoryBitMask = heroCategory;
     node.physicsBody.allowsRotation = NO;
-    node.physicsBody.contactTestBitMask = pathCategory | heroCategory;
+    node.physicsBody.contactTestBitMask = pathCategory | heroCategory | bonusCategory;
     
     [node _runRunningAnimation];
 
