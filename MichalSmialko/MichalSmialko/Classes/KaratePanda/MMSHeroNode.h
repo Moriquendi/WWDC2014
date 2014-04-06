@@ -17,6 +17,7 @@
 
 - (void)stopMoving;
 - (void)startJump;
+- (void)stopFalling;
 - (void)updateLocation:(CFTimeInterval)dt;
 
 @end

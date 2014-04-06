@@ -9,7 +9,7 @@
 #import "MMSKaratePandaScene.h"
 #import "MMSHeroNode.h"
 
-@interface MMSKaratePandaScene ()
+@interface MMSKaratePandaScene () <SKPhysicsContactDelegate>
 
 @property (nonatomic, strong) SKNode *_world;
 @property (nonatomic) CFTimeInterval _previousFrameTime;
@@ -23,10 +23,13 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
-        BOOL goRight = location.x > CGRectGetMidX(self.frame);
-        self._heroNode.dirrection = CGVectorMake(goRight ? 100 : - 100,
-                                                 self._heroNode.dirrection.dy);
+        
+        [self._heroNode startJump];
+        
+//        CGPoint location = [touch locationInNode:self];
+//        BOOL goRight = location.x > CGRectGetMidX(self.frame);
+//        self._heroNode.dirrection = CGVectorMake(goRight ? 100 : - 100,
+//                                                 self._heroNode.dirrection.dy);
     }
 }
 
@@ -59,6 +62,22 @@
         self._heroNode.position = CGPointMake(CGRectGetMidX(self.frame),
                                               CGRectGetMidY(self.frame));
         [self._world addChild:self._heroNode];
+        
+        // Path
+        SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"lasAtlas"];
+        SKTexture *texture = [atlas textureNamed:@"sciezka_kamien_zas"];
+        SKSpriteNode *pathNode = [SKSpriteNode spriteNodeWithTexture:texture];
+        pathNode.position = CGPointMake(300, 250);
+        
+        pathNode.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:pathNode.frame.size];
+        pathNode.physicsBody.usesPreciseCollisionDetection = YES;
+        pathNode.physicsBody.categoryBitMask = 0x1 << 0;
+        pathNode.physicsBody.dynamic = NO;
+        
+        self.physicsWorld.contactDelegate = self;
+        self.physicsWorld.gravity = CGVectorMake(0, 0);
+        
+        [self._world addChild:pathNode];
     }
     return self;
 }
@@ -82,5 +101,16 @@
     self._previousFrameTime = currentTime;
 }
 
+#pragma mark - 
+
+- (void)didBeginContact:(SKPhysicsContact *)contact
+{
+    [self._heroNode stopFalling];
+}
+
+- (void)didEndContact:(SKPhysicsContact *)contact
+{
+    NSLog(@"end");
+}
 
 @end

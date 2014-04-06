@@ -30,8 +30,19 @@
     [node _loadStayAnimation];
     [node _loadRunAnimation];
     
-    [node _runRunningAnimation];
+    // Physics
+    node.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:node.frame.size];
+    node.physicsBody.usesPreciseCollisionDetection = YES;
+    node.physicsBody.categoryBitMask = 0x1 << 1;
+
+    const uint32_t pathCategory = 0x1 << 0;
+    const uint32_t heroCategory = 0x1 << 1;
+
+    node.physicsBody.allowsRotation = NO;
+    node.physicsBody.contactTestBitMask = pathCategory | heroCategory;
     
+    [node _runRunningAnimation];
+
     return node;
 }
 
@@ -73,6 +84,13 @@
     self.dirrection = CGVectorMake(self.dirrection.dx,
                                    300);
     self.jumping = YES;
+}
+
+- (void)stopFalling
+{
+    self.dirrection = CGVectorMake(self.dirrection.dx,
+                                   0);
+    self.jumping = NO;
 }
 
 #pragma mark - MMSHeroNode ()
