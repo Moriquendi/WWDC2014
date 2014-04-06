@@ -12,4 +12,11 @@
 
 + (instancetype)sharedInstance;
 
+// Colors
+- (UIColor *)lightBackgroundColor;
+
+// Fonts
+- (UIFont *)headerFont;
+- (UIFont *)subHeaderFont;
+
 @end

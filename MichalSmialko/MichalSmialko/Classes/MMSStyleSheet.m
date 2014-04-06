@@ -32,6 +32,25 @@
     return self;
 }
 
+#pragma mark - MMStyleSheet - Colors
+
+- (UIColor *)lightBackgroundColor
+{
+    return [UIColor colorWithWhite:230./255. alpha:1.0];
+}
+
+#pragma mark - MMStyleSheet - Fonts
+
+- (UIFont *)headerFont
+{
+    return [UIFont fontWithName:@"Helvetica-Light" size:80.];
+}
+
+- (UIFont *)subHeaderFont
+{
+    return [UIFont fontWithName:@"Helvetica-Light" size:35.];
+}
+
 #pragma mark - MMStyleSheet ()
 
 - (void)_applyAppearanceProxies

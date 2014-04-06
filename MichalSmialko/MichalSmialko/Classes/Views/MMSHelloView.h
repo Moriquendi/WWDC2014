@@ -10,4 +10,6 @@
 
 @interface MMSHelloView : UIView
 
+- (void)startAnimation;
+
 @end
