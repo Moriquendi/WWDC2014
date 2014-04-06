@@ -60,9 +60,7 @@
         [self addChild:bgSprite];
         
         // Hero
-        SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"panda"];
-        SKTexture *texture = [atlas textureNamed:@"panda_stoi01"];
-        self._heroNode = [MMSHeroNode spriteNodeWithTexture:texture];
+        self._heroNode = [MMSHeroNode heroNode];
         self._heroNode.position = CGPointMake(CGRectGetMidX(self.frame),
                                               CGRectGetMidY(self.frame));
         [self addChild:self._heroNode];
@@ -85,7 +83,6 @@
     
     self._previousFrameTime = currentTime;
 }
-
 
 
 @end

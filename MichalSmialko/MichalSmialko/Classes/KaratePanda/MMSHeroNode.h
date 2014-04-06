@@ -13,6 +13,8 @@
 @property (nonatomic) BOOL running;
 @property (nonatomic) CGVector dirrection;
 
++ (instancetype)heroNode;
+
 - (void)stopMoving;
 - (void)startJump;
 - (void)updateLocation:(CFTimeInterval)dt;
