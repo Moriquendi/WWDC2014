@@ -27,6 +27,8 @@
 		907A61CD18F1679900273A57 /* MMSKaratePandaScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61CC18F1679900273A57 /* MMSKaratePandaScene.m */; };
 		907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61D218F1684200273A57 /* MMSKaratePandaVC.m */; };
 		907A61D618F16A0B00273A57 /* MMSKaratePandaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */; };
+		907A61D818F1729A00273A57 /* bgLas.png in Resources */ = {isa = PBXBuildFile; fileRef = 907A61D718F1729A00273A57 /* bgLas.png */; };
+		907A61E318F17B8E00273A57 /* testspri.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 907A61E218F17B8E00273A57 /* testspri.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		907A61D218F1684200273A57 /* MMSKaratePandaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKaratePandaVC.m; path = Classes/Controllers/MMSKaratePandaVC.m; sourceTree = "<group>"; };
 		907A61D418F16A0B00273A57 /* MMSKaratePandaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSKaratePandaView.h; path = Classes/Views/MMSKaratePandaView.h; sourceTree = "<group>"; };
 		907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKaratePandaView.m; path = Classes/Views/MMSKaratePandaView.m; sourceTree = "<group>"; };
+		907A61D718F1729A00273A57 /* bgLas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgLas.png; path = Resources/KaratePanda/bgLas.png; sourceTree = "<group>"; };
+		907A61E218F17B8E00273A57 /* testspri.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = testspri.atlas; path = Resources/KaratePanda/testspri.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		907A614C18F1581C00273A57 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				907A61D918F1729D00273A57 /* Resources */,
 				907A614D18F1581C00273A57 /* MichalSmialko-Info.plist */,
 				907A614E18F1581C00273A57 /* InfoPlist.strings */,
 				907A615118F1581C00273A57 /* main.m */,
@@ -203,6 +208,23 @@
 				907A61D218F1684200273A57 /* MMSKaratePandaVC.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		907A61D918F1729D00273A57 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				907A61DA18F172A100273A57 /* KaratePanda */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		907A61DA18F172A100273A57 /* KaratePanda */ = {
+			isa = PBXGroup;
+			children = (
+				907A61E218F17B8E00273A57 /* testspri.atlas */,
+				907A61D718F1729A00273A57 /* bgLas.png */,
+			);
+			name = KaratePanda;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +305,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
+				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
+				907A61E318F17B8E00273A57 /* testspri.atlas in Resources */,
 				907A615918F1581C00273A57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
