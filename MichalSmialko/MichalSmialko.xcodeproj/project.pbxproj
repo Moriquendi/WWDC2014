@@ -23,6 +23,10 @@
 		907A617118F1581D00273A57 /* MichalSmialkoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A617018F1581D00273A57 /* MichalSmialkoTests.m */; };
 		907A617C18F1586B00273A57 /* MMSStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A617B18F1586B00273A57 /* MMSStyleSheet.m */; };
 		907A617F18F1592300273A57 /* MMSHelloView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A617E18F1592300273A57 /* MMSHelloView.m */; };
+		907A618218F166F300273A57 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A618118F166F300273A57 /* SpriteKit.framework */; };
+		907A61CD18F1679900273A57 /* MMSKaratePandaScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61CC18F1679900273A57 /* MMSKaratePandaScene.m */; };
+		907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61D218F1684200273A57 /* MMSKaratePandaVC.m */; };
+		907A61D618F16A0B00273A57 /* MMSKaratePandaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,13 @@
 		907A617B18F1586B00273A57 /* MMSStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSStyleSheet.m; path = Classes/MMSStyleSheet.m; sourceTree = "<group>"; };
 		907A617D18F1592300273A57 /* MMSHelloView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSHelloView.h; path = Classes/Views/MMSHelloView.h; sourceTree = "<group>"; };
 		907A617E18F1592300273A57 /* MMSHelloView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSHelloView.m; path = Classes/Views/MMSHelloView.m; sourceTree = "<group>"; };
+		907A618118F166F300273A57 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		907A61CB18F1679900273A57 /* MMSKaratePandaScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSKaratePandaScene.h; path = Classes/Scenes/MMSKaratePandaScene.h; sourceTree = "<group>"; };
+		907A61CC18F1679900273A57 /* MMSKaratePandaScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKaratePandaScene.m; path = Classes/Scenes/MMSKaratePandaScene.m; sourceTree = "<group>"; };
+		907A61D118F1684200273A57 /* MMSKaratePandaVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSKaratePandaVC.h; path = Classes/Controllers/MMSKaratePandaVC.h; sourceTree = "<group>"; };
+		907A61D218F1684200273A57 /* MMSKaratePandaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKaratePandaVC.m; path = Classes/Controllers/MMSKaratePandaVC.m; sourceTree = "<group>"; };
+		907A61D418F16A0B00273A57 /* MMSKaratePandaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSKaratePandaView.h; path = Classes/Views/MMSKaratePandaView.h; sourceTree = "<group>"; };
+		907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKaratePandaView.m; path = Classes/Views/MMSKaratePandaView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907A618218F166F300273A57 /* SpriteKit.framework in Frameworks */,
 				907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */,
 				907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */,
 				907A614618F1581C00273A57 /* Foundation.framework in Frameworks */,
@@ -107,6 +119,7 @@
 		907A614418F1581C00273A57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				907A618118F166F300273A57 /* SpriteKit.framework */,
 				907A614518F1581C00273A57 /* Foundation.framework */,
 				907A614718F1581C00273A57 /* CoreGraphics.framework */,
 				907A614918F1581C00273A57 /* UIKit.framework */,
@@ -121,8 +134,8 @@
 				907A615418F1581C00273A57 /* MMSAppDelegate.h */,
 				907A615518F1581C00273A57 /* MMSAppDelegate.m */,
 				907A615718F1581C00273A57 /* Main.storyboard */,
-				907A615A18F1581C00273A57 /* MMSHelloViewController.h */,
-				907A615B18F1581C00273A57 /* MMSHelloViewController.m */,
+				907A61D018F1682600273A57 /* Controllers */,
+				907A61CE18F1679D00273A57 /* Scenes */,
 				907A617A18F1586B00273A57 /* MMSStyleSheet.h */,
 				907A617B18F1586B00273A57 /* MMSStyleSheet.m */,
 				907A618018F1592600273A57 /* Views */,
@@ -166,8 +179,30 @@
 			children = (
 				907A617D18F1592300273A57 /* MMSHelloView.h */,
 				907A617E18F1592300273A57 /* MMSHelloView.m */,
+				907A61D418F16A0B00273A57 /* MMSKaratePandaView.h */,
+				907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		907A61CE18F1679D00273A57 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				907A61CB18F1679900273A57 /* MMSKaratePandaScene.h */,
+				907A61CC18F1679900273A57 /* MMSKaratePandaScene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		907A61D018F1682600273A57 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				907A615A18F1581C00273A57 /* MMSHelloViewController.h */,
+				907A615B18F1581C00273A57 /* MMSHelloViewController.m */,
+				907A61D118F1684200273A57 /* MMSKaratePandaVC.h */,
+				907A61D218F1684200273A57 /* MMSKaratePandaVC.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +305,12 @@
 			files = (
 				907A615C18F1581C00273A57 /* MMSHelloViewController.m in Sources */,
 				907A617C18F1586B00273A57 /* MMSStyleSheet.m in Sources */,
+				907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */,
+				907A61D618F16A0B00273A57 /* MMSKaratePandaView.m in Sources */,
 				907A617F18F1592300273A57 /* MMSHelloView.m in Sources */,
 				907A615618F1581C00273A57 /* MMSAppDelegate.m in Sources */,
 				907A615218F1581C00273A57 /* main.m in Sources */,
+				907A61CD18F1679900273A57 /* MMSKaratePandaScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

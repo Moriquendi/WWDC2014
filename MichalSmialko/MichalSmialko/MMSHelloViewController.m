@@ -31,6 +31,7 @@
     [super viewDidAppear:animated];
     
     [self._helloView performSelector:@selector(startAnimation) withObject:nil afterDelay:1.0];
+    [self._helloView startAnimation];
 }
 
 @end
