@@ -15,6 +15,13 @@
 // Colors
 - (UIColor *)lightBackgroundColor;
 
+- (UIColor *)darkBlueColor;
+- (UIColor *)lightBlueColor;
+- (UIColor *)redColor;
+- (UIColor *)tealColor;
+- (UIColor *)yellowColor;
+
+
 // Fonts
 - (UIFont *)headerFont;
 - (UIFont *)subHeaderFont;

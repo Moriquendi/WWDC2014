@@ -39,6 +39,32 @@
     return [UIColor colorWithWhite:230./255. alpha:1.0];
 }
 
+- (UIColor *)darkBlueColor
+{
+    return [UIColor colorWithRed:45./255. green:62./255. blue:82./255. alpha:1.0];
+}
+
+- (UIColor *)lightBlueColor
+{
+    return [UIColor colorWithRed:74./255.
+                           green:164./255.
+                            blue:216./255. alpha:1.0];
+}
+- (UIColor *)redColor
+{
+    return [UIColor colorWithRed:219./255. green:87./255. blue:73./255. alpha:1.0];
+}
+
+- (UIColor *)tealColor
+{
+    return [UIColor colorWithRed:83./255. green:186./255. blue:137./255. alpha:1.0];
+}
+
+- (UIColor *)yellowColor
+{
+    return [UIColor colorWithRed:235./255. green:144./255. blue:29./255. alpha:1.0];
+}
+
 #pragma mark - MMStyleSheet - Fonts
 
 - (UIFont *)headerFont

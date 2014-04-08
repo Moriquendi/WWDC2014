@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901BDD0418F4B7FD00723187 /* MMSMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0318F4B7FD00723187 /* MMSMenuVC.m */; };
+		901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0618F4B85F00723187 /* MMSMenuView.m */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -50,6 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		901BDD0218F4B7FD00723187 /* MMSMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSMenuVC.h; path = Classes/Controllers/MMSMenuVC.h; sourceTree = "<group>"; };
+		901BDD0318F4B7FD00723187 /* MMSMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSMenuVC.m; path = Classes/Controllers/MMSMenuVC.m; sourceTree = "<group>"; };
+		901BDD0518F4B85F00723187 /* MMSMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSMenuView.h; path = Classes/Views/MMSMenuView.h; sourceTree = "<group>"; };
+		901BDD0618F4B85F00723187 /* MMSMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSMenuView.m; path = Classes/Views/MMSMenuView.m; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -214,6 +220,8 @@
 				907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */,
 				90C53B1018F2C71800E09CC6 /* MMSStackView.h */,
 				90C53B1118F2C71800E09CC6 /* MMSStackView.m */,
+				901BDD0518F4B85F00723187 /* MMSMenuView.h */,
+				901BDD0618F4B85F00723187 /* MMSMenuView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -236,6 +244,8 @@
 				907A61D218F1684200273A57 /* MMSKaratePandaVC.m */,
 				90C53B0D18F2C6F900E09CC6 /* MMSTestViewController.h */,
 				90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */,
+				901BDD0218F4B7FD00723187 /* MMSMenuVC.h */,
+				901BDD0318F4B7FD00723187 /* MMSMenuVC.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -375,7 +385,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				907A61E818F1930400273A57 /* MMSHeroNode.m in Sources */,
+				901BDD0418F4B7FD00723187 /* MMSMenuVC.m in Sources */,
 				90C53B0F18F2C6F900E09CC6 /* MMSTestViewController.m in Sources */,
+				901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */,
 				907A61EC18F1B59600273A57 /* MMSBonusNode.m in Sources */,
 				90C53B1518F2CE2800E09CC6 /* NSArray+Utils.m in Sources */,
 				907A61EF18F1B65000273A57 /* MMSKeys.m in Sources */,
