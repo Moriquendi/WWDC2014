@@ -10,6 +10,8 @@
 
 @interface MMSStackView : UIView
 
+@property (nonatomic, strong) UIPanGestureRecognizer *pan;
+
 - (instancetype)initWithViews:(NSArray *)stackViews frame:(CGRect)frame;
 
 @end

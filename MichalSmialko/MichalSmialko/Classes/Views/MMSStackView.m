@@ -61,8 +61,8 @@
         [self addSubview:obj];
     }];
     
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
-    [[self._stackViews lastObject] addGestureRecognizer:pan];
+    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+    [[self._stackViews lastObject] addGestureRecognizer:self.pan];
 }
 
 #pragma mark - MMStackView ()
@@ -79,8 +79,8 @@
         }];
     }
     
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
-    [[self._stackViews lastObject] addGestureRecognizer:pan];
+    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+    [[self._stackViews lastObject] addGestureRecognizer:self.pan];
 }
 
 - (void)handlePan:(UIPanGestureRecognizer *)gesture
