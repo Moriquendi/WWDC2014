@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901379C418F5B9D700B7434C /* MMSKrakJamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901379C318F5B9D700B7434C /* MMSKrakJamView.m */; };
 		901BDD0418F4B7FD00723187 /* MMSMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0318F4B7FD00723187 /* MMSMenuVC.m */; };
 		901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0618F4B85F00723187 /* MMSMenuView.m */; };
 		901BDD0A18F56D4F00723187 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0918F56D4F00723187 /* NSTimer+Blocks.m */; };
+		901BDD0E18F5799A00723187 /* MMSHackathonsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0D18F5799A00723187 /* MMSHackathonsVC.m */; };
+		901BDD1118F579B700723187 /* MMSHackathonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD1018F579B700723187 /* MMSHackathonsView.m */; };
+		901BDD1418F57F8900723187 /* MMSAGHacksView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD1318F57F8900723187 /* MMSAGHacksView.m */; };
+		901BDD1A18F5829F00723187 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901BDD1918F5829F00723187 /* MediaPlayer.framework */; };
+		901BDD1C18F582DD00723187 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901BDD1B18F582DD00723187 /* QuartzCore.framework */; };
+		901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 901BDD1D18F5850A00723187 /* AGHacksPromo.mov */; };
+		901BDD2018F5968600723187 /* AGHacksLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 901BDD1F18F5968600723187 /* AGHacksLogo@2x.png */; };
+		901BDD2418F59F9400723187 /* MMSAGHacksDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD2318F59F9400723187 /* MMSAGHacksDetailsView.m */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -53,12 +62,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		901379C218F5B9D700B7434C /* MMSKrakJamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSKrakJamView.h; path = Classes/Views/MMSKrakJamView.h; sourceTree = "<group>"; };
+		901379C318F5B9D700B7434C /* MMSKrakJamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKrakJamView.m; path = Classes/Views/MMSKrakJamView.m; sourceTree = "<group>"; };
 		901BDD0218F4B7FD00723187 /* MMSMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSMenuVC.h; path = Classes/Controllers/MMSMenuVC.h; sourceTree = "<group>"; };
 		901BDD0318F4B7FD00723187 /* MMSMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSMenuVC.m; path = Classes/Controllers/MMSMenuVC.m; sourceTree = "<group>"; };
 		901BDD0518F4B85F00723187 /* MMSMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSMenuView.h; path = Classes/Views/MMSMenuView.h; sourceTree = "<group>"; };
 		901BDD0618F4B85F00723187 /* MMSMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSMenuView.m; path = Classes/Views/MMSMenuView.m; sourceTree = "<group>"; };
 		901BDD0818F56D4F00723187 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTimer+Blocks.h"; path = "extern/NSTimer-Blocks-master/NSTimer+Blocks.h"; sourceTree = "<group>"; };
 		901BDD0918F56D4F00723187 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+Blocks.m"; path = "extern/NSTimer-Blocks-master/NSTimer+Blocks.m"; sourceTree = "<group>"; };
+		901BDD0C18F5799A00723187 /* MMSHackathonsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSHackathonsVC.h; path = Classes/Controllers/MMSHackathonsVC.h; sourceTree = "<group>"; };
+		901BDD0D18F5799A00723187 /* MMSHackathonsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSHackathonsVC.m; path = Classes/Controllers/MMSHackathonsVC.m; sourceTree = "<group>"; };
+		901BDD0F18F579B700723187 /* MMSHackathonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSHackathonsView.h; path = Classes/Views/MMSHackathonsView.h; sourceTree = "<group>"; };
+		901BDD1018F579B700723187 /* MMSHackathonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSHackathonsView.m; path = Classes/Views/MMSHackathonsView.m; sourceTree = "<group>"; };
+		901BDD1218F57F8900723187 /* MMSAGHacksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSAGHacksView.h; path = Classes/Views/MMSAGHacksView.h; sourceTree = "<group>"; };
+		901BDD1318F57F8900723187 /* MMSAGHacksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSAGHacksView.m; path = Classes/Views/MMSAGHacksView.m; sourceTree = "<group>"; };
+		901BDD1918F5829F00723187 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		901BDD1B18F582DD00723187 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		901BDD1D18F5850A00723187 /* AGHacksPromo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = AGHacksPromo.mov; path = Resources/AGHacksPromo.mov; sourceTree = "<group>"; };
+		901BDD1F18F5968600723187 /* AGHacksLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AGHacksLogo@2x.png"; path = "Resources/AGHacks/AGHacksLogo@2x.png"; sourceTree = "<group>"; };
+		901BDD2218F59F9400723187 /* MMSAGHacksDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSAGHacksDetailsView.h; path = Classes/Views/MMSAGHacksDetailsView.h; sourceTree = "<group>"; };
+		901BDD2318F59F9400723187 /* MMSAGHacksDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSAGHacksDetailsView.m; path = Classes/Views/MMSAGHacksDetailsView.m; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -113,6 +136,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901BDD1C18F582DD00723187 /* QuartzCore.framework in Frameworks */,
+				901BDD1A18F5829F00723187 /* MediaPlayer.framework in Frameworks */,
 				907A618218F166F300273A57 /* SpriteKit.framework in Frameworks */,
 				907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */,
 				907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */,
@@ -142,6 +167,14 @@
 			name = extern;
 			sourceTree = "<group>";
 		};
+		901BDD2118F5968A00723187 /* AGHacks */ = {
+			isa = PBXGroup;
+			children = (
+				901BDD1F18F5968600723187 /* AGHacksLogo@2x.png */,
+			);
+			name = AGHacks;
+			sourceTree = "<group>";
+		};
 		907A613918F1581C00273A57 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +197,8 @@
 		907A614418F1581C00273A57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				901BDD1B18F582DD00723187 /* QuartzCore.framework */,
+				901BDD1918F5829F00723187 /* MediaPlayer.framework */,
 				907A618118F166F300273A57 /* SpriteKit.framework */,
 				907A614518F1581C00273A57 /* Foundation.framework */,
 				907A614718F1581C00273A57 /* CoreGraphics.framework */,
@@ -235,6 +270,14 @@
 				90C53B1118F2C71800E09CC6 /* MMSStackView.m */,
 				901BDD0518F4B85F00723187 /* MMSMenuView.h */,
 				901BDD0618F4B85F00723187 /* MMSMenuView.m */,
+				901BDD0F18F579B700723187 /* MMSHackathonsView.h */,
+				901BDD1018F579B700723187 /* MMSHackathonsView.m */,
+				901BDD1218F57F8900723187 /* MMSAGHacksView.h */,
+				901BDD1318F57F8900723187 /* MMSAGHacksView.m */,
+				901BDD2218F59F9400723187 /* MMSAGHacksDetailsView.h */,
+				901BDD2318F59F9400723187 /* MMSAGHacksDetailsView.m */,
+				901379C218F5B9D700B7434C /* MMSKrakJamView.h */,
+				901379C318F5B9D700B7434C /* MMSKrakJamView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -255,6 +298,8 @@
 				907A615B18F1581C00273A57 /* MMSHelloViewController.m */,
 				907A61D118F1684200273A57 /* MMSKaratePandaVC.h */,
 				907A61D218F1684200273A57 /* MMSKaratePandaVC.m */,
+				901BDD0C18F5799A00723187 /* MMSHackathonsVC.h */,
+				901BDD0D18F5799A00723187 /* MMSHackathonsVC.m */,
 				90C53B0D18F2C6F900E09CC6 /* MMSTestViewController.h */,
 				90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */,
 				901BDD0218F4B7FD00723187 /* MMSMenuVC.h */,
@@ -266,6 +311,8 @@
 		907A61D918F1729D00273A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				901BDD2118F5968A00723187 /* AGHacks */,
+				901BDD1D18F5850A00723187 /* AGHacksPromo.mov */,
 				907A61DA18F172A100273A57 /* KaratePanda */,
 			);
 			name = Resources;
@@ -373,7 +420,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */,
 				907A61E518F1920F00273A57 /* panda.atlas in Resources */,
+				901BDD2018F5968600723187 /* AGHacksLogo@2x.png in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
 				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
@@ -397,13 +446,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901BDD0E18F5799A00723187 /* MMSHackathonsVC.m in Sources */,
 				907A61E818F1930400273A57 /* MMSHeroNode.m in Sources */,
+				901BDD2418F59F9400723187 /* MMSAGHacksDetailsView.m in Sources */,
 				901BDD0418F4B7FD00723187 /* MMSMenuVC.m in Sources */,
 				90C53B0F18F2C6F900E09CC6 /* MMSTestViewController.m in Sources */,
 				901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */,
 				907A61EC18F1B59600273A57 /* MMSBonusNode.m in Sources */,
 				90C53B1518F2CE2800E09CC6 /* NSArray+Utils.m in Sources */,
 				907A61EF18F1B65000273A57 /* MMSKeys.m in Sources */,
+				901379C418F5B9D700B7434C /* MMSKrakJamView.m in Sources */,
+				901BDD1418F57F8900723187 /* MMSAGHacksView.m in Sources */,
 				907A615C18F1581C00273A57 /* MMSHelloViewController.m in Sources */,
 				907A617C18F1586B00273A57 /* MMSStyleSheet.m in Sources */,
 				907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */,
@@ -414,6 +467,7 @@
 				907A615618F1581C00273A57 /* MMSAppDelegate.m in Sources */,
 				907A615218F1581C00273A57 /* main.m in Sources */,
 				907A61F218F1B6ED00273A57 /* MMSPath.m in Sources */,
+				901BDD1118F579B700723187 /* MMSHackathonsView.m in Sources */,
 				907A61CD18F1679900273A57 /* MMSKaratePandaScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -529,7 +583,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -544,6 +598,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MichalSmialko/MichalSmialko-Prefix.pch";
 				INFOPLIST_FILE = "MichalSmialko/MichalSmialko-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -558,6 +613,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MichalSmialko/MichalSmialko-Prefix.pch";
 				INFOPLIST_FILE = "MichalSmialko/MichalSmialko-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
@@ -623,6 +679,7 @@
 				907A617618F1581D00273A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		907A617718F1581D00273A57 /* Build configuration list for PBXNativeTarget "MichalSmialkoTests" */ = {
 			isa = XCConfigurationList;
@@ -631,6 +688,7 @@
 				907A617918F1581D00273A57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

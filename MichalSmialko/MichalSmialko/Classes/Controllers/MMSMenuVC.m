@@ -8,6 +8,7 @@
 
 #import "MMSMenuVC.h"
 #import "MMSMenuView.h"
+#import "MMSHackathonsVC.h"
 
 @interface MMSMenuVC ()
 @property (nonatomic, strong) MMSMenuView *_menuView;
@@ -56,8 +57,18 @@
 
 - (void)_buttonTapped:(UIButton *)sender
 {
+    NSArray *VCClasses = @[[MMSHackathonsVC class],
+                           [MMSHackathonsVC class],
+                           [MMSHackathonsVC class],
+                           [MMSHackathonsVC class]];
+    
     [self._menuView animateButtonSelection:sender complection:^{
-        
+        UIViewController *vc = [[VCClasses[sender.tag] alloc] init];
+        [vc willMoveToParentViewController:self];
+        vc.view.frame = self.view.bounds;
+        [self.view addSubview:vc.view];
+        [self addChildViewController:vc];
+        [vc didMoveToParentViewController:self];
     }];
 }
 
