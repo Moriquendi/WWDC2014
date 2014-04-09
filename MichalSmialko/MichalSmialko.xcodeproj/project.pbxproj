@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		901379C418F5B9D700B7434C /* MMSKrakJamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901379C318F5B9D700B7434C /* MMSKrakJamView.m */; };
+		901379C718F5E2D900B7434C /* krakjam.png in Resources */ = {isa = PBXBuildFile; fileRef = 901379C518F5E2D900B7434C /* krakjam.png */; };
+		901379C818F5E2D900B7434C /* KrakJamTrailer.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 901379C618F5E2D900B7434C /* KrakJamTrailer.m4v */; };
+		901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 901379CA18F5E2F900B7434C /* SmartCatchPromo.m4v */; };
 		901BDD0418F4B7FD00723187 /* MMSMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0318F4B7FD00723187 /* MMSMenuVC.m */; };
 		901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0618F4B85F00723187 /* MMSMenuView.m */; };
 		901BDD0A18F56D4F00723187 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0918F56D4F00723187 /* NSTimer+Blocks.m */; };
@@ -64,6 +67,9 @@
 /* Begin PBXFileReference section */
 		901379C218F5B9D700B7434C /* MMSKrakJamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSKrakJamView.h; path = Classes/Views/MMSKrakJamView.h; sourceTree = "<group>"; };
 		901379C318F5B9D700B7434C /* MMSKrakJamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKrakJamView.m; path = Classes/Views/MMSKrakJamView.m; sourceTree = "<group>"; };
+		901379C518F5E2D900B7434C /* krakjam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = krakjam.png; path = Resources/KrakJam/krakjam.png; sourceTree = "<group>"; };
+		901379C618F5E2D900B7434C /* KrakJamTrailer.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = KrakJamTrailer.m4v; path = Resources/KrakJam/KrakJamTrailer.m4v; sourceTree = "<group>"; };
+		901379CA18F5E2F900B7434C /* SmartCatchPromo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = SmartCatchPromo.m4v; path = Resources/SmartTaps/SmartCatchPromo.m4v; sourceTree = "<group>"; };
 		901BDD0218F4B7FD00723187 /* MMSMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSMenuVC.h; path = Classes/Controllers/MMSMenuVC.h; sourceTree = "<group>"; };
 		901BDD0318F4B7FD00723187 /* MMSMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSMenuVC.m; path = Classes/Controllers/MMSMenuVC.m; sourceTree = "<group>"; };
 		901BDD0518F4B85F00723187 /* MMSMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSMenuView.h; path = Classes/Views/MMSMenuView.h; sourceTree = "<group>"; };
@@ -158,6 +164,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		901379C918F5E2DE00B7434C /* KrakJam */ = {
+			isa = PBXGroup;
+			children = (
+				901379C518F5E2D900B7434C /* krakjam.png */,
+				901379C618F5E2D900B7434C /* KrakJamTrailer.m4v */,
+			);
+			name = KrakJam;
+			sourceTree = "<group>";
+		};
+		901379CC18F5E2FD00B7434C /* SmartTaps */ = {
+			isa = PBXGroup;
+			children = (
+				901379CA18F5E2F900B7434C /* SmartCatchPromo.m4v */,
+			);
+			name = SmartTaps;
+			sourceTree = "<group>";
+		};
 		901BDD0B18F56D5200723187 /* extern */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +334,8 @@
 		907A61D918F1729D00273A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				901379CC18F5E2FD00B7434C /* SmartTaps */,
+				901379C918F5E2DE00B7434C /* KrakJam */,
 				901BDD2118F5968A00723187 /* AGHacks */,
 				901BDD1D18F5850A00723187 /* AGHacksPromo.mov */,
 				907A61DA18F172A100273A57 /* KaratePanda */,
@@ -423,11 +448,14 @@
 				901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */,
 				907A61E518F1920F00273A57 /* panda.atlas in Resources */,
 				901BDD2018F5968600723187 /* AGHacksLogo@2x.png in Resources */,
+				901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */,
+				901379C718F5E2D900B7434C /* krakjam.png in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
 				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
 				907A61E318F17B8E00273A57 /* lasAtlas.atlas in Resources */,
 				907A615918F1581C00273A57 /* Main.storyboard in Resources */,
+				901379C818F5E2D900B7434C /* KrakJamTrailer.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
