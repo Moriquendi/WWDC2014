@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		901BDD0418F4B7FD00723187 /* MMSMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0318F4B7FD00723187 /* MMSMenuVC.m */; };
 		901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0618F4B85F00723187 /* MMSMenuView.m */; };
+		901BDD0A18F56D4F00723187 /* NSTimer+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0918F56D4F00723187 /* NSTimer+Blocks.m */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -56,6 +57,8 @@
 		901BDD0318F4B7FD00723187 /* MMSMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSMenuVC.m; path = Classes/Controllers/MMSMenuVC.m; sourceTree = "<group>"; };
 		901BDD0518F4B85F00723187 /* MMSMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSMenuView.h; path = Classes/Views/MMSMenuView.h; sourceTree = "<group>"; };
 		901BDD0618F4B85F00723187 /* MMSMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSMenuView.m; path = Classes/Views/MMSMenuView.m; sourceTree = "<group>"; };
+		901BDD0818F56D4F00723187 /* NSTimer+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTimer+Blocks.h"; path = "extern/NSTimer-Blocks-master/NSTimer+Blocks.h"; sourceTree = "<group>"; };
+		901BDD0918F56D4F00723187 /* NSTimer+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+Blocks.m"; path = "extern/NSTimer-Blocks-master/NSTimer+Blocks.m"; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		901BDD0B18F56D5200723187 /* extern */ = {
+			isa = PBXGroup;
+			children = (
+				901BDD0818F56D4F00723187 /* NSTimer+Blocks.h */,
+				901BDD0918F56D4F00723187 /* NSTimer+Blocks.m */,
+			);
+			name = extern;
+			sourceTree = "<group>";
+		};
 		907A613918F1581C00273A57 = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +176,7 @@
 		907A614B18F1581C00273A57 /* MichalSmialko */ = {
 			isa = PBXGroup;
 			children = (
+				901BDD0B18F56D5200723187 /* extern */,
 				907A615418F1581C00273A57 /* MMSAppDelegate.h */,
 				907A615518F1581C00273A57 /* MMSAppDelegate.m */,
 				907A615718F1581C00273A57 /* Main.storyboard */,
@@ -396,6 +409,7 @@
 				907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */,
 				90C53B1218F2C71800E09CC6 /* MMSStackView.m in Sources */,
 				907A61D618F16A0B00273A57 /* MMSKaratePandaView.m in Sources */,
+				901BDD0A18F56D4F00723187 /* NSTimer+Blocks.m in Sources */,
 				907A617F18F1592300273A57 /* MMSHelloView.m in Sources */,
 				907A615618F1581C00273A57 /* MMSAppDelegate.m in Sources */,
 				907A615218F1581C00273A57 /* main.m in Sources */,

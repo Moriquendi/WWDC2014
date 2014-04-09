@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) NSArray *buttons;
 
+- (void)animateButtonSelection:(UIButton *)button complection:(void (^)(void))complection;
+
 @end

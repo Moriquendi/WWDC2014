@@ -29,6 +29,11 @@
         obj.tag = idx;
         [obj addTarget:self action:@selector(_buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     }];
+
+    [self._menuView.buttons[0] setTitle:@"My Projects" forState:UIControlStateNormal];
+    [self._menuView.buttons[1] setTitle:@"Hackathons" forState:UIControlStateNormal];
+    [self._menuView.buttons[2] setTitle:@"Learn & Teach" forState:UIControlStateNormal];
+    [self._menuView.buttons[3] setTitle:@"Work & Study" forState:UIControlStateNormal];
     
 }
 
@@ -38,8 +43,9 @@
     
     [self._menuView.buttons enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
         obj.transform = CGAffineTransformTranslate(CGAffineTransformIdentity, 0, 400 + 100*idx);
+        obj.transform = CGAffineTransformScale(obj.transform, 1./100., 1./100.);
         obj.alpha = 0.f;
-        [UIView animateWithDuration:0.5 + 0.1*idx animations:^{
+        [UIView animateWithDuration:0.4 + 0.1*idx animations:^{
             obj.alpha = 1.f;
             obj.transform = CGAffineTransformIdentity;
         }];
@@ -50,13 +56,8 @@
 
 - (void)_buttonTapped:(UIButton *)sender
 {
-    [self._menuView.buttons enumerateObjectsUsingBlock:^(UIButton *obj, NSUInteger idx, BOOL *stop) {
-        if (obj != sender) {
-            // Explode
-            [UIView animateWithDuration:0.3 animations:^{
-                obj.alpha = 0.f;
-            }];
-        }
+    [self._menuView animateButtonSelection:sender complection:^{
+        
     }];
 }
 
