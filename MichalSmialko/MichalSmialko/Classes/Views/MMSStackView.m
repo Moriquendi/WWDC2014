@@ -16,9 +16,11 @@
 #import "NSArray+Utils.h"
 
 @interface MMSStackView ()
+@property (nonatomic, strong) UIPanGestureRecognizer *_pan;
 @property (nonatomic, strong) UIDynamicAnimator *_animator;
 @property (nonatomic, strong) UIAttachmentBehavior *_attachment;
 @property (nonatomic, strong) NSArray *_stackViews;
+@property (nonatomic) CGPoint _anchorPoint;
 @end
 
 @implementation MMSStackView
@@ -26,9 +28,10 @@
 
 #pragma mark - UIView
 
-- (instancetype)initWithViews:(NSArray *)stackViews frame:(CGRect)frame
+- (instancetype)initWithViews:(NSArray *)stackViews anchorPoint:(CGPoint)anchor
 {
-    if (self = [self initWithFrame:frame]) {
+    if (self = [self initWithFrame:CGRectZero]) {
+        self._anchorPoint = anchor;
         self._stackViews = stackViews;
     }
     return self;
@@ -48,21 +51,17 @@
 {
     [super willMoveToSuperview:newSuperview];
     
-    __block CGRect viewFrame;
-    viewFrame = CGRectMake(40,
-                           40,
-                           self.bounds.size.width - 80,
-                           self.bounds.size.height - 80);
     [self._stackViews enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-        obj.frame = viewFrame;
+        obj.frame = CGRectMake(0, 0, obj.frame.size.width, obj.frame.size.height);
+        obj.center = self._anchorPoint;
         obj.transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_4 / 3 * idx);
         obj.layer.borderColor = [[UIColor blackColor] CGColor];;
         obj.layer.borderWidth = 2.;
         [self addSubview:obj];
     }];
     
-    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
-    [[self._stackViews lastObject] addGestureRecognizer:self.pan];
+    self._pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handle_pan:)];
+    [[self._stackViews lastObject] addGestureRecognizer:self._pan];
 }
 
 #pragma mark - MMStackView ()
@@ -79,11 +78,11 @@
         }];
     }
     
-    self.pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
-    [[self._stackViews lastObject] addGestureRecognizer:self.pan];
+    self._pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handle_pan:)];
+    [[self._stackViews lastObject] addGestureRecognizer:self._pan];
 }
 
-- (void)handlePan:(UIPanGestureRecognizer *)gesture
+- (void)handle_pan:(UIPanGestureRecognizer *)gesture
 {
     static CGPoint               startCenter;
     
@@ -183,7 +182,7 @@
         [self._animator addBehavior:dynamicItem];
         [self._animator addBehavior:snap];
         
-        // Remove Pan gesture from old view
+        // Remove _pan gesture from old view
         [gesture.view removeGestureRecognizer:gesture];
         
         // Swap views

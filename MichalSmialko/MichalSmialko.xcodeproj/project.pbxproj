@@ -22,6 +22,7 @@
 		901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 901BDD1D18F5850A00723187 /* AGHacksPromo.mov */; };
 		901BDD2018F5968600723187 /* AGHacksLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 901BDD1F18F5968600723187 /* AGHacksLogo@2x.png */; };
 		901BDD2418F59F9400723187 /* MMSAGHacksDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD2318F59F9400723187 /* MMSAGHacksDetailsView.m */; };
+		9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9028214B18F6A16200FD9A26 /* ggj@2x.png */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -88,6 +89,7 @@
 		901BDD1F18F5968600723187 /* AGHacksLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AGHacksLogo@2x.png"; path = "Resources/AGHacks/AGHacksLogo@2x.png"; sourceTree = "<group>"; };
 		901BDD2218F59F9400723187 /* MMSAGHacksDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSAGHacksDetailsView.h; path = Classes/Views/MMSAGHacksDetailsView.h; sourceTree = "<group>"; };
 		901BDD2318F59F9400723187 /* MMSAGHacksDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSAGHacksDetailsView.m; path = Classes/Views/MMSAGHacksDetailsView.m; sourceTree = "<group>"; };
+		9028214B18F6A16200FD9A26 /* ggj@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ggj@2x.png"; path = "Resources/KrakJam/ggj@2x.png"; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -167,6 +169,7 @@
 		901379C918F5E2DE00B7434C /* KrakJam */ = {
 			isa = PBXGroup;
 			children = (
+				9028214B18F6A16200FD9A26 /* ggj@2x.png */,
 				901379C518F5E2D900B7434C /* krakjam@2x.png */,
 				901379C618F5E2D900B7434C /* KrakJamTrailer.m4v */,
 			);
@@ -452,6 +455,7 @@
 				901379C718F5E2D900B7434C /* krakjam@2x.png in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
 				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
+				9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */,
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
 				907A61E318F17B8E00273A57 /* lasAtlas.atlas in Resources */,
 				907A615918F1581C00273A57 /* Main.storyboard in Resources */,

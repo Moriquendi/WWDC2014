@@ -29,8 +29,7 @@
     }
     
     MMSStackView *stack = [[MMSStackView alloc] initWithViews:stackViews
-                                                        frame:CGRectMake(100, 100,
-                                                                         300, 300)];
+                                                        anchorPoint:CGPointZero];
     [self.view addSubview:stack];
 }
 

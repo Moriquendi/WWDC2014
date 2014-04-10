@@ -69,15 +69,6 @@
 {
     [super didMoveToSuperview];
     [self._moviePlayerController performSelector:@selector(play) withObject:nil afterDelay:0.2];
-    
-    [self performSelector:@selector(_animateTest) withObject:nil afterDelay:1.0];
-}
-
-- (void)_animateTest
-{
-    [UIView animateWithDuration:4.0 animations:^{
-        self.contentView.contentOffset = CGPointMake(self.contentView.contentSize.width - self.contentView.frame.size.width, 0);
-    }];
 }
 
 - (void)layoutSubviews

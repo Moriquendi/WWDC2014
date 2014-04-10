@@ -29,6 +29,7 @@
         self._contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         self._contentView.alwaysBounceHorizontal = YES;
         self._contentView.delegate = self;
+        self._contentView.pagingEnabled = YES;
         [self addSubview:self._contentView];
 
         // KrakJam
