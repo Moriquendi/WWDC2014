@@ -53,6 +53,17 @@
 		90C53B0F18F2C6F900E09CC6 /* MMSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */; };
 		90C53B1218F2C71800E09CC6 /* MMSStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B1118F2C71800E09CC6 /* MMSStackView.m */; };
 		90C53B1518F2CE2800E09CC6 /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B1418F2CE2800E09CC6 /* NSArray+Utils.m */; };
+		90F8E6A418F6B9FF00797B83 /* MMSUSHackathons.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6A318F6B9FF00797B83 /* MMSUSHackathons.m */; };
+		90F8E6A718F6BB5200797B83 /* hacktechLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */; };
+		90F8E6A818F6BB5200797B83 /* mhacksLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6A618F6BB5200797B83 /* mhacksLogo@2x.png */; };
+		90F8E6AC18F6C1F400797B83 /* MMSLearnTeachVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6AB18F6C1F400797B83 /* MMSLearnTeachVC.m */; };
+		90F8E6B118F6CEDF00797B83 /* MDMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6AE18F6CEDF00797B83 /* MDMatrix.m */; };
+		90F8E6B218F6CEDF00797B83 /* MDScratchImageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6B018F6CEDF00797B83 /* MDScratchImageView.mm */; };
+		90F8E6B718F6CF5900797B83 /* MMSCocoaHeadsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6B618F6CF5900797B83 /* MMSCocoaHeadsView.m */; };
+		90F8E6B918F6D9D300797B83 /* chBg@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6B818F6D9D300797B83 /* chBg@2x.jpeg */; };
+		90F8E6BC18F6DB4B00797B83 /* chLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6BB18F6DB4B00797B83 /* chLogo@2x.png */; };
+		90F8E6BF18F6DE1200797B83 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6BE18F6DE1200797B83 /* UIImage+ImageEffects.m */; };
+		90F8E6C318F6DE8200797B83 /* UIView+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6C218F6DE8200797B83 /* UIView+Effects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +148,24 @@
 		90C53B1118F2C71800E09CC6 /* MMSStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSStackView.m; path = Classes/Views/MMSStackView.m; sourceTree = "<group>"; };
 		90C53B1318F2CE2800E09CC6 /* NSArray+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Utils.h"; path = "Classes/Utils/NSArray+Utils.h"; sourceTree = "<group>"; };
 		90C53B1418F2CE2800E09CC6 /* NSArray+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Utils.m"; path = "Classes/Utils/NSArray+Utils.m"; sourceTree = "<group>"; };
+		90F8E6A218F6B9FF00797B83 /* MMSUSHackathons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSUSHackathons.h; path = Classes/Views/MMSUSHackathons.h; sourceTree = "<group>"; };
+		90F8E6A318F6B9FF00797B83 /* MMSUSHackathons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSUSHackathons.m; path = Classes/Views/MMSUSHackathons.m; sourceTree = "<group>"; };
+		90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hacktechLogo@2x.png"; path = "Resources/Hackathons/hacktechLogo@2x.png"; sourceTree = "<group>"; };
+		90F8E6A618F6BB5200797B83 /* mhacksLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mhacksLogo@2x.png"; path = "Resources/Hackathons/mhacksLogo@2x.png"; sourceTree = "<group>"; };
+		90F8E6AA18F6C1F400797B83 /* MMSLearnTeachVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSLearnTeachVC.h; path = Classes/Controllers/MMSLearnTeachVC.h; sourceTree = "<group>"; };
+		90F8E6AB18F6C1F400797B83 /* MMSLearnTeachVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSLearnTeachVC.m; path = Classes/Controllers/MMSLearnTeachVC.m; sourceTree = "<group>"; };
+		90F8E6AD18F6CEDF00797B83 /* MDMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDMatrix.h; path = extern/MDScratchImageView/MDMatrix.h; sourceTree = "<group>"; };
+		90F8E6AE18F6CEDF00797B83 /* MDMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDMatrix.m; path = extern/MDScratchImageView/MDMatrix.m; sourceTree = "<group>"; };
+		90F8E6AF18F6CEDF00797B83 /* MDScratchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDScratchImageView.h; path = extern/MDScratchImageView/MDScratchImageView.h; sourceTree = "<group>"; };
+		90F8E6B018F6CEDF00797B83 /* MDScratchImageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MDScratchImageView.mm; path = extern/MDScratchImageView/MDScratchImageView.mm; sourceTree = "<group>"; };
+		90F8E6B518F6CF5900797B83 /* MMSCocoaHeadsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSCocoaHeadsView.h; path = Classes/Views/MMSCocoaHeadsView.h; sourceTree = "<group>"; };
+		90F8E6B618F6CF5900797B83 /* MMSCocoaHeadsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSCocoaHeadsView.m; path = Classes/Views/MMSCocoaHeadsView.m; sourceTree = "<group>"; };
+		90F8E6B818F6D9D300797B83 /* chBg@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "chBg@2x.jpeg"; path = "Resources/CH/chBg@2x.jpeg"; sourceTree = "<group>"; };
+		90F8E6BB18F6DB4B00797B83 /* chLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chLogo@2x.png"; path = "Resources/CH/chLogo@2x.png"; sourceTree = "<group>"; };
+		90F8E6BD18F6DE1200797B83 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "extern/ImageEffects/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		90F8E6BE18F6DE1200797B83 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "extern/ImageEffects/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		90F8E6C118F6DE8200797B83 /* UIView+Effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Effects.h"; path = "Classes/Utils/UIView+Effects.h"; sourceTree = "<group>"; };
+		90F8E6C218F6DE8200797B83 /* UIView+Effects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Effects.m"; path = "Classes/Utils/UIView+Effects.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,8 +216,9 @@
 		901BDD0B18F56D5200723187 /* extern */ = {
 			isa = PBXGroup;
 			children = (
-				901BDD0818F56D4F00723187 /* NSTimer+Blocks.h */,
-				901BDD0918F56D4F00723187 /* NSTimer+Blocks.m */,
+				90F8E6C018F6DE1600797B83 /* ImageEffects */,
+				90F8E6B318F6CEE500797B83 /* ScratchImageView */,
+				90F8E6B418F6CEF300797B83 /* TimerBlocks */,
 			);
 			name = extern;
 			sourceTree = "<group>";
@@ -249,6 +279,8 @@
 				907A617B18F1586B00273A57 /* MMSStyleSheet.m */,
 				907A618018F1592600273A57 /* Views */,
 				907A61E918F1931100273A57 /* KaratePanda */,
+				90F8E6C118F6DE8200797B83 /* UIView+Effects.h */,
+				90F8E6C218F6DE8200797B83 /* UIView+Effects.m */,
 				907A615D18F1581C00273A57 /* Images.xcassets */,
 				907A614C18F1581C00273A57 /* Supporting Files */,
 			);
@@ -288,6 +320,8 @@
 		907A618018F1592600273A57 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				90F8E6B518F6CF5900797B83 /* MMSCocoaHeadsView.h */,
+				90F8E6B618F6CF5900797B83 /* MMSCocoaHeadsView.m */,
 				907A617D18F1592300273A57 /* MMSHelloView.h */,
 				907A617E18F1592300273A57 /* MMSHelloView.m */,
 				907A61D418F16A0B00273A57 /* MMSKaratePandaView.h */,
@@ -296,14 +330,7 @@
 				90C53B1118F2C71800E09CC6 /* MMSStackView.m */,
 				901BDD0518F4B85F00723187 /* MMSMenuView.h */,
 				901BDD0618F4B85F00723187 /* MMSMenuView.m */,
-				901BDD0F18F579B700723187 /* MMSHackathonsView.h */,
-				901BDD1018F579B700723187 /* MMSHackathonsView.m */,
-				901BDD1218F57F8900723187 /* MMSAGHacksView.h */,
-				901BDD1318F57F8900723187 /* MMSAGHacksView.m */,
-				901BDD2218F59F9400723187 /* MMSAGHacksDetailsView.h */,
-				901BDD2318F59F9400723187 /* MMSAGHacksDetailsView.m */,
-				901379C218F5B9D700B7434C /* MMSKrakJamView.h */,
-				901379C318F5B9D700B7434C /* MMSKrakJamView.m */,
+				90F8E6A118F6B9C600797B83 /* Hackathons */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -326,6 +353,8 @@
 				907A61D218F1684200273A57 /* MMSKaratePandaVC.m */,
 				901BDD0C18F5799A00723187 /* MMSHackathonsVC.h */,
 				901BDD0D18F5799A00723187 /* MMSHackathonsVC.m */,
+				90F8E6AA18F6C1F400797B83 /* MMSLearnTeachVC.h */,
+				90F8E6AB18F6C1F400797B83 /* MMSLearnTeachVC.m */,
 				90C53B0D18F2C6F900E09CC6 /* MMSTestViewController.h */,
 				90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */,
 				901BDD0218F4B7FD00723187 /* MMSMenuVC.h */,
@@ -337,6 +366,8 @@
 		907A61D918F1729D00273A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				90F8E6BA18F6D9D500797B83 /* CocoaHeads */,
+				90F8E6A918F6BB5600797B83 /* Hackathons */,
 				901379CC18F5E2FD00B7434C /* SmartTaps */,
 				901379C918F5E2DE00B7434C /* KrakJam */,
 				901BDD2118F5968A00723187 /* AGHacks */,
@@ -369,6 +400,70 @@
 				907A61EE18F1B65000273A57 /* MMSKeys.m */,
 			);
 			name = KaratePanda;
+			sourceTree = "<group>";
+		};
+		90F8E6A118F6B9C600797B83 /* Hackathons */ = {
+			isa = PBXGroup;
+			children = (
+				901BDD0F18F579B700723187 /* MMSHackathonsView.h */,
+				901BDD1018F579B700723187 /* MMSHackathonsView.m */,
+				901BDD1218F57F8900723187 /* MMSAGHacksView.h */,
+				901BDD1318F57F8900723187 /* MMSAGHacksView.m */,
+				901BDD2218F59F9400723187 /* MMSAGHacksDetailsView.h */,
+				901BDD2318F59F9400723187 /* MMSAGHacksDetailsView.m */,
+				901379C218F5B9D700B7434C /* MMSKrakJamView.h */,
+				901379C318F5B9D700B7434C /* MMSKrakJamView.m */,
+				90F8E6A218F6B9FF00797B83 /* MMSUSHackathons.h */,
+				90F8E6A318F6B9FF00797B83 /* MMSUSHackathons.m */,
+			);
+			name = Hackathons;
+			sourceTree = "<group>";
+		};
+		90F8E6A918F6BB5600797B83 /* Hackathons */ = {
+			isa = PBXGroup;
+			children = (
+				90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */,
+				90F8E6A618F6BB5200797B83 /* mhacksLogo@2x.png */,
+			);
+			name = Hackathons;
+			sourceTree = "<group>";
+		};
+		90F8E6B318F6CEE500797B83 /* ScratchImageView */ = {
+			isa = PBXGroup;
+			children = (
+				90F8E6AD18F6CEDF00797B83 /* MDMatrix.h */,
+				90F8E6AE18F6CEDF00797B83 /* MDMatrix.m */,
+				90F8E6AF18F6CEDF00797B83 /* MDScratchImageView.h */,
+				90F8E6B018F6CEDF00797B83 /* MDScratchImageView.mm */,
+			);
+			name = ScratchImageView;
+			sourceTree = "<group>";
+		};
+		90F8E6B418F6CEF300797B83 /* TimerBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				901BDD0818F56D4F00723187 /* NSTimer+Blocks.h */,
+				901BDD0918F56D4F00723187 /* NSTimer+Blocks.m */,
+			);
+			name = TimerBlocks;
+			sourceTree = "<group>";
+		};
+		90F8E6BA18F6D9D500797B83 /* CocoaHeads */ = {
+			isa = PBXGroup;
+			children = (
+				90F8E6BB18F6DB4B00797B83 /* chLogo@2x.png */,
+				90F8E6B818F6D9D300797B83 /* chBg@2x.jpeg */,
+			);
+			name = CocoaHeads;
+			sourceTree = "<group>";
+		};
+		90F8E6C018F6DE1600797B83 /* ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				90F8E6BD18F6DE1200797B83 /* UIImage+ImageEffects.h */,
+				90F8E6BE18F6DE1200797B83 /* UIImage+ImageEffects.m */,
+			);
+			name = ImageEffects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,16 +543,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90F8E6A818F6BB5200797B83 /* mhacksLogo@2x.png in Resources */,
 				901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */,
 				907A61E518F1920F00273A57 /* panda.atlas in Resources */,
 				901BDD2018F5968600723187 /* AGHacksLogo@2x.png in Resources */,
 				901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */,
 				901379C718F5E2D900B7434C /* krakjam@2x.png in Resources */,
+				90F8E6BC18F6DB4B00797B83 /* chLogo@2x.png in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
 				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
 				9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */,
+				90F8E6B918F6D9D300797B83 /* chBg@2x.jpeg in Resources */,
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
 				907A61E318F17B8E00273A57 /* lasAtlas.atlas in Resources */,
+				90F8E6A718F6BB5200797B83 /* hacktechLogo@2x.png in Resources */,
 				907A615918F1581C00273A57 /* Main.storyboard in Resources */,
 				901379C818F5E2D900B7434C /* KrakJamTrailer.m4v in Resources */,
 			);
@@ -483,6 +582,8 @@
 				901BDD2418F59F9400723187 /* MMSAGHacksDetailsView.m in Sources */,
 				901BDD0418F4B7FD00723187 /* MMSMenuVC.m in Sources */,
 				90C53B0F18F2C6F900E09CC6 /* MMSTestViewController.m in Sources */,
+				90F8E6C318F6DE8200797B83 /* UIView+Effects.m in Sources */,
+				90F8E6B118F6CEDF00797B83 /* MDMatrix.m in Sources */,
 				901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */,
 				907A61EC18F1B59600273A57 /* MMSBonusNode.m in Sources */,
 				90C53B1518F2CE2800E09CC6 /* NSArray+Utils.m in Sources */,
@@ -491,16 +592,21 @@
 				901BDD1418F57F8900723187 /* MMSAGHacksView.m in Sources */,
 				907A615C18F1581C00273A57 /* MMSHelloViewController.m in Sources */,
 				907A617C18F1586B00273A57 /* MMSStyleSheet.m in Sources */,
+				90F8E6BF18F6DE1200797B83 /* UIImage+ImageEffects.m in Sources */,
 				907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */,
 				90C53B1218F2C71800E09CC6 /* MMSStackView.m in Sources */,
 				907A61D618F16A0B00273A57 /* MMSKaratePandaView.m in Sources */,
 				901BDD0A18F56D4F00723187 /* NSTimer+Blocks.m in Sources */,
 				907A617F18F1592300273A57 /* MMSHelloView.m in Sources */,
 				907A615618F1581C00273A57 /* MMSAppDelegate.m in Sources */,
+				90F8E6B218F6CEDF00797B83 /* MDScratchImageView.mm in Sources */,
 				907A615218F1581C00273A57 /* main.m in Sources */,
 				907A61F218F1B6ED00273A57 /* MMSPath.m in Sources */,
+				90F8E6A418F6B9FF00797B83 /* MMSUSHackathons.m in Sources */,
+				90F8E6B718F6CF5900797B83 /* MMSCocoaHeadsView.m in Sources */,
 				901BDD1118F579B700723187 /* MMSHackathonsView.m in Sources */,
 				907A61CD18F1679900273A57 /* MMSKaratePandaScene.m in Sources */,
+				90F8E6AC18F6C1F400797B83 /* MMSLearnTeachVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

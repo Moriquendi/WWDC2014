@@ -7,7 +7,7 @@
 //
 
 #import "MMSTestViewController.h"
-#import "MMSStackView.h"
+#import "MMSCocoaHeadsView.h"
 
 @interface MMSTestViewController ()
 
@@ -19,18 +19,9 @@
 {
     [super viewDidLoad];
     
-    NSMutableArray *stackViews = [NSMutableArray array];
-    for (NSInteger i=0; i<5; i++) {
-        UIView *newView = [[UIView alloc] init];
-        newView.backgroundColor = [UIColor colorWithRed:(30*i)/255.
-                                                  green:(0*i)/255.
-                                                   blue:(0*i)/255. alpha:1.0];
-        [stackViews addObject:newView];
-    }
-    
-    MMSStackView *stack = [[MMSStackView alloc] initWithViews:stackViews
-                                                        anchorPoint:CGPointZero];
-    [self.view addSubview:stack];
+    MMSCocoaHeadsView *chView = [[MMSCocoaHeadsView alloc] initWithFrame:self.view.bounds];
+    chView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:chView];
 }
 
 @end
