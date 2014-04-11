@@ -64,6 +64,11 @@
 		90F8E6BC18F6DB4B00797B83 /* chLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6BB18F6DB4B00797B83 /* chLogo@2x.png */; };
 		90F8E6BF18F6DE1200797B83 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6BE18F6DE1200797B83 /* UIImage+ImageEffects.m */; };
 		90F8E6C318F6DE8200797B83 /* UIView+Effects.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6C218F6DE8200797B83 /* UIView+Effects.m */; };
+		90F8E6C918F812C100797B83 /* ch1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6C418F812C100797B83 /* ch1.jpeg */; };
+		90F8E6CA18F812C100797B83 /* ch2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6C518F812C100797B83 /* ch2.jpeg */; };
+		90F8E6CB18F812C100797B83 /* ch3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6C618F812C100797B83 /* ch3.jpeg */; };
+		90F8E6CC18F812C100797B83 /* ch4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6C718F812C100797B83 /* ch4.jpeg */; };
+		90F8E6CD18F812C100797B83 /* ch5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6C818F812C100797B83 /* ch5.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +171,11 @@
 		90F8E6BE18F6DE1200797B83 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "extern/ImageEffects/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		90F8E6C118F6DE8200797B83 /* UIView+Effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Effects.h"; path = "Classes/Utils/UIView+Effects.h"; sourceTree = "<group>"; };
 		90F8E6C218F6DE8200797B83 /* UIView+Effects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Effects.m"; path = "Classes/Utils/UIView+Effects.m"; sourceTree = "<group>"; };
+		90F8E6C418F812C100797B83 /* ch1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ch1.jpeg; path = Resources/CH/ch1.jpeg; sourceTree = "<group>"; };
+		90F8E6C518F812C100797B83 /* ch2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ch2.jpeg; path = Resources/CH/ch2.jpeg; sourceTree = "<group>"; };
+		90F8E6C618F812C100797B83 /* ch3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ch3.jpeg; path = Resources/CH/ch3.jpeg; sourceTree = "<group>"; };
+		90F8E6C718F812C100797B83 /* ch4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ch4.jpeg; path = Resources/CH/ch4.jpeg; sourceTree = "<group>"; };
+		90F8E6C818F812C100797B83 /* ch5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ch5.jpeg; path = Resources/CH/ch5.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +461,11 @@
 		90F8E6BA18F6D9D500797B83 /* CocoaHeads */ = {
 			isa = PBXGroup;
 			children = (
+				90F8E6C418F812C100797B83 /* ch1.jpeg */,
+				90F8E6C518F812C100797B83 /* ch2.jpeg */,
+				90F8E6C618F812C100797B83 /* ch3.jpeg */,
+				90F8E6C718F812C100797B83 /* ch4.jpeg */,
+				90F8E6C818F812C100797B83 /* ch5.jpeg */,
 				90F8E6BB18F6DB4B00797B83 /* chLogo@2x.png */,
 				90F8E6B818F6D9D300797B83 /* chBg@2x.jpeg */,
 			);
@@ -547,6 +562,8 @@
 				901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */,
 				907A61E518F1920F00273A57 /* panda.atlas in Resources */,
 				901BDD2018F5968600723187 /* AGHacksLogo@2x.png in Resources */,
+				90F8E6CB18F812C100797B83 /* ch3.jpeg in Resources */,
+				90F8E6CD18F812C100797B83 /* ch5.jpeg in Resources */,
 				901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */,
 				901379C718F5E2D900B7434C /* krakjam@2x.png in Resources */,
 				90F8E6BC18F6DB4B00797B83 /* chLogo@2x.png in Resources */,
@@ -557,8 +574,11 @@
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
 				907A61E318F17B8E00273A57 /* lasAtlas.atlas in Resources */,
 				90F8E6A718F6BB5200797B83 /* hacktechLogo@2x.png in Resources */,
+				90F8E6CC18F812C100797B83 /* ch4.jpeg in Resources */,
 				907A615918F1581C00273A57 /* Main.storyboard in Resources */,
+				90F8E6C918F812C100797B83 /* ch1.jpeg in Resources */,
 				901379C818F5E2D900B7434C /* KrakJamTrailer.m4v in Resources */,
+				90F8E6CA18F812C100797B83 /* ch2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

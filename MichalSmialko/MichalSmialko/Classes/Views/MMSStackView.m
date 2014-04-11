@@ -55,8 +55,6 @@
         obj.frame = CGRectMake(0, 0, obj.frame.size.width, obj.frame.size.height);
         obj.center = self._anchorPoint;
         obj.transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_4 / 3 * idx);
-        obj.layer.borderColor = [[UIColor blackColor] CGColor];;
-        obj.layer.borderWidth = 2.;
         [self addSubview:obj];
     }];
     
