@@ -13,7 +13,7 @@
 @property (nonatomic, strong) UIScrollView *_contentView;
 @property (nonatomic, strong, readwrite) MMSAGHacksView *aghacksView;
 @property (nonatomic, strong, readwrite) MMSKrakJamView *krakJamView;
-@property (nonatomic, strong, readwrite) MMSUSHackathons *usHackathons;
+@property (nonatomic, strong, readwrite) MMSMHacksView *mhacksView;
 @end
 
 @implementation MMSHackathonsView
@@ -38,8 +38,8 @@
         [self._contentView addSubview:self.krakJamView];
         
         // Hackathons
-        self.usHackathons = [[MMSUSHackathons alloc] init];
-        [self._contentView addSubview:self.usHackathons];
+        self.mhacksView = [[MMSMHacksView alloc] init];
+        [self._contentView addSubview:self.mhacksView];
         
         // AGHacks
         self.aghacksView = [[MMSAGHacksView alloc] init];
@@ -52,15 +52,15 @@
 {
     [super layoutSubviews];
     
-    self._contentView.contentSize = CGSizeMake(self._contentView.frame.size.width * 5.f,
+    self._contentView.contentSize = CGSizeMake(self._contentView.frame.size.width * 6.f,
                                                self._contentView.frame.size.height);
 
     self.krakJamView.frame = self._contentView.bounds;
-    self.usHackathons.frame = CGRectOffset(self.krakJamView.frame,
-                                           self.krakJamView.frame.size.width,
-                                           0);
-    self.aghacksView.frame = CGRectOffset(self.usHackathons.frame,
-                                          self.usHackathons.frame.size.width,
+    self.mhacksView.frame = CGRectOffset(self.krakJamView.frame,
+                                         self.krakJamView.frame.size.width,
+                                         0);
+    self.aghacksView.frame = CGRectOffset(self.mhacksView.frame,
+                                          self.mhacksView.frame.size.width * 2,
                                           0);
 }
 
@@ -68,9 +68,19 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if (scrollView.contentOffset.x > scrollView.frame.size.width * 2 &&
-        scrollView.contentOffset.x < scrollView.frame.size.width * 4) {
-        CGFloat delta = scrollView.contentOffset.x - scrollView.frame.size.width * 2;
+    if (scrollView.contentOffset.x > scrollView.frame.size.width &&
+        scrollView.contentOffset.x < scrollView.frame.size.width * 3) {
+        CGFloat delta = scrollView.contentOffset.x - scrollView.frame.size.width;
+        self.mhacksView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity,
+                                                               delta,
+                                                               0);
+        self.mhacksView.contentView.contentOffset = CGPointMake(delta, 0);
+        self.mhacksView.mhacksLogoView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity,
+                                                                              delta*0.7, 0);
+    }
+    else if (scrollView.contentOffset.x > scrollView.frame.size.width * 3 &&
+        scrollView.contentOffset.x < scrollView.frame.size.width * 5) {
+        CGFloat delta = scrollView.contentOffset.x - scrollView.frame.size.width * 3;
         self.aghacksView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity,
                                                                 delta,
                                                                 0);

@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "MMSAGHacksView.h"
 #import "MMSKrakJamView.h"
-#import "MMSUSHackathons.h"
+#import "MMSMHacksView.h"
 
 @interface MMSHackathonsView : UIView
 
 @property (nonatomic, strong, readonly) MMSAGHacksView *aghacksView;
 @property (nonatomic, strong, readonly) MMSKrakJamView *krakJamView;
-@property (nonatomic, strong, readonly) MMSUSHackathons *usHackathons;
+@property (nonatomic, strong, readonly) MMSMHacksView *mhacksView;
 
 @end

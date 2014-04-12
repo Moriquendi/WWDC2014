@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMSUSHackathons : UIView
+@interface MMSMHacksView : UIView
+
+@property (nonatomic, strong, readonly) UIScrollView *contentView;
+@property (nonatomic, strong, readonly) UIImageView *mhacksLogoView;
 
 @end
