@@ -29,6 +29,8 @@
 		9036147A18F9304400213C3F /* MMSEventsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9036147918F9304400213C3F /* MMSEventsView.xib */; };
 		9036147D18F936CF00213C3F /* wwdc1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9036147B18F936CF00213C3F /* wwdc1.jpg */; };
 		9036147E18F936CF00213C3F /* wwdc2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9036147C18F936CF00213C3F /* wwdc2.jpg */; };
+		9036148418F9677500213C3F /* MMSProjectsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036148318F9677500213C3F /* MMSProjectsVC.m */; };
+		9036148718F9719600213C3F /* MMSCubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036148618F9719600213C3F /* MMSCubeView.m */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -120,6 +122,10 @@
 		9036147918F9304400213C3F /* MMSEventsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSEventsView.xib; path = Classes/Views/MMSEventsView.xib; sourceTree = "<group>"; };
 		9036147B18F936CF00213C3F /* wwdc1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wwdc1.jpg; path = Resources/Events/wwdc1.jpg; sourceTree = "<group>"; };
 		9036147C18F936CF00213C3F /* wwdc2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wwdc2.jpg; path = Resources/Events/wwdc2.jpg; sourceTree = "<group>"; };
+		9036148218F9677500213C3F /* MMSProjectsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSProjectsVC.h; path = Classes/Controllers/MMSProjectsVC.h; sourceTree = "<group>"; };
+		9036148318F9677500213C3F /* MMSProjectsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSProjectsVC.m; path = Classes/Controllers/MMSProjectsVC.m; sourceTree = "<group>"; };
+		9036148518F9719600213C3F /* MMSCubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSCubeView.h; path = Classes/Views/MMSCubeView.h; sourceTree = "<group>"; };
+		9036148618F9719600213C3F /* MMSCubeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSCubeView.m; path = Classes/Views/MMSCubeView.m; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -375,6 +381,8 @@
 				90F8E6D118F818E900797B83 /* MMSEventsView.h */,
 				90F8E6D218F818E900797B83 /* MMSEventsView.m */,
 				9036147918F9304400213C3F /* MMSEventsView.xib */,
+				9036148518F9719600213C3F /* MMSCubeView.h */,
+				9036148618F9719600213C3F /* MMSCubeView.m */,
 				90F8E6A118F6B9C600797B83 /* Hackathons */,
 			);
 			name = Views;
@@ -404,6 +412,8 @@
 				90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */,
 				901BDD0218F4B7FD00723187 /* MMSMenuVC.h */,
 				901BDD0318F4B7FD00723187 /* MMSMenuVC.m */,
+				9036148218F9677500213C3F /* MMSProjectsVC.h */,
+				9036148318F9677500213C3F /* MMSProjectsVC.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -659,8 +669,10 @@
 				90C53B1218F2C71800E09CC6 /* MMSStackView.m in Sources */,
 				907A61D618F16A0B00273A57 /* MMSKaratePandaView.m in Sources */,
 				901BDD0A18F56D4F00723187 /* NSTimer+Blocks.m in Sources */,
+				9036148418F9677500213C3F /* MMSProjectsVC.m in Sources */,
 				907A617F18F1592300273A57 /* MMSHelloView.m in Sources */,
 				907A615618F1581C00273A57 /* MMSAppDelegate.m in Sources */,
+				9036148718F9719600213C3F /* MMSCubeView.m in Sources */,
 				90F8E6B218F6CEDF00797B83 /* MDScratchImageView.mm in Sources */,
 				90F8E6D018F817C200797B83 /* MMSLearnTeachView.m in Sources */,
 				907A615218F1581C00273A57 /* main.m in Sources */,
