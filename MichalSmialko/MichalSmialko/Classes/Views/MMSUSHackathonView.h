@@ -14,4 +14,6 @@
 @property (nonatomic, strong, readonly) UIImageView *logoView;
 @property (nonatomic, strong, readonly) UILabel *detailsLabel;
 
+@property (nonatomic, strong) NSArray *stackViews;
+
 @end

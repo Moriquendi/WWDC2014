@@ -44,6 +44,7 @@
         was awesome because  bla bla. We've made awesome hacks like SchedMe\
         which let you do lots of stuff, bla bla";
         self.mhacksView.logoView.image = [UIImage imageNamed:@"mhacksLogo"];
+        self.mhacksView.stackViews = [self _mhacksImagesViews];
         [self._contentView addSubview:self.mhacksView];
         
         // HackTech
@@ -52,6 +53,8 @@
         was awesome because  bla bla. We've made awesome hacks like SchedMe\
         which let you do lots of stuff, bla bla";
         self.hackTech.logoView.image = [UIImage imageNamed:@"hacktechLogo"];
+        self.hackTech.backgroundColor = [UIColor colorWithRed:1. green:132./255. blue:0 alpha:1.0];
+        self.hackTech.stackViews = [self _hackTechImageViews];
         [self._contentView addSubview:self.hackTech];
         
         // AGHacks
@@ -80,6 +83,32 @@
                                           0);
 }
 
+#pragma mark - MMSHackathonsView ()
+
+- (NSArray *)_imageViewsWithName:(NSString *)name count:(NSInteger)count
+{
+    NSMutableArray *views = [NSMutableArray array];
+    for (NSInteger i=0; i<count; i++) {
+        NSString *imageName = [name stringByAppendingString:[NSString stringWithFormat:@"%li.jpg", i+1]];
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+        imageView.contentMode = UIViewContentModeScaleAspectFit;
+        imageView.userInteractionEnabled = YES;
+        imageView.frame = CGRectMake(0, 0, 300, 300);
+        [views addObject:imageView];
+    }
+    return [NSArray arrayWithArray:views];
+}
+
+- (NSArray *)_mhacksImagesViews
+{
+    return [self _imageViewsWithName:@"wwdc" count:2];
+}
+
+- (NSArray *)_hackTechImageViews
+{
+    return [self _imageViewsWithName:@"wwdc" count:2];
+}
+
 #pragma mark - <UIScrollViewDelegate>
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -94,7 +123,7 @@
         self.mhacksView.contentView.contentOffset = CGPointMake(delta, 0);
         if (delta < scrollView.frame.size.width) {
             self.mhacksView.logoView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity,
-                                                                            delta*0.7, 0);
+                                                                            delta*0.75, 0);
         }
     }
     else if (scrollView.contentOffset.x > scrollView.frame.size.width * 3 &&
@@ -106,7 +135,7 @@
         self.hackTech.contentView.contentOffset = CGPointMake(delta, 0);
         if (delta < scrollView.frame.size.width) {
             self.hackTech.logoView.transform = CGAffineTransformTranslate(CGAffineTransformIdentity,
-                                                                          delta*0.7, 0);
+                                                                          delta*0.75, 0);
         }
     }
     else if (scrollView.contentOffset.x > scrollView.frame.size.width * 5 &&
