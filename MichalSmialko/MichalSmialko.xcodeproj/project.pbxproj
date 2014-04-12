@@ -59,7 +59,7 @@
 		90C53B0F18F2C6F900E09CC6 /* MMSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */; };
 		90C53B1218F2C71800E09CC6 /* MMSStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B1118F2C71800E09CC6 /* MMSStackView.m */; };
 		90C53B1518F2CE2800E09CC6 /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B1418F2CE2800E09CC6 /* NSArray+Utils.m */; };
-		90F8E6A418F6B9FF00797B83 /* MMSMHacksView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6A318F6B9FF00797B83 /* MMSMHacksView.m */; };
+		90F8E6A418F6B9FF00797B83 /* MMSUSHackathonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6A318F6B9FF00797B83 /* MMSUSHackathonView.m */; };
 		90F8E6A718F6BB5200797B83 /* hacktechLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */; };
 		90F8E6A818F6BB5200797B83 /* mhacksLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6A618F6BB5200797B83 /* mhacksLogo@2x.png */; };
 		90F8E6AC18F6C1F400797B83 /* MMSLearnTeachVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6AB18F6C1F400797B83 /* MMSLearnTeachVC.m */; };
@@ -167,8 +167,8 @@
 		90C53B1118F2C71800E09CC6 /* MMSStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSStackView.m; path = Classes/Views/MMSStackView.m; sourceTree = "<group>"; };
 		90C53B1318F2CE2800E09CC6 /* NSArray+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Utils.h"; path = "Classes/Utils/NSArray+Utils.h"; sourceTree = "<group>"; };
 		90C53B1418F2CE2800E09CC6 /* NSArray+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Utils.m"; path = "Classes/Utils/NSArray+Utils.m"; sourceTree = "<group>"; };
-		90F8E6A218F6B9FF00797B83 /* MMSMHacksView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSMHacksView.h; path = Classes/Views/MMSMHacksView.h; sourceTree = "<group>"; };
-		90F8E6A318F6B9FF00797B83 /* MMSMHacksView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSMHacksView.m; path = Classes/Views/MMSMHacksView.m; sourceTree = "<group>"; };
+		90F8E6A218F6B9FF00797B83 /* MMSUSHackathonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSUSHackathonView.h; path = Classes/Views/MMSUSHackathonView.h; sourceTree = "<group>"; };
+		90F8E6A318F6B9FF00797B83 /* MMSUSHackathonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSUSHackathonView.m; path = Classes/Views/MMSUSHackathonView.m; sourceTree = "<group>"; };
 		90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hacktechLogo@2x.png"; path = "Resources/Hackathons/hacktechLogo@2x.png"; sourceTree = "<group>"; };
 		90F8E6A618F6BB5200797B83 /* mhacksLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mhacksLogo@2x.png"; path = "Resources/Hackathons/mhacksLogo@2x.png"; sourceTree = "<group>"; };
 		90F8E6AA18F6C1F400797B83 /* MMSLearnTeachVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSLearnTeachVC.h; path = Classes/Controllers/MMSLearnTeachVC.h; sourceTree = "<group>"; };
@@ -459,8 +459,8 @@
 				901BDD2318F59F9400723187 /* MMSAGHacksDetailsView.m */,
 				901379C218F5B9D700B7434C /* MMSKrakJamView.h */,
 				901379C318F5B9D700B7434C /* MMSKrakJamView.m */,
-				90F8E6A218F6B9FF00797B83 /* MMSMHacksView.h */,
-				90F8E6A318F6B9FF00797B83 /* MMSMHacksView.m */,
+				90F8E6A218F6B9FF00797B83 /* MMSUSHackathonView.h */,
+				90F8E6A318F6B9FF00797B83 /* MMSUSHackathonView.m */,
 			);
 			name = Hackathons;
 			sourceTree = "<group>";
@@ -665,7 +665,7 @@
 				90F8E6D018F817C200797B83 /* MMSLearnTeachView.m in Sources */,
 				907A615218F1581C00273A57 /* main.m in Sources */,
 				907A61F218F1B6ED00273A57 /* MMSPath.m in Sources */,
-				90F8E6A418F6B9FF00797B83 /* MMSMHacksView.m in Sources */,
+				90F8E6A418F6B9FF00797B83 /* MMSUSHackathonView.m in Sources */,
 				90F8E6D318F818E900797B83 /* MMSEventsView.m in Sources */,
 				90F8E6B718F6CF5900797B83 /* MMSCocoaHeadsView.m in Sources */,
 				901BDD1118F579B700723187 /* MMSHackathonsView.m in Sources */,
