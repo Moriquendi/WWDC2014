@@ -8,7 +8,6 @@
 
 #import "MMSHackathonsView.h"
 #import "MMSStyleSheet.h"
-#import <QuartzCore/QuartzCore.h>
 
 @interface MMSHackathonsView () <UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *_contentView;
@@ -81,44 +80,10 @@
                                           0);
 }
 
-#pragma mark - MMSHackathonsView
-
-- (CABasicAnimation *)_animationFromColor:(UIColor *)fromColor toColor:(UIColor *)toColor
-{
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:
-                                   NSStringFromSelector(@selector(backgroundColor))];
-    animation.fromValue = (id)[fromColor CGColor];
-    animation.toValue = (id)[toColor CGColor];
-    [animation setDuration:1.0];
-    animation.autoreverses = NO;
-    animation.removedOnCompletion = NO;
-    
-    return animation;
-}
-
 #pragma mark - <UIScrollViewDelegate>
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if (scrollView.contentOffset.x > 0 &&
-        scrollView.contentOffset.x < self.mhacksView.frame.origin.x) {
-        if (![self.layer animationForKey:NSStringFromSelector(@selector(backgroundColor))]) {
-            UIColor *toColor = [[MMSStyleSheet sharedInstance] redColor];
-            CABasicAnimation *animation = [self _animationFromColor:self.backgroundColor
-                                                            toColor:toColor];
-            [self.layer addAnimation:animation forKey:NSStringFromSelector(@selector(backgroundColor))];
-        }
-        
-        CGFloat delta = scrollView.contentOffset.x;
-        CGFloat percent = delta / self.mhacksView.frame.origin.x;
-        self.layer.speed = 0;
-        self.layer.timeOffset = percent;
-    }
-    else {
-        self.layer.speed = 1.f;
-        [self.layer removeAllAnimations];
-    }
-    
     if (scrollView.contentOffset.x > scrollView.frame.size.width &&
         scrollView.contentOffset.x < scrollView.frame.size.width * 3) {
         
