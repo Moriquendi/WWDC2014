@@ -23,6 +23,12 @@
 		901BDD2018F5968600723187 /* AGHacksLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 901BDD1F18F5968600723187 /* AGHacksLogo@2x.png */; };
 		901BDD2418F59F9400723187 /* MMSAGHacksDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD2318F59F9400723187 /* MMSAGHacksDetailsView.m */; };
 		9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9028214B18F6A16200FD9A26 /* ggj@2x.png */; };
+		9036147618F8236500213C3F /* cc1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9036147318F8236500213C3F /* cc1.jpg */; };
+		9036147718F8236500213C3F /* cc2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9036147418F8236500213C3F /* cc2.jpg */; };
+		9036147818F8236500213C3F /* cc3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9036147518F8236500213C3F /* cc3.jpg */; };
+		9036147A18F9304400213C3F /* MMSEventsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9036147918F9304400213C3F /* MMSEventsView.xib */; };
+		9036147D18F936CF00213C3F /* wwdc1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9036147B18F936CF00213C3F /* wwdc1.jpg */; };
+		9036147E18F936CF00213C3F /* wwdc2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9036147C18F936CF00213C3F /* wwdc2.jpg */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -69,6 +75,8 @@
 		90F8E6CB18F812C100797B83 /* ch3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6C618F812C100797B83 /* ch3.jpeg */; };
 		90F8E6CC18F812C100797B83 /* ch4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6C718F812C100797B83 /* ch4.jpeg */; };
 		90F8E6CD18F812C100797B83 /* ch5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6C818F812C100797B83 /* ch5.jpeg */; };
+		90F8E6D018F817C200797B83 /* MMSLearnTeachView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6CF18F817C200797B83 /* MMSLearnTeachView.m */; };
+		90F8E6D318F818E900797B83 /* MMSEventsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6D218F818E900797B83 /* MMSEventsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +114,12 @@
 		901BDD2218F59F9400723187 /* MMSAGHacksDetailsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSAGHacksDetailsView.h; path = Classes/Views/MMSAGHacksDetailsView.h; sourceTree = "<group>"; };
 		901BDD2318F59F9400723187 /* MMSAGHacksDetailsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSAGHacksDetailsView.m; path = Classes/Views/MMSAGHacksDetailsView.m; sourceTree = "<group>"; };
 		9028214B18F6A16200FD9A26 /* ggj@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ggj@2x.png"; path = "Resources/KrakJam/ggj@2x.png"; sourceTree = "<group>"; };
+		9036147318F8236500213C3F /* cc1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cc1.jpg; path = Resources/Events/cc1.jpg; sourceTree = "<group>"; };
+		9036147418F8236500213C3F /* cc2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cc2.jpg; path = Resources/Events/cc2.jpg; sourceTree = "<group>"; };
+		9036147518F8236500213C3F /* cc3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cc3.jpg; path = Resources/Events/cc3.jpg; sourceTree = "<group>"; };
+		9036147918F9304400213C3F /* MMSEventsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSEventsView.xib; path = Classes/Views/MMSEventsView.xib; sourceTree = "<group>"; };
+		9036147B18F936CF00213C3F /* wwdc1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wwdc1.jpg; path = Resources/Events/wwdc1.jpg; sourceTree = "<group>"; };
+		9036147C18F936CF00213C3F /* wwdc2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wwdc2.jpg; path = Resources/Events/wwdc2.jpg; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,6 +190,10 @@
 		90F8E6C618F812C100797B83 /* ch3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ch3.jpeg; path = Resources/CH/ch3.jpeg; sourceTree = "<group>"; };
 		90F8E6C718F812C100797B83 /* ch4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ch4.jpeg; path = Resources/CH/ch4.jpeg; sourceTree = "<group>"; };
 		90F8E6C818F812C100797B83 /* ch5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ch5.jpeg; path = Resources/CH/ch5.jpeg; sourceTree = "<group>"; };
+		90F8E6CE18F817C200797B83 /* MMSLearnTeachView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSLearnTeachView.h; path = Classes/Views/MMSLearnTeachView.h; sourceTree = "<group>"; };
+		90F8E6CF18F817C200797B83 /* MMSLearnTeachView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSLearnTeachView.m; path = Classes/Views/MMSLearnTeachView.m; sourceTree = "<group>"; };
+		90F8E6D118F818E900797B83 /* MMSEventsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSEventsView.h; path = Classes/Views/MMSEventsView.h; sourceTree = "<group>"; };
+		90F8E6D218F818E900797B83 /* MMSEventsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSEventsView.m; path = Classes/Views/MMSEventsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +257,18 @@
 				901BDD1F18F5968600723187 /* AGHacksLogo@2x.png */,
 			);
 			name = AGHacks;
+			sourceTree = "<group>";
+		};
+		9036147218F8234C00213C3F /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				9036147B18F936CF00213C3F /* wwdc1.jpg */,
+				9036147C18F936CF00213C3F /* wwdc2.jpg */,
+				9036147318F8236500213C3F /* cc1.jpg */,
+				9036147418F8236500213C3F /* cc2.jpg */,
+				9036147518F8236500213C3F /* cc3.jpg */,
+			);
+			name = Events;
 			sourceTree = "<group>";
 		};
 		907A613918F1581C00273A57 = {
@@ -340,6 +370,11 @@
 				90C53B1118F2C71800E09CC6 /* MMSStackView.m */,
 				901BDD0518F4B85F00723187 /* MMSMenuView.h */,
 				901BDD0618F4B85F00723187 /* MMSMenuView.m */,
+				90F8E6CE18F817C200797B83 /* MMSLearnTeachView.h */,
+				90F8E6CF18F817C200797B83 /* MMSLearnTeachView.m */,
+				90F8E6D118F818E900797B83 /* MMSEventsView.h */,
+				90F8E6D218F818E900797B83 /* MMSEventsView.m */,
+				9036147918F9304400213C3F /* MMSEventsView.xib */,
 				90F8E6A118F6B9C600797B83 /* Hackathons */,
 			);
 			name = Views;
@@ -376,6 +411,7 @@
 		907A61D918F1729D00273A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9036147218F8234C00213C3F /* Events */,
 				90F8E6BA18F6D9D500797B83 /* CocoaHeads */,
 				90F8E6A918F6BB5600797B83 /* Hackathons */,
 				901379CC18F5E2FD00B7434C /* SmartTaps */,
@@ -562,20 +598,26 @@
 				901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */,
 				907A61E518F1920F00273A57 /* panda.atlas in Resources */,
 				901BDD2018F5968600723187 /* AGHacksLogo@2x.png in Resources */,
+				9036147E18F936CF00213C3F /* wwdc2.jpg in Resources */,
 				90F8E6CB18F812C100797B83 /* ch3.jpeg in Resources */,
 				90F8E6CD18F812C100797B83 /* ch5.jpeg in Resources */,
 				901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */,
 				901379C718F5E2D900B7434C /* krakjam@2x.png in Resources */,
 				90F8E6BC18F6DB4B00797B83 /* chLogo@2x.png in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
+				9036147718F8236500213C3F /* cc2.jpg in Resources */,
 				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
 				9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */,
 				90F8E6B918F6D9D300797B83 /* chBg@2x.jpeg in Resources */,
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
+				9036147818F8236500213C3F /* cc3.jpg in Resources */,
 				907A61E318F17B8E00273A57 /* lasAtlas.atlas in Resources */,
+				9036147618F8236500213C3F /* cc1.jpg in Resources */,
 				90F8E6A718F6BB5200797B83 /* hacktechLogo@2x.png in Resources */,
 				90F8E6CC18F812C100797B83 /* ch4.jpeg in Resources */,
+				9036147D18F936CF00213C3F /* wwdc1.jpg in Resources */,
 				907A615918F1581C00273A57 /* Main.storyboard in Resources */,
+				9036147A18F9304400213C3F /* MMSEventsView.xib in Resources */,
 				90F8E6C918F812C100797B83 /* ch1.jpeg in Resources */,
 				901379C818F5E2D900B7434C /* KrakJamTrailer.m4v in Resources */,
 				90F8E6CA18F812C100797B83 /* ch2.jpeg in Resources */,
@@ -620,9 +662,11 @@
 				907A617F18F1592300273A57 /* MMSHelloView.m in Sources */,
 				907A615618F1581C00273A57 /* MMSAppDelegate.m in Sources */,
 				90F8E6B218F6CEDF00797B83 /* MDScratchImageView.mm in Sources */,
+				90F8E6D018F817C200797B83 /* MMSLearnTeachView.m in Sources */,
 				907A615218F1581C00273A57 /* main.m in Sources */,
 				907A61F218F1B6ED00273A57 /* MMSPath.m in Sources */,
 				90F8E6A418F6B9FF00797B83 /* MMSUSHackathons.m in Sources */,
+				90F8E6D318F818E900797B83 /* MMSEventsView.m in Sources */,
 				90F8E6B718F6CF5900797B83 /* MMSCocoaHeadsView.m in Sources */,
 				901BDD1118F579B700723187 /* MMSHackathonsView.m in Sources */,
 				907A61CD18F1679900273A57 /* MMSKaratePandaScene.m in Sources */,

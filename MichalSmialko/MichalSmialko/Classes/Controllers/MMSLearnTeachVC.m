@@ -7,9 +7,10 @@
 //
 
 #import "MMSLearnTeachVC.h"
+#import "MMSLearnTeachView.h"
 
 @interface MMSLearnTeachVC ()
-
+@property (nonatomic, strong) MMSLearnTeachView *_learnTeachView;
 @end
 
 @implementation MMSLearnTeachVC
@@ -19,11 +20,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Cocoa Heads'y
-    // Cocoa Camp
-    // Conferences
-    // WWDC
+
+    self._learnTeachView = [[MMSLearnTeachView alloc] initWithFrame:self.view.bounds];
+    self._learnTeachView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:self._learnTeachView];
 }
 
 @end
