@@ -36,6 +36,13 @@
 		9036149018F981CE00213C3F /* farm1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036148E18F981CE00213C3F /* farm1.png */; };
 		9036149118F981CE00213C3F /* farm2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036148F18F981CE00213C3F /* farm2.png */; };
 		9036149418F9825600213C3F /* MMSFarmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9036149318F9825600213C3F /* MMSFarmView.xib */; };
+		9036149718F9AE1700213C3F /* MMSSmartTapsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036149618F9AE1700213C3F /* MMSSmartTapsView.m */; };
+		9036149918F9AE3000213C3F /* MMSSmartTapsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9036149818F9AE3000213C3F /* MMSSmartTapsView.xib */; };
+		9036149B18F9AF8900213C3F /* smart1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036149A18F9AF8900213C3F /* smart1@2x.png */; };
+		9036149E18F9B6A300213C3F /* MMSBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036149D18F9B6A300213C3F /* MMSBaseView.m */; };
+		903614A018F9B6B600213C3F /* MMSBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9036149F18F9B6B600213C3F /* MMSBaseView.xib */; };
+		903614A318F9B77B00213C3F /* MMSBurglarsNightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614A218F9B77B00213C3F /* MMSBurglarsNightView.m */; };
+		903614A518F9B78C00213C3F /* MMSBurglarsNightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903614A418F9B78C00213C3F /* MMSBurglarsNightView.xib */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -138,6 +145,16 @@
 		9036148E18F981CE00213C3F /* farm1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = farm1.png; path = Resources/Farm2/farm1.png; sourceTree = "<group>"; };
 		9036148F18F981CE00213C3F /* farm2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = farm2.png; path = Resources/Farm2/farm2.png; sourceTree = "<group>"; };
 		9036149318F9825600213C3F /* MMSFarmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSFarmView.xib; path = Classes/Views/MMSFarmView.xib; sourceTree = "<group>"; };
+		9036149518F9AE1700213C3F /* MMSSmartTapsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSSmartTapsView.h; path = Classes/Views/MMSSmartTapsView.h; sourceTree = "<group>"; };
+		9036149618F9AE1700213C3F /* MMSSmartTapsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSSmartTapsView.m; path = Classes/Views/MMSSmartTapsView.m; sourceTree = "<group>"; };
+		9036149818F9AE3000213C3F /* MMSSmartTapsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSSmartTapsView.xib; path = Classes/KaratePanda/MMSSmartTapsView.xib; sourceTree = "<group>"; };
+		9036149A18F9AF8900213C3F /* smart1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "smart1@2x.png"; path = "Resources/SmartTaps/smart1@2x.png"; sourceTree = "<group>"; };
+		9036149C18F9B6A300213C3F /* MMSBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSBaseView.h; path = Classes/Views/MMSBaseView.h; sourceTree = "<group>"; };
+		9036149D18F9B6A300213C3F /* MMSBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSBaseView.m; path = Classes/Views/MMSBaseView.m; sourceTree = "<group>"; };
+		9036149F18F9B6B600213C3F /* MMSBaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSBaseView.xib; path = Classes/Views/MMSBaseView.xib; sourceTree = "<group>"; };
+		903614A118F9B77B00213C3F /* MMSBurglarsNightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSBurglarsNightView.h; path = Classes/Views/MMSBurglarsNightView.h; sourceTree = "<group>"; };
+		903614A218F9B77B00213C3F /* MMSBurglarsNightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSBurglarsNightView.m; path = Classes/Views/MMSBurglarsNightView.m; sourceTree = "<group>"; };
+		903614A418F9B78C00213C3F /* MMSBurglarsNightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSBurglarsNightView.xib; path = Classes/Views/MMSBurglarsNightView.xib; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -254,6 +271,7 @@
 		901379CC18F5E2FD00B7434C /* SmartTaps */ = {
 			isa = PBXGroup;
 			children = (
+				9036149A18F9AF8900213C3F /* smart1@2x.png */,
 				901379CA18F5E2F900B7434C /* SmartCatchPromo.m4v */,
 			);
 			name = SmartTaps;
@@ -409,6 +427,15 @@
 				9036148B18F97D1900213C3F /* MMSFarmView.h */,
 				9036148C18F97D1900213C3F /* MMSFarmView.m */,
 				9036149318F9825600213C3F /* MMSFarmView.xib */,
+				9036149518F9AE1700213C3F /* MMSSmartTapsView.h */,
+				9036149618F9AE1700213C3F /* MMSSmartTapsView.m */,
+				9036149818F9AE3000213C3F /* MMSSmartTapsView.xib */,
+				9036149C18F9B6A300213C3F /* MMSBaseView.h */,
+				9036149D18F9B6A300213C3F /* MMSBaseView.m */,
+				9036149F18F9B6B600213C3F /* MMSBaseView.xib */,
+				903614A118F9B77B00213C3F /* MMSBurglarsNightView.h */,
+				903614A218F9B77B00213C3F /* MMSBurglarsNightView.m */,
+				903614A418F9B78C00213C3F /* MMSBurglarsNightView.xib */,
 				90F8E6A118F6B9C600797B83 /* Hackathons */,
 			);
 			name = Views;
@@ -633,6 +660,7 @@
 			files = (
 				90F8E6A818F6BB5200797B83 /* mhacksLogo@2x.png in Resources */,
 				901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */,
+				9036149B18F9AF8900213C3F /* smart1@2x.png in Resources */,
 				907A61E518F1920F00273A57 /* panda.atlas in Resources */,
 				901BDD2018F5968600723187 /* AGHacksLogo@2x.png in Resources */,
 				9036147E18F936CF00213C3F /* wwdc2.jpg in Resources */,
@@ -641,8 +669,11 @@
 				901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */,
 				901379C718F5E2D900B7434C /* krakjam@2x.png in Resources */,
 				90F8E6BC18F6DB4B00797B83 /* chLogo@2x.png in Resources */,
+				903614A518F9B78C00213C3F /* MMSBurglarsNightView.xib in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
+				903614A018F9B6B600213C3F /* MMSBaseView.xib in Resources */,
 				9036149018F981CE00213C3F /* farm1.png in Resources */,
+				9036149918F9AE3000213C3F /* MMSSmartTapsView.xib in Resources */,
 				9036147718F8236500213C3F /* cc2.jpg in Resources */,
 				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
 				9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */,
@@ -687,6 +718,7 @@
 				90F8E6C318F6DE8200797B83 /* UIView+Effects.m in Sources */,
 				90F8E6B118F6CEDF00797B83 /* MDMatrix.m in Sources */,
 				901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */,
+				903614A318F9B77B00213C3F /* MMSBurglarsNightView.m in Sources */,
 				907A61EC18F1B59600273A57 /* MMSBonusNode.m in Sources */,
 				90C53B1518F2CE2800E09CC6 /* NSArray+Utils.m in Sources */,
 				9036148D18F97D1900213C3F /* MMSFarmView.m in Sources */,
@@ -708,6 +740,7 @@
 				90F8E6B218F6CEDF00797B83 /* MDScratchImageView.mm in Sources */,
 				90F8E6D018F817C200797B83 /* MMSLearnTeachView.m in Sources */,
 				907A615218F1581C00273A57 /* main.m in Sources */,
+				9036149E18F9B6A300213C3F /* MMSBaseView.m in Sources */,
 				907A61F218F1B6ED00273A57 /* MMSPath.m in Sources */,
 				90F8E6A418F6B9FF00797B83 /* MMSUSHackathonView.m in Sources */,
 				90F8E6D318F818E900797B83 /* MMSEventsView.m in Sources */,
@@ -715,6 +748,7 @@
 				901BDD1118F579B700723187 /* MMSHackathonsView.m in Sources */,
 				907A61CD18F1679900273A57 /* MMSKaratePandaScene.m in Sources */,
 				90F8E6AC18F6C1F400797B83 /* MMSLearnTeachVC.m in Sources */,
+				9036149718F9AE1700213C3F /* MMSSmartTapsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

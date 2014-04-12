@@ -17,22 +17,18 @@
 
 #pragma mark - UIView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-    }
-    return self;
-}
-
 - (void)layoutSubviews
 {
     [super layoutSubviews];
     
-    CGPoint startPoint = CGPointMake(130, 150);
+    NSArray *colors = @[];
+    
+    CGPoint startPoint = CGPointMake(110, 110);
+    CGFloat radius = [[self.buttons firstObject] frame].size.width/2.f;
+    radius += 1;
     [self.buttons enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-        obj.center = CGPointMake(startPoint.x, startPoint.y + 180*idx);
+        obj.center = CGPointMake(startPoint.x + radius * (idx % 2),
+                                 startPoint.y + (radius + radius/2.f) * idx);
     }];
 }
 

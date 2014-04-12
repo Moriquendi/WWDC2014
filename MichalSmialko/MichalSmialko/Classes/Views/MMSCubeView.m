@@ -33,23 +33,26 @@
     
     CGFloat threeSqt = sqrtf(3);
     
+    CGPoint center = CGPointMake(self.frame.size.width/2.f,
+                                 self.frame.size.height/2.f);
+    
     // Top
-    [path moveToPoint:CGPointMake(threeSqt / 2.f * radius, 0)];
+    [path moveToPoint:CGPointMake(center.x, 0)];
     
     // Right top
-    [path addLineToPoint:CGPointMake(threeSqt * radius, radius/2.f)];
+    [path addLineToPoint:CGPointMake(center.x + radius * threeSqt / 2., radius/2.f)];
     
     // Right bottom
-    [path addLineToPoint:CGPointMake(threeSqt * radius, radius + radius/2.f)];
+    [path addLineToPoint:CGPointMake(center.x + radius * threeSqt / 2., radius + radius/2.f)];
     
     // Bottom
-    [path addLineToPoint:CGPointMake(threeSqt / 2.f * radius , radius*2)];
+    [path addLineToPoint:CGPointMake(center.x , radius*2)];
     
     // Left bottom
-    [path addLineToPoint:CGPointMake(0, radius + radius/2.f)];
+    [path addLineToPoint:CGPointMake(center.x - radius * threeSqt / 2.f, radius + radius/2.f)];
     
     // Left top
-    [path addLineToPoint:CGPointMake(0, radius/2.f)];
+    [path addLineToPoint:CGPointMake(center.x - radius * threeSqt / 2.f, radius/2.f)];
     
     // Close
     [path closePath];

@@ -10,6 +10,9 @@
 #import "MMSCubesMenu.h"
 #import "MMSFarmView.h"
 #import "MMSKaratePandaView.h"
+#import "MMSSmartTapsView.h"
+#import "MMSBaseView.h"
+#import "MMSBurglarsNightView.h"
 
 @interface MMSProjectsVC ()
 @property (nonatomic, strong) UIView *_sideView;
@@ -43,7 +46,7 @@
                                                                         0,
                                                                         200,
                                                                         self.view.frame.size.height)
-                                                buttonsCount:4];
+                                                buttonsCount:6];
     menu.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     [menu.buttons enumerateObjectsUsingBlock:^(UIButton *btn, NSUInteger idx, BOOL *stop) {
         btn.tag = idx;
@@ -77,19 +80,30 @@
         }
             break;
         case 2: {
-            // Smart Taps
+            MMSSmartTapsView *tapsView = [[[NSBundle mainBundle] loadNibNamed:@"MMSSmartTapsView"
+                                                                        owner:self
+                                                                      options:nil] objectAtIndex:0];
+            addedView = tapsView;
         }
         case 3: {
-            // Base ?
+            // Base
+            MMSBaseView *baseView = [[[NSBundle mainBundle] loadNibNamed:@"MMSBaseView"
+                                                                   owner:self
+                                                                 options:nil] objectAtIndex:0];
+            addedView = baseView;
         }
         case 4: {
             // WhosAt
         }
         case 5: {
-            // Chayamuni
+            // Chay
         }
         case 6: {
             // Burglars Night
+            MMSBurglarsNightView *burglarsView = [[[NSBundle mainBundle] loadNibNamed:@"MMSBurglarsNightView"
+                                                                   owner:self
+                                                                 options:nil] objectAtIndex:0];
+            addedView = burglarsView;
         }
             break;
     }
