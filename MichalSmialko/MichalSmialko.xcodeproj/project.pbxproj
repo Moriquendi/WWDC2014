@@ -31,6 +31,10 @@
 		9036147E18F936CF00213C3F /* wwdc2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9036147C18F936CF00213C3F /* wwdc2.jpg */; };
 		9036148418F9677500213C3F /* MMSProjectsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036148318F9677500213C3F /* MMSProjectsVC.m */; };
 		9036148718F9719600213C3F /* MMSCubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036148618F9719600213C3F /* MMSCubeView.m */; };
+		9036148A18F9776000213C3F /* MMSCubesMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036148918F9776000213C3F /* MMSCubesMenu.m */; };
+		9036148D18F97D1900213C3F /* MMSFarmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036148C18F97D1900213C3F /* MMSFarmView.m */; };
+		9036149018F981CE00213C3F /* farm1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036148E18F981CE00213C3F /* farm1.png */; };
+		9036149118F981CE00213C3F /* farm2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036148F18F981CE00213C3F /* farm2.png */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -126,6 +130,12 @@
 		9036148318F9677500213C3F /* MMSProjectsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSProjectsVC.m; path = Classes/Controllers/MMSProjectsVC.m; sourceTree = "<group>"; };
 		9036148518F9719600213C3F /* MMSCubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSCubeView.h; path = Classes/Views/MMSCubeView.h; sourceTree = "<group>"; };
 		9036148618F9719600213C3F /* MMSCubeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSCubeView.m; path = Classes/Views/MMSCubeView.m; sourceTree = "<group>"; };
+		9036148818F9776000213C3F /* MMSCubesMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSCubesMenu.h; path = Classes/Views/MMSCubesMenu.h; sourceTree = "<group>"; };
+		9036148918F9776000213C3F /* MMSCubesMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSCubesMenu.m; path = Classes/Views/MMSCubesMenu.m; sourceTree = "<group>"; };
+		9036148B18F97D1900213C3F /* MMSFarmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSFarmView.h; path = Classes/Views/MMSFarmView.h; sourceTree = "<group>"; };
+		9036148C18F97D1900213C3F /* MMSFarmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSFarmView.m; path = Classes/Views/MMSFarmView.m; sourceTree = "<group>"; };
+		9036148E18F981CE00213C3F /* farm1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = farm1.png; path = Resources/Farm2/farm1.png; sourceTree = "<group>"; };
+		9036148F18F981CE00213C3F /* farm2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = farm2.png; path = Resources/Farm2/farm2.png; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -277,6 +287,15 @@
 			name = Events;
 			sourceTree = "<group>";
 		};
+		9036149218F981D400213C3F /* Farm */ = {
+			isa = PBXGroup;
+			children = (
+				9036148E18F981CE00213C3F /* farm1.png */,
+				9036148F18F981CE00213C3F /* farm2.png */,
+			);
+			name = Farm;
+			sourceTree = "<group>";
+		};
 		907A613918F1581C00273A57 = {
 			isa = PBXGroup;
 			children = (
@@ -383,6 +402,10 @@
 				9036147918F9304400213C3F /* MMSEventsView.xib */,
 				9036148518F9719600213C3F /* MMSCubeView.h */,
 				9036148618F9719600213C3F /* MMSCubeView.m */,
+				9036148818F9776000213C3F /* MMSCubesMenu.h */,
+				9036148918F9776000213C3F /* MMSCubesMenu.m */,
+				9036148B18F97D1900213C3F /* MMSFarmView.h */,
+				9036148C18F97D1900213C3F /* MMSFarmView.m */,
 				90F8E6A118F6B9C600797B83 /* Hackathons */,
 			);
 			name = Views;
@@ -421,6 +444,7 @@
 		907A61D918F1729D00273A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9036149218F981D400213C3F /* Farm */,
 				9036147218F8234C00213C3F /* Events */,
 				90F8E6BA18F6D9D500797B83 /* CocoaHeads */,
 				90F8E6A918F6BB5600797B83 /* Hackathons */,
@@ -615,6 +639,7 @@
 				901379C718F5E2D900B7434C /* krakjam@2x.png in Resources */,
 				90F8E6BC18F6DB4B00797B83 /* chLogo@2x.png in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
+				9036149018F981CE00213C3F /* farm1.png in Resources */,
 				9036147718F8236500213C3F /* cc2.jpg in Resources */,
 				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
 				9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */,
@@ -627,6 +652,7 @@
 				90F8E6CC18F812C100797B83 /* ch4.jpeg in Resources */,
 				9036147D18F936CF00213C3F /* wwdc1.jpg in Resources */,
 				907A615918F1581C00273A57 /* Main.storyboard in Resources */,
+				9036149118F981CE00213C3F /* farm2.png in Resources */,
 				9036147A18F9304400213C3F /* MMSEventsView.xib in Resources */,
 				90F8E6C918F812C100797B83 /* ch1.jpeg in Resources */,
 				901379C818F5E2D900B7434C /* KrakJamTrailer.m4v in Resources */,
@@ -659,6 +685,7 @@
 				901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */,
 				907A61EC18F1B59600273A57 /* MMSBonusNode.m in Sources */,
 				90C53B1518F2CE2800E09CC6 /* NSArray+Utils.m in Sources */,
+				9036148D18F97D1900213C3F /* MMSFarmView.m in Sources */,
 				907A61EF18F1B65000273A57 /* MMSKeys.m in Sources */,
 				901379C418F5B9D700B7434C /* MMSKrakJamView.m in Sources */,
 				901BDD1418F57F8900723187 /* MMSAGHacksView.m in Sources */,
@@ -668,6 +695,7 @@
 				907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */,
 				90C53B1218F2C71800E09CC6 /* MMSStackView.m in Sources */,
 				907A61D618F16A0B00273A57 /* MMSKaratePandaView.m in Sources */,
+				9036148A18F9776000213C3F /* MMSCubesMenu.m in Sources */,
 				901BDD0A18F56D4F00723187 /* NSTimer+Blocks.m in Sources */,
 				9036148418F9677500213C3F /* MMSProjectsVC.m in Sources */,
 				907A617F18F1592300273A57 /* MMSHelloView.m in Sources */,

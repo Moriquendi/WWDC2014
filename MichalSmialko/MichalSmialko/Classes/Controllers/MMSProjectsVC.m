@@ -7,7 +7,7 @@
 //
 
 #import "MMSProjectsVC.h"
-#import "MMSCubeView.h"
+#import "MMSCubesMenu.h"
 
 @interface MMSProjectsVC ()
 
@@ -21,8 +21,22 @@
 {
     [super viewDidLoad];
     
-    MMSCubeView *view = [[MMSCubeView alloc] initWithFrame:CGRectMake(300, 300, 300, 300)];
-    [self.view addSubview:view];
+    // Menu
+    MMSCubesMenu *menu = [[MMSCubesMenu alloc] initWithFrame:CGRectMake(0, 0, 300, self.view.frame.size.height)
+                                                buttonsCount:4];
+    menu.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    [menu.buttons enumerateObjectsUsingBlock:^(UIButton *btn, NSUInteger idx, BOOL *stop) {
+        btn.tag = idx;
+        [btn addTarget:self action:@selector(_menuButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+    }];
+    [self.view addSubview:menu];
+}
+
+#pragma mark- MMSProjectsVC ()
+
+- (void)_menuButtonSelected:(UIButton *)sender
+{
+    
 }
 
 @end
