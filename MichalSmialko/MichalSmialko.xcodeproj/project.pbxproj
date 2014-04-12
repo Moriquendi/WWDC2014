@@ -35,6 +35,7 @@
 		9036148D18F97D1900213C3F /* MMSFarmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036148C18F97D1900213C3F /* MMSFarmView.m */; };
 		9036149018F981CE00213C3F /* farm1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036148E18F981CE00213C3F /* farm1.png */; };
 		9036149118F981CE00213C3F /* farm2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036148F18F981CE00213C3F /* farm2.png */; };
+		9036149418F9825600213C3F /* MMSFarmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9036149318F9825600213C3F /* MMSFarmView.xib */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -136,6 +137,7 @@
 		9036148C18F97D1900213C3F /* MMSFarmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSFarmView.m; path = Classes/Views/MMSFarmView.m; sourceTree = "<group>"; };
 		9036148E18F981CE00213C3F /* farm1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = farm1.png; path = Resources/Farm2/farm1.png; sourceTree = "<group>"; };
 		9036148F18F981CE00213C3F /* farm2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = farm2.png; path = Resources/Farm2/farm2.png; sourceTree = "<group>"; };
+		9036149318F9825600213C3F /* MMSFarmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSFarmView.xib; path = Classes/Views/MMSFarmView.xib; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -406,6 +408,7 @@
 				9036148918F9776000213C3F /* MMSCubesMenu.m */,
 				9036148B18F97D1900213C3F /* MMSFarmView.h */,
 				9036148C18F97D1900213C3F /* MMSFarmView.m */,
+				9036149318F9825600213C3F /* MMSFarmView.xib */,
 				90F8E6A118F6B9C600797B83 /* Hackathons */,
 			);
 			name = Views;
@@ -652,6 +655,7 @@
 				90F8E6CC18F812C100797B83 /* ch4.jpeg in Resources */,
 				9036147D18F936CF00213C3F /* wwdc1.jpg in Resources */,
 				907A615918F1581C00273A57 /* Main.storyboard in Resources */,
+				9036149418F9825600213C3F /* MMSFarmView.xib in Resources */,
 				9036149118F981CE00213C3F /* farm2.png in Resources */,
 				9036147A18F9304400213C3F /* MMSEventsView.xib in Resources */,
 				90F8E6C918F812C100797B83 /* ch1.jpeg in Resources */,

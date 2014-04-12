@@ -8,17 +8,15 @@
 
 #import "MMSFarmView.h"
 
+@interface MMSFarmView ()
+@property (weak, nonatomic) IBOutlet UILabel *_titleLabel;
+@property (weak, nonatomic) IBOutlet UIView *_videoContentView;
+@property (weak, nonatomic) IBOutlet UILabel *_detailsLabel;
+@end
+
 @implementation MMSFarmView
 
-#pragma mark - MSFarmView
+#pragma mark - UIView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-    }
-    return self;
-}
 
 @end

@@ -23,15 +23,14 @@
         self.layer.shadowRadius = 20;
         
         // Sk
-        SKView * skView = [[SKView alloc] initWithFrame:self.bounds];
+        SKView * skView = [[SKView alloc] initWithFrame:CGRectMake(30, 80, 560, 420)];
         skView.layer.cornerRadius = 10.f;
         skView.clipsToBounds = YES;
-        skView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         skView.showsFPS = YES;
         skView.showsNodeCount = YES;
         [self addSubview:skView];
 
-        SKScene * scene = [MMSKaratePandaScene sceneWithSize:skView.bounds.size];
+        SKScene * scene = [MMSKaratePandaScene sceneWithSize:CGSizeMake(560, 420)];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         [skView presentScene:scene];
     }

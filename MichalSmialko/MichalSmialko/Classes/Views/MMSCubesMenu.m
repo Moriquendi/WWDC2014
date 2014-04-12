@@ -49,7 +49,6 @@
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             btn.frame = cubeView.frame;
             [btn addSubview:cubeView];
-            [btn addTarget:self action:@selector(test:) forControlEvents:UIControlEventTouchUpInside];
             [allButtons addObject:btn];
             
             [self addSubview:btn];
@@ -58,11 +57,6 @@
         self.buttons = [NSArray arrayWithArray:allButtons];
     }
     return self;
-}
-
-- (void)test:(id)sender
-{
-    NSLog(@"asdasda");
 }
 
 @end
