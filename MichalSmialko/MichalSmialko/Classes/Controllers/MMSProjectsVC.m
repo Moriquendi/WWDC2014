@@ -17,6 +17,7 @@
 @interface MMSProjectsVC ()
 @property (nonatomic, strong) UIView *_sideView;
 @property (nonatomic, strong) UIView *_contentView;
+@property (nonatomic, strong) MMSCubesMenu *_menu;
 @end
 
 @implementation MMSProjectsVC
@@ -42,17 +43,30 @@
     [self._contentView addSubview:self._sideView];
     
     // Menu
-    MMSCubesMenu *menu = [[MMSCubesMenu alloc] initWithFrame:CGRectMake(0,
-                                                                        0,
-                                                                        200,
-                                                                        self.view.frame.size.height)
-                                                buttonsCount:6];
-    menu.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-    [menu.buttons enumerateObjectsUsingBlock:^(UIButton *btn, NSUInteger idx, BOOL *stop) {
+    self._menu = [[MMSCubesMenu alloc] initWithFrame:CGRectMake(0,
+                                                                0,
+                                                                200,
+                                                                self.view.frame.size.height)
+                                        buttonsCount:6];
+    self._menu.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+    NSArray *titles = @[@"Farm 2",
+                        @"Karate Panda",
+                        @"Smart Taps",
+                        @"Base",
+                        @"Burglars Night", @"", @"", @""];
+    [self._menu.buttons enumerateObjectsUsingBlock:^(UIButton *btn, NSUInteger idx, BOOL *stop) {
         btn.tag = idx;
         [btn addTarget:self action:@selector(_menuButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
+        [btn setTitle:titles[idx] forState:UIControlStateNormal];
     }];
-    [self._contentView addSubview:menu];
+    [self._contentView addSubview:self._menu];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self._menu animateButtonsAppearance];
 }
 
 #pragma mark- MMSProjectsVC ()

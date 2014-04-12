@@ -14,4 +14,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame buttonsCount:(NSInteger)count;
 
+- (void)animateButtonsAppearance;
+
 @end
