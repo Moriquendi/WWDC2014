@@ -17,6 +17,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *_travelLabel;
 @property (weak, nonatomic) IBOutlet UILabel *_baseLabel;
 @property (weak, nonatomic) IBOutlet UILabel *_coffeeLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *_aghImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *_travelImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *_baseImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *_coffeeImageView;
 @end
 
 @implementation MMSPolandView
@@ -29,10 +33,18 @@
 
     // Map view
     self.mapView.userInteractionEnabled = NO;
-    self.mapView.layer.borderColor = [[UIColor whiteColor] CGColor];
-    self.mapView.layer.borderWidth = 14;
+    [self _restyleView:self.mapView];
     self.mapView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_4/2.f);
     [self addSubview:self.mapView];
+    
+    [self _restyleView:self._aghImageView];
+    self._aghImageView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -M_PI_4/5.f);
+    
+    [self _restyleView:self._travelImageView];
+    self._travelImageView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_4/5.f);
+    
+    [self _restyleView:self._coffeeImageView];
+    self._coffeeImageView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -M_PI_4/5.f);
 
     // Add 'Cracow' pin
     MKPointAnnotation *annotatino = [[MKPointAnnotation alloc] init];
@@ -41,37 +53,31 @@
     [self.mapView addAnnotation:annotatino];
     
     //
-    self._titleLabel.text = @"About me...";
     self._titleLabel.font = [UIFont systemFontOfSize:56.];
-    [self._titleLabel sizeToFit];
     self._titleLabel.textColor = [UIColor colorWithWhite:230./255. alpha:1.];
+    [self._titleLabel sizeToFit];
     [self addSubview:self._titleLabel];
     
     self._detailsLabel.text = @"So I am Michal Smialko and I live in Krakow. Blah blah. I've started programming in secondary school and bla bla";
-    self._detailsLabel.font = [UIFont systemFontOfSize:20.];
-    self._detailsLabel.textColor = self._titleLabel.textColor;
+    [self _restyleLabel:self._detailsLabel];
     self._detailsLabel.numberOfLines = 0;
     [self addSubview:self._detailsLabel];
+    
+    // Restyle labels
+    [self _restyleLabel:self._aghLabel];
+    [self _restyleLabel:self._travelLabel];
+    [self _restyleLabel:self._baseLabel];
+    [self _restyleLabel:self._coffeeLabel];
 }
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    
+        
     self.mapView.frame = CGRectMake(self.frame.size.width/2.f,
                                     100,
                                     310,
                                     460);
-    
-    self._titleLabel.frame = CGRectMake(70,
-                                        100,
-                                        self._titleLabel.frame.size.width,
-                                        self._titleLabel.frame.size.height);
-    self._detailsLabel.frame = CGRectMake(70,
-                                          self._titleLabel.frame.origin.y +
-                                          self._titleLabel.frame.size.height + 20,
-                                          self._titleLabel.frame.size.width,
-                                          300);
 }
 
 - (void)sizeToFit
@@ -79,7 +85,21 @@
     self.frame = CGRectMake(self.frame.origin.x,
                             self.frame.origin.y,
                             self.frame.size.width,
-                            1720);
+                            1020);
+}
+
+#pragma mark - MMSPolandView ()
+
+- (void)_restyleView:(UIView *)view
+{
+    view.layer.borderColor = [[UIColor whiteColor] CGColor];
+    view.layer.borderWidth = 14;
+}
+
+- (void)_restyleLabel:(UILabel *)label
+{
+    label.font = [UIFont systemFontOfSize:20.];
+    label.textColor = self._titleLabel.textColor;
 }
 
 @end

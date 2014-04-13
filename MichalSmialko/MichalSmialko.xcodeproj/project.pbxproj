@@ -80,6 +80,10 @@
 		90B208B518FAD2A90097D866 /* UIImage+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B208B418FAD2A90097D866 /* UIImage+Utils.m */; };
 		90B208B718FAD9750097D866 /* mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B208B618FAD9750097D866 /* mask@2x.png */; };
 		90B208B918FAED9B0097D866 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B208B818FAED9B0097D866 /* back@2x.png */; };
+		90B208BB18FB33C30097D866 /* agh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90B208BA18FB33C30097D866 /* agh.jpg */; };
+		90B208BD18FB34FB0097D866 /* nyc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90B208BC18FB34FB0097D866 /* nyc.jpg */; };
+		90B208BF18FB37470097D866 /* basek.png in Resources */ = {isa = PBXBuildFile; fileRef = 90B208BE18FB37470097D866 /* basek.png */; };
+		90B208C118FB39630097D866 /* coffe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90B208C018FB39630097D866 /* coffe.jpg */; };
 		90C53B0F18F2C6F900E09CC6 /* MMSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */; };
 		90C53B1218F2C71800E09CC6 /* MMSStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B1118F2C71800E09CC6 /* MMSStackView.m */; };
 		90C53B1518F2CE2800E09CC6 /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B1418F2CE2800E09CC6 /* NSArray+Utils.m */; };
@@ -221,6 +225,10 @@
 		90B208B418FAD2A90097D866 /* UIImage+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Utils.m"; path = "Classes/Utils/UIImage+Utils.m"; sourceTree = "<group>"; };
 		90B208B618FAD9750097D866 /* mask@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mask@2x.png"; path = "Resources/mask@2x.png"; sourceTree = "<group>"; };
 		90B208B818FAED9B0097D866 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back@2x.png"; path = "Resources/back@2x.png"; sourceTree = "<group>"; };
+		90B208BA18FB33C30097D866 /* agh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = agh.jpg; path = Resources/agh.jpg; sourceTree = "<group>"; };
+		90B208BC18FB34FB0097D866 /* nyc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nyc.jpg; path = Resources/nyc.jpg; sourceTree = "<group>"; };
+		90B208BE18FB37470097D866 /* basek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = basek.png; path = Resources/basek.png; sourceTree = "<group>"; };
+		90B208C018FB39630097D866 /* coffe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = coffe.jpg; path = Resources/coffe.jpg; sourceTree = "<group>"; };
 		90C53B0D18F2C6F900E09CC6 /* MMSTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSTestViewController.h; path = Classes/Controllers/MMSTestViewController.h; sourceTree = "<group>"; };
 		90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSTestViewController.m; path = Classes/Controllers/MMSTestViewController.m; sourceTree = "<group>"; };
 		90C53B1018F2C71800E09CC6 /* MMSStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSStackView.h; path = Classes/Views/MMSStackView.h; sourceTree = "<group>"; };
@@ -509,6 +517,10 @@
 		907A61D918F1729D00273A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				90B208C018FB39630097D866 /* coffe.jpg */,
+				90B208BE18FB37470097D866 /* basek.png */,
+				90B208BC18FB34FB0097D866 /* nyc.jpg */,
+				90B208BA18FB33C30097D866 /* agh.jpg */,
 				90B208B818FAED9B0097D866 /* back@2x.png */,
 				90B208B618FAD9750097D866 /* mask@2x.png */,
 				90B208AE18FABE4B0097D866 /* bgblur.jpg */,
@@ -714,6 +726,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B208BD18FB34FB0097D866 /* nyc.jpg in Resources */,
 				90F8E6A818F6BB5200797B83 /* mhacksLogo@2x.png in Resources */,
 				901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */,
 				9036149B18F9AF8900213C3F /* smart1@2x.png in Resources */,
@@ -723,6 +736,7 @@
 				90F8E6CB18F812C100797B83 /* ch3.jpeg in Resources */,
 				90F8E6CD18F812C100797B83 /* ch5.jpeg in Resources */,
 				901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */,
+				90B208BB18FB33C30097D866 /* agh.jpg in Resources */,
 				90B208B718FAD9750097D866 /* mask@2x.png in Resources */,
 				901379C718F5E2D900B7434C /* krakjam@2x.png in Resources */,
 				903614B218FA8EC400213C3F /* MMSPolandView.xib in Resources */,
@@ -730,8 +744,10 @@
 				903614A518F9B78C00213C3F /* MMSBurglarsNightView.xib in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
 				903614A018F9B6B600213C3F /* MMSBaseView.xib in Resources */,
+				90B208BF18FB37470097D866 /* basek.png in Resources */,
 				9036149018F981CE00213C3F /* farm1.png in Resources */,
 				9036149918F9AE3000213C3F /* MMSSmartTapsView.xib in Resources */,
+				90B208C118FB39630097D866 /* coffe.jpg in Resources */,
 				9036147718F8236500213C3F /* cc2.jpg in Resources */,
 				90B208B918FAED9B0097D866 /* back@2x.png in Resources */,
 				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
