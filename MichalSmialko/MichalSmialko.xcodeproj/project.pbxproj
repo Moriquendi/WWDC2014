@@ -43,6 +43,10 @@
 		903614A018F9B6B600213C3F /* MMSBaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9036149F18F9B6B600213C3F /* MMSBaseView.xib */; };
 		903614A318F9B77B00213C3F /* MMSBurglarsNightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614A218F9B77B00213C3F /* MMSBurglarsNightView.m */; };
 		903614A518F9B78C00213C3F /* MMSBurglarsNightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903614A418F9B78C00213C3F /* MMSBurglarsNightView.xib */; };
+		903614A818F9D63200213C3F /* MMSAboutMeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614A718F9D63200213C3F /* MMSAboutMeVC.m */; };
+		903614AB18FA048400213C3F /* MMSAboutMeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614AA18FA048400213C3F /* MMSAboutMeView.m */; };
+		903614AD18FA061E00213C3F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903614AC18FA061E00213C3F /* MapKit.framework */; };
+		903614B018FA065C00213C3F /* MMSPolandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614AF18FA065C00213C3F /* MMSPolandView.m */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -155,6 +159,13 @@
 		903614A118F9B77B00213C3F /* MMSBurglarsNightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSBurglarsNightView.h; path = Classes/Views/MMSBurglarsNightView.h; sourceTree = "<group>"; };
 		903614A218F9B77B00213C3F /* MMSBurglarsNightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSBurglarsNightView.m; path = Classes/Views/MMSBurglarsNightView.m; sourceTree = "<group>"; };
 		903614A418F9B78C00213C3F /* MMSBurglarsNightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSBurglarsNightView.xib; path = Classes/Views/MMSBurglarsNightView.xib; sourceTree = "<group>"; };
+		903614A618F9D63200213C3F /* MMSAboutMeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSAboutMeVC.h; path = Classes/Controllers/MMSAboutMeVC.h; sourceTree = "<group>"; };
+		903614A718F9D63200213C3F /* MMSAboutMeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSAboutMeVC.m; path = Classes/Controllers/MMSAboutMeVC.m; sourceTree = "<group>"; };
+		903614A918FA048400213C3F /* MMSAboutMeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSAboutMeView.h; path = Classes/Views/MMSAboutMeView.h; sourceTree = "<group>"; };
+		903614AA18FA048400213C3F /* MMSAboutMeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSAboutMeView.m; path = Classes/Views/MMSAboutMeView.m; sourceTree = "<group>"; };
+		903614AC18FA061E00213C3F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		903614AE18FA065C00213C3F /* MMSPolandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSPolandView.h; path = Classes/Views/MMSPolandView.h; sourceTree = "<group>"; };
+		903614AF18FA065C00213C3F /* MMSPolandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSPolandView.m; path = Classes/Views/MMSPolandView.m; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -240,6 +251,7 @@
 				901BDD1A18F5829F00723187 /* MediaPlayer.framework in Frameworks */,
 				907A618218F166F300273A57 /* SpriteKit.framework in Frameworks */,
 				907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */,
+				903614AD18FA061E00213C3F /* MapKit.framework in Frameworks */,
 				907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */,
 				907A614618F1581C00273A57 /* Foundation.framework in Frameworks */,
 			);
@@ -338,6 +350,7 @@
 		907A614418F1581C00273A57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				903614AC18FA061E00213C3F /* MapKit.framework */,
 				901BDD1B18F582DD00723187 /* QuartzCore.framework */,
 				901BDD1918F5829F00723187 /* MediaPlayer.framework */,
 				907A618118F166F300273A57 /* SpriteKit.framework */,
@@ -436,6 +449,10 @@
 				903614A118F9B77B00213C3F /* MMSBurglarsNightView.h */,
 				903614A218F9B77B00213C3F /* MMSBurglarsNightView.m */,
 				903614A418F9B78C00213C3F /* MMSBurglarsNightView.xib */,
+				903614A918FA048400213C3F /* MMSAboutMeView.h */,
+				903614AA18FA048400213C3F /* MMSAboutMeView.m */,
+				903614AE18FA065C00213C3F /* MMSPolandView.h */,
+				903614AF18FA065C00213C3F /* MMSPolandView.m */,
 				90F8E6A118F6B9C600797B83 /* Hackathons */,
 			);
 			name = Views;
@@ -467,6 +484,8 @@
 				901BDD0318F4B7FD00723187 /* MMSMenuVC.m */,
 				9036148218F9677500213C3F /* MMSProjectsVC.h */,
 				9036148318F9677500213C3F /* MMSProjectsVC.m */,
+				903614A618F9D63200213C3F /* MMSAboutMeVC.h */,
+				903614A718F9D63200213C3F /* MMSAboutMeVC.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -629,6 +648,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = MMS;
 				TargetAttributes = {
+					907A614118F1581C00273A57 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					907A616218F1581C00273A57 = {
 						TestTargetID = 907A614118F1581C00273A57;
 					};
@@ -711,6 +737,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				901BDD0E18F5799A00723187 /* MMSHackathonsVC.m in Sources */,
+				903614AB18FA048400213C3F /* MMSAboutMeView.m in Sources */,
 				907A61E818F1930400273A57 /* MMSHeroNode.m in Sources */,
 				901BDD2418F59F9400723187 /* MMSAGHacksDetailsView.m in Sources */,
 				901BDD0418F4B7FD00723187 /* MMSMenuVC.m in Sources */,
@@ -730,6 +757,7 @@
 				90F8E6BF18F6DE1200797B83 /* UIImage+ImageEffects.m in Sources */,
 				907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */,
 				90C53B1218F2C71800E09CC6 /* MMSStackView.m in Sources */,
+				903614A818F9D63200213C3F /* MMSAboutMeVC.m in Sources */,
 				907A61D618F16A0B00273A57 /* MMSKaratePandaView.m in Sources */,
 				9036148A18F9776000213C3F /* MMSCubesMenu.m in Sources */,
 				901BDD0A18F56D4F00723187 /* NSTimer+Blocks.m in Sources */,
@@ -746,6 +774,7 @@
 				90F8E6D318F818E900797B83 /* MMSEventsView.m in Sources */,
 				90F8E6B718F6CF5900797B83 /* MMSCocoaHeadsView.m in Sources */,
 				901BDD1118F579B700723187 /* MMSHackathonsView.m in Sources */,
+				903614B018FA065C00213C3F /* MMSPolandView.m in Sources */,
 				907A61CD18F1679900273A57 /* MMSKaratePandaScene.m in Sources */,
 				90F8E6AC18F6C1F400797B83 /* MMSLearnTeachVC.m in Sources */,
 				9036149718F9AE1700213C3F /* MMSSmartTapsView.m in Sources */,
