@@ -9,6 +9,7 @@
 #import "MMSMenuView.h"
 #import "MMSStyleSheet.h"
 #import "NSTimer+Blocks.h"
+#import "MMSCubeView.h"
 
 @interface MMSMenuView ()
 @property (nonatomic) BOOL animating;
@@ -27,20 +28,27 @@
         self._animator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
         self.backgroundColor = [[MMSStyleSheet sharedInstance] lightBackgroundColor];
         
+        MMSStyleSheet *styles = [MMSStyleSheet sharedInstance];
+        NSArray *colors = @[[styles lightBlueColor],
+                            [styles redColor],
+                            [styles tealColor],
+                            [styles yellowColor]];
+        
         NSMutableArray *buttons = [[NSMutableArray alloc] initWithCapacity:4];
         for (NSInteger i=0; i<4; i++) {
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             btn.frame = CGRectMake(0, 0, 200, 200);
+            btn.backgroundColor = [UIColor clearColor];
             [self addSubview:btn];
+         
+            // Cube
+            MMSCubeView *cube = [[MMSCubeView alloc] initWithFrame:btn.bounds];
+            cube.userInteractionEnabled = NO;
+            cube.fillColor = colors[i];
+            [btn addSubview:cube];
             
             [buttons addObject:btn];
         }
-
-        [buttons[0] setBackgroundColor:[[MMSStyleSheet sharedInstance] lightBlueColor]];
-        [buttons[1] setBackgroundColor:[[MMSStyleSheet sharedInstance] redColor]];
-        [buttons[2] setBackgroundColor:[[MMSStyleSheet sharedInstance] tealColor]];
-        [buttons[3] setBackgroundColor:[[MMSStyleSheet sharedInstance] yellowColor]];
-        
         self.buttons = [NSArray arrayWithArray:buttons];
     }
     return self;
@@ -58,9 +66,6 @@
         CGFloat x = (self.frame.size.width - 80) / [self.buttons count];
         obj.center = CGPointMake(130 + x * idx,
                                  CGRectGetMidY(self.bounds));
-        
-        CGFloat cornerRadius = obj.frame.size.width/2.f;
-        obj.layer.cornerRadius = cornerRadius;
     }];
 }
 
@@ -71,6 +76,12 @@
     self.animating = YES;
 
     [self._animator removeAllBehaviors];
+    MMSStyleSheet *styles = [MMSStyleSheet sharedInstance];
+    NSArray *colors = @[[styles lightBlueColor],
+                        [styles redColor],
+                        [styles tealColor],
+                        [styles yellowColor]];
+    
     [UIView animateWithDuration:0.3 animations:^{
         [self.buttons enumerateObjectsUsingBlock:^(UIButton *obj, NSUInteger idx, BOOL *stop) {
             if (obj != button) {
@@ -85,7 +96,7 @@
             for (NSInteger i=0; i<25; i++) {
                 // Create new bullet
                 UIView *bullet = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-                bullet.backgroundColor = obj.backgroundColor;
+                bullet.backgroundColor = colors[idx];
                 bullet.center = obj.center;
                 bullet.layer.cornerRadius = bullet.frame.size.width/2.f;
                 [self addSubview:bullet];

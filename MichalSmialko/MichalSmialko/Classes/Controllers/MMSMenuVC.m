@@ -9,6 +9,9 @@
 #import "MMSMenuVC.h"
 #import "MMSMenuView.h"
 #import "MMSHackathonsVC.h"
+#import "MMSProjectsVC.h"
+#import "MMSLearnTeachVC.h"
+#import "MMSAboutMeVC.h"
 
 @interface MMSMenuVC ()
 @property (nonatomic, strong) MMSMenuView *_menuView;
@@ -31,10 +34,10 @@
         [obj addTarget:self action:@selector(_buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
     }];
 
-    [self._menuView.buttons[0] setTitle:@"My Projects" forState:UIControlStateNormal];
-    [self._menuView.buttons[1] setTitle:@"Hackathons" forState:UIControlStateNormal];
-    [self._menuView.buttons[2] setTitle:@"Learn & Teach" forState:UIControlStateNormal];
-    [self._menuView.buttons[3] setTitle:@"Work & Study" forState:UIControlStateNormal];
+    [self._menuView.buttons[0] setTitle:@"About me" forState:UIControlStateNormal];
+    [self._menuView.buttons[1] setTitle:@"My Projects" forState:UIControlStateNormal];
+    [self._menuView.buttons[2] setTitle:@"Hackathons" forState:UIControlStateNormal];
+    [self._menuView.buttons[3] setTitle:@"Learn & Teach" forState:UIControlStateNormal];
     
 }
 
@@ -57,10 +60,10 @@
 
 - (void)_buttonTapped:(UIButton *)sender
 {
-    NSArray *VCClasses = @[[MMSHackathonsVC class],
+    NSArray *VCClasses = @[[MMSAboutMeVC class],
+                           [MMSProjectsVC class],
                            [MMSHackathonsVC class],
-                           [MMSHackathonsVC class],
-                           [MMSHackathonsVC class]];
+                           [MMSLearnTeachVC class]];
     
     [self._menuView animateButtonSelection:sender complection:^{
         UIViewController *vc = [[VCClasses[sender.tag] alloc] init];

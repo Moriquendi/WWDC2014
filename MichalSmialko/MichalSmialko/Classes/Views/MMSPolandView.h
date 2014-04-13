@@ -11,6 +11,6 @@
 
 @interface MMSPolandView : UIView
 
-@property (nonatomic, strong, readonly) MKMapView *mapView;
+@property (weak, nonatomic, readonly) IBOutlet MKMapView *mapView;
 
 @end

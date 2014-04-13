@@ -47,6 +47,7 @@
 		903614AB18FA048400213C3F /* MMSAboutMeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614AA18FA048400213C3F /* MMSAboutMeView.m */; };
 		903614AD18FA061E00213C3F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903614AC18FA061E00213C3F /* MapKit.framework */; };
 		903614B018FA065C00213C3F /* MMSPolandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614AF18FA065C00213C3F /* MMSPolandView.m */; };
+		903614B218FA8EC400213C3F /* MMSPolandView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903614B118FA8EC400213C3F /* MMSPolandView.xib */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -166,6 +167,7 @@
 		903614AC18FA061E00213C3F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		903614AE18FA065C00213C3F /* MMSPolandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSPolandView.h; path = Classes/Views/MMSPolandView.h; sourceTree = "<group>"; };
 		903614AF18FA065C00213C3F /* MMSPolandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSPolandView.m; path = Classes/Views/MMSPolandView.m; sourceTree = "<group>"; };
+		903614B118FA8EC400213C3F /* MMSPolandView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSPolandView.xib; path = Classes/Views/MMSPolandView.xib; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -453,6 +455,7 @@
 				903614AA18FA048400213C3F /* MMSAboutMeView.m */,
 				903614AE18FA065C00213C3F /* MMSPolandView.h */,
 				903614AF18FA065C00213C3F /* MMSPolandView.m */,
+				903614B118FA8EC400213C3F /* MMSPolandView.xib */,
 				90F8E6A118F6B9C600797B83 /* Hackathons */,
 			);
 			name = Views;
@@ -694,6 +697,7 @@
 				90F8E6CD18F812C100797B83 /* ch5.jpeg in Resources */,
 				901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */,
 				901379C718F5E2D900B7434C /* krakjam@2x.png in Resources */,
+				903614B218FA8EC400213C3F /* MMSPolandView.xib in Resources */,
 				90F8E6BC18F6DB4B00797B83 /* chLogo@2x.png in Resources */,
 				903614A518F9B78C00213C3F /* MMSBurglarsNightView.xib in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
