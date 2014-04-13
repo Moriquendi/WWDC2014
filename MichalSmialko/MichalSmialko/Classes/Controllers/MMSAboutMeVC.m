@@ -39,10 +39,10 @@
 - (void)_zoomMapToCracow
 {
     MKMapView *mapView = self._aboutView.polandView.mapView;
-    CLLocationCoordinate2D cords = CLLocationCoordinate2DMake(50.061755, 19.937496);
+    CLLocationCoordinate2D cords = CLLocationCoordinate2DMake(50.069755, 19.937496);
     MKMapCamera *cam = [MKMapCamera cameraLookingAtCenterCoordinate:cords
                                                   fromEyeCoordinate:cords
-                                                        eyeAltitude:9550];
+                                                        eyeAltitude:9500];
     [mapView setCamera:cam animated:YES];
 }
 
