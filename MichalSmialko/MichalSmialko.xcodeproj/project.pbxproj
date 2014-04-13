@@ -33,8 +33,8 @@
 		9036148718F9719600213C3F /* MMSCubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036148618F9719600213C3F /* MMSCubeView.m */; };
 		9036148A18F9776000213C3F /* MMSCubesMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036148918F9776000213C3F /* MMSCubesMenu.m */; };
 		9036148D18F97D1900213C3F /* MMSFarmView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036148C18F97D1900213C3F /* MMSFarmView.m */; };
-		9036149018F981CE00213C3F /* farm1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036148E18F981CE00213C3F /* farm1.png */; };
-		9036149118F981CE00213C3F /* farm2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036148F18F981CE00213C3F /* farm2.png */; };
+		9036149018F981CE00213C3F /* farm1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036148E18F981CE00213C3F /* farm1@2x.png */; };
+		9036149118F981CE00213C3F /* farm2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9036148F18F981CE00213C3F /* farm2@2x.png */; };
 		9036149418F9825600213C3F /* MMSFarmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9036149318F9825600213C3F /* MMSFarmView.xib */; };
 		9036149718F9AE1700213C3F /* MMSSmartTapsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9036149618F9AE1700213C3F /* MMSSmartTapsView.m */; };
 		9036149918F9AE3000213C3F /* MMSSmartTapsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9036149818F9AE3000213C3F /* MMSSmartTapsView.xib */; };
@@ -156,8 +156,8 @@
 		9036148918F9776000213C3F /* MMSCubesMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSCubesMenu.m; path = Classes/Views/MMSCubesMenu.m; sourceTree = "<group>"; };
 		9036148B18F97D1900213C3F /* MMSFarmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSFarmView.h; path = Classes/Views/MMSFarmView.h; sourceTree = "<group>"; };
 		9036148C18F97D1900213C3F /* MMSFarmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSFarmView.m; path = Classes/Views/MMSFarmView.m; sourceTree = "<group>"; };
-		9036148E18F981CE00213C3F /* farm1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = farm1.png; path = Resources/Farm2/farm1.png; sourceTree = "<group>"; };
-		9036148F18F981CE00213C3F /* farm2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = farm2.png; path = Resources/Farm2/farm2.png; sourceTree = "<group>"; };
+		9036148E18F981CE00213C3F /* farm1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "farm1@2x.png"; path = "Resources/Farm2/farm1@2x.png"; sourceTree = "<group>"; };
+		9036148F18F981CE00213C3F /* farm2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "farm2@2x.png"; path = "Resources/Farm2/farm2@2x.png"; sourceTree = "<group>"; };
 		9036149318F9825600213C3F /* MMSFarmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSFarmView.xib; path = Classes/Views/MMSFarmView.xib; sourceTree = "<group>"; };
 		9036149518F9AE1700213C3F /* MMSSmartTapsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSSmartTapsView.h; path = Classes/Views/MMSSmartTapsView.h; sourceTree = "<group>"; };
 		9036149618F9AE1700213C3F /* MMSSmartTapsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSSmartTapsView.m; path = Classes/Views/MMSSmartTapsView.m; sourceTree = "<group>"; };
@@ -344,8 +344,8 @@
 		9036149218F981D400213C3F /* Farm */ = {
 			isa = PBXGroup;
 			children = (
-				9036148E18F981CE00213C3F /* farm1.png */,
-				9036148F18F981CE00213C3F /* farm2.png */,
+				9036148E18F981CE00213C3F /* farm1@2x.png */,
+				9036148F18F981CE00213C3F /* farm2@2x.png */,
 			);
 			name = Farm;
 			sourceTree = "<group>";
@@ -745,7 +745,7 @@
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
 				903614A018F9B6B600213C3F /* MMSBaseView.xib in Resources */,
 				90B208BF18FB37470097D866 /* basek.png in Resources */,
-				9036149018F981CE00213C3F /* farm1.png in Resources */,
+				9036149018F981CE00213C3F /* farm1@2x.png in Resources */,
 				9036149918F9AE3000213C3F /* MMSSmartTapsView.xib in Resources */,
 				90B208C118FB39630097D866 /* coffe.jpg in Resources */,
 				9036147718F8236500213C3F /* cc2.jpg in Resources */,
@@ -763,7 +763,7 @@
 				9036147D18F936CF00213C3F /* wwdc1.jpg in Resources */,
 				907A615918F1581C00273A57 /* Main.storyboard in Resources */,
 				9036149418F9825600213C3F /* MMSFarmView.xib in Resources */,
-				9036149118F981CE00213C3F /* farm2.png in Resources */,
+				9036149118F981CE00213C3F /* farm2@2x.png in Resources */,
 				9036147A18F9304400213C3F /* MMSEventsView.xib in Resources */,
 				90F8E6C918F812C100797B83 /* ch1.jpeg in Resources */,
 				901379C818F5E2D900B7434C /* KrakJamTrailer.m4v in Resources */,

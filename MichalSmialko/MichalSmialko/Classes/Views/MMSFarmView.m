@@ -7,16 +7,52 @@
 //
 
 #import "MMSFarmView.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "MMSStackView.h"
+#import "MMSStyleSheet.h"
 
 @interface MMSFarmView ()
 @property (weak, nonatomic) IBOutlet UILabel *_titleLabel;
 @property (weak, nonatomic) IBOutlet UIView *_videoContentView;
 @property (weak, nonatomic) IBOutlet UILabel *_detailsLabel;
+@property (nonatomic, strong) MPMoviePlayerController *_moviePlayerController;
+@property (nonatomic, strong) MMSStackView *_stack;
 @end
 
 @implementation MMSFarmView
 
 #pragma mark - UIView
 
+- (void)awakeFromNib
+{
+    self.backgroundColor = [[MMSStyleSheet sharedInstance] darkRedColor];
+    
+    // Movie
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"AGHacksPromo" ofType:@"mov"];
+    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+    self._moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
+    [self._moviePlayerController prepareToPlay];
+    self._moviePlayerController.scalingMode = MPMovieScalingModeAspectFit;
+    self._moviePlayerController.controlStyle = MPMovieControlStyleEmbedded;
+    self._moviePlayerController.view.frame = self._videoContentView.bounds;
+    [self._videoContentView addSubview:self._moviePlayerController.view];
+    
+    // Stack
+    NSMutableArray *imgs = [NSMutableArray array];
+    for (NSInteger i=0; i<2; i++) {
+        NSString *imgName = [@"farm" stringByAppendingString:[NSString stringWithFormat:@"%li", i+1]];
+        UIImageView *img = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imgName]];
+        img.contentMode = UIViewContentModeScaleAspectFit;
+        img.frame = CGRectMake(0, 0, 200, 200);
+        img.userInteractionEnabled = YES;
+        [imgs addObject:img];
+    }
+    self._stack = [[MMSStackView alloc] initWithViews:[NSArray arrayWithArray:imgs]
+                                          anchorPoint:CGPointMake(self.frame.size.width - 130,
+                                                                  self.frame.size.height - 130)];
+    self._stack.frame = self.bounds;
+    self._stack.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self addSubview:self._stack];
+}
 
 @end

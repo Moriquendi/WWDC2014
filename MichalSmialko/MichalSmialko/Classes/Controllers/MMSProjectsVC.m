@@ -134,6 +134,10 @@
     addedView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self._sideView addSubview:addedView];
     
+    //
+    addedView.layer.shadowColor = [[UIColor blackColor] CGColor];
+    addedView.layer.shadowOpacity = 0.2;
+    addedView.layer.shadowRadius = 6;
     
     // Snap animation
     addedView.frame = CGRectOffset(addedView.frame, self._sideView.frame.size.width, 0);
