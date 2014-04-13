@@ -45,7 +45,7 @@
         self._animating = NO;
         
         MMSStyleSheet *styles = [MMSStyleSheet sharedInstance];
-        NSArray *colors = @[[styles redColor],
+        NSArray *colors = @[[styles darkRedColor],
                             [styles tealColor],
                             [styles yellowColor],
                             [styles lightBlueColor]];

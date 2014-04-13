@@ -13,6 +13,7 @@
 #import "MMSSmartTapsView.h"
 #import "MMSBaseView.h"
 #import "MMSBurglarsNightView.h"
+#import "MMSStyleSheet.h"
 
 @interface MMSProjectsVC ()
 @property (nonatomic, strong) UIView *_sideView;
@@ -27,6 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [[MMSStyleSheet sharedInstance] redColor];
     
     // Content
     self._contentView = [[UIView alloc] initWithFrame:self.view.bounds];

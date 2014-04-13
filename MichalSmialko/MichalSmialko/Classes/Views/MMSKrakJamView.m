@@ -26,7 +26,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor colorWithRed:87./255. green:56./255. blue:106./255. alpha:1.0];
+        self.backgroundColor = [[MMSStyleSheet sharedInstance] tealColor];
         
         // Logo
         self._logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ggj"]];

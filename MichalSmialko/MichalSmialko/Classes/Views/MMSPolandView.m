@@ -25,7 +25,7 @@
 
 - (void)awakeFromNib
 {
-    self.backgroundColor = [[MMSStyleSheet sharedInstance] redColor];
+    self.backgroundColor = [[MMSStyleSheet sharedInstance] lightBlueColor];
 
     // Map view
     self.mapView.userInteractionEnabled = NO;

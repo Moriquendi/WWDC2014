@@ -130,6 +130,8 @@
     button.selected = YES;
     self.animating = YES;
 
+    self.userInteractionEnabled = NO;
+    
     [self._animator removeAllBehaviors];
     
     [UIView animateWithDuration:0.3 animations:^{
@@ -191,9 +193,11 @@
             } completion:^(BOOL finished) {
                 
                 [UIView animateWithDuration:0.3 animations:^{
-                    button.alpha = 0.f;
+                    ((MMSCubeButton *)button).largeTitleLabel.alpha = 0.f;
                 } completion:^(BOOL finished) {
                     [self._animator removeAllBehaviors];
+                    
+                    self.userInteractionEnabled = YES;
                     
                     if (complection) {
                         complection();
@@ -206,9 +210,12 @@
 
 - (void)animateButtonAppearanceComplection:(void (^)(void))complection
 {
+    self.userInteractionEnabled = NO;
+    
     [UIView animateWithDuration:1.6 animations:^{
         [self.buttons enumerateObjectsUsingBlock:^(MMSCubeButton *obj, NSUInteger idx, BOOL *stop) {
             if (obj.selected) {
+                obj.largeTitleLabel.alpha = 1.f;
                 obj.alpha = 1.f;
                 obj.selected = NO;
             }
@@ -221,6 +228,7 @@
             }];
             [self layoutSubviews];
         } completion:^(BOOL finished) {
+            self.userInteractionEnabled = YES;
             if (complection) {
                 complection();
             }

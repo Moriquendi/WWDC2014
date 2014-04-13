@@ -18,6 +18,7 @@
 - (UIColor *)darkBlueColor;
 - (UIColor *)lightBlueColor;
 - (UIColor *)redColor;
+- (UIColor *)darkRedColor;
 - (UIColor *)tealColor;
 - (UIColor *)yellowColor;
 

@@ -25,7 +25,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [[MMSStyleSheet sharedInstance] redColor];
+        self.backgroundColor = [[MMSStyleSheet sharedInstance] tealColor];
         
         self._contentView = [[UIScrollView alloc] initWithFrame:self.bounds];
         self._contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;

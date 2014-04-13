@@ -70,14 +70,19 @@
         self._visibleVC = [[VCClasses[sender.tag] alloc] init];
         [self._visibleVC willMoveToParentViewController:self];
         self._visibleVC.view.frame = self.view.bounds;
+        self._visibleVC.view.alpha = 0.f;
         [self.view addSubview:self._visibleVC.view];
         [self addChildViewController:self._visibleVC];
         [self._visibleVC didMoveToParentViewController:self];
         
+        [UIView animateWithDuration:0.5 animations:^{
+            self._visibleVC.view.alpha = 1.f;
+        }];
+        
         UIButton *dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [dismissButton setTitle:@"<-" forState:UIControlStateNormal];
+        [dismissButton setImage:[UIImage imageNamed:@"back"] forState:UIControlStateNormal];
         [dismissButton sizeToFit];
-        dismissButton.frame = CGRectOffset(dismissButton.frame, 70, 70);
+        dismissButton.frame = CGRectOffset(dismissButton.frame, 30, 40);
         [self._visibleVC.view addSubview:dismissButton];
         [dismissButton addTarget:self
                           action:@selector(_dismissButtonTapped:)

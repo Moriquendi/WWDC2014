@@ -11,6 +11,8 @@
 #import "UIView+Effects.h"
 #import "UIImage+ImageEffects.h"
 #import "MMSStackView.h"
+#import "UIImage+Utils.h"
+#import "MMSStyleSheet.h"
 
 @interface MMSCocoaHeadsView () <MDScratchImageViewDelegate>
 @property (nonatomic, strong) NSArray *labels;
@@ -85,10 +87,14 @@
         
         MDScratchImageView *scratchView = [[MDScratchImageView alloc] initWithFrame:self.bounds];
         scratchView.delegate = self;
-        [scratchView setImage:[UIImage imageNamed:@"hacktechLogo"] radius:25];
+        UIImage *img = [UIImage imageWithColor:[[MMSStyleSheet sharedInstance] yellowColor]];
         scratchView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         scratchView.frame = self.bounds;
+        [scratchView setImage:img radius:35];
         [self addSubview:scratchView];
+        
+        UIImageView *mask = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mask"]];
+        scratchView.layer.mask = mask.layer;
     }
     return self;
 }
@@ -172,7 +178,7 @@
 
 - (void)mdScratchImageView:(MDScratchImageView *)scratchImageView didChangeMaskingProgress:(CGFloat)maskingProgress
 {
-    if (maskingProgress > 0.55) {
+    if (maskingProgress > 0.45) {
         if (scratchImageView.userInteractionEnabled) {
             scratchImageView.userInteractionEnabled = NO;
             

@@ -9,6 +9,8 @@
 #import "MMSEventsView.h"
 #import "MDScratchImageView.h"
 #import "MMSStackView.h"
+#import "UIImage+Utils.h"
+#import "MMSStyleSheet.h"
 
 @interface MMSEventsView () <MDScratchImageViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *campTitleLabel;
@@ -61,16 +63,20 @@
     MDScratchImageView *scratchView = [[MDScratchImageView alloc] initWithFrame:self.bounds];
     scratchView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     scratchView.delegate = self;
-    [scratchView setImage:[UIImage imageNamed:@"hacktechLogo"] radius:25];
+    UIImage *img = [UIImage imageWithColor:[[MMSStyleSheet sharedInstance] yellowColor]];
+    [scratchView setImage:img radius:35];
     scratchView.frame = self.bounds;
     [self addSubview:scratchView];
+    
+    UIImageView *mask = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mask"]];
+    scratchView.layer.mask = mask.layer;
 }
 
 #pragma mark - <MDScratchImageViewDelegate>
 
 - (void)mdScratchImageView:(MDScratchImageView *)scratchImageView didChangeMaskingProgress:(CGFloat)maskingProgress
 {
-    if (maskingProgress > 0.55) {
+    if (maskingProgress > 0.45) {
         if (scratchImageView.userInteractionEnabled) {
             scratchImageView.userInteractionEnabled = NO;
 

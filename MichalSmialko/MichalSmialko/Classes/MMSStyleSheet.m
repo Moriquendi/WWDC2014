@@ -50,9 +50,15 @@
                            green:164./255.
                             blue:216./255. alpha:1.0];
 }
+
 - (UIColor *)redColor
 {
     return [UIColor colorWithRed:219./255. green:87./255. blue:73./255. alpha:1.0];
+}
+
+- (UIColor *)darkRedColor
+{
+    return [UIColor colorWithRed:249./255. green:87./255. blue:83./255. alpha:1.0];
 }
 
 - (UIColor *)tealColor
