@@ -27,7 +27,7 @@
         return;
     }
     
-    CGPoint startPoint = CGPointMake(110, 110);
+    CGPoint startPoint = CGPointMake(160, 110);
     CGFloat radius = [[self.buttons firstObject] frame].size.width/2.f;
     radius += 1;
     

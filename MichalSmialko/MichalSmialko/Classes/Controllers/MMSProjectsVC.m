@@ -19,6 +19,7 @@
 @property (nonatomic, strong) UIView *_sideView;
 @property (nonatomic, strong) UIView *_contentView;
 @property (nonatomic, strong) MMSCubesMenu *_menu;
+@property (nonatomic, strong) UIDynamicAnimator *_animator;
 @end
 
 @implementation MMSProjectsVC
@@ -37,17 +38,20 @@
     [self.view addSubview:self._contentView];
     
     // Side view
-    self._sideView = [[UIView alloc] initWithFrame:CGRectMake(200,
+    self._sideView = [[UIView alloc] initWithFrame:CGRectMake(300,
                                                               0,
-                                                              self._contentView.frame.size.width - 200,
+                                                              self._contentView.frame.size.width - 300,
                                                               self._contentView.frame.size.height)];
     self._sideView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin;
     [self._contentView addSubview:self._sideView];
+
+    // animator
+    self._animator = [[UIDynamicAnimator alloc] initWithReferenceView:self._sideView];
     
     // Menu
     self._menu = [[MMSCubesMenu alloc] initWithFrame:CGRectMake(0,
                                                                 0,
-                                                                200,
+                                                                300,
                                                                 self.view.frame.size.height)
                                         buttonsCount:6];
     self._menu.autoresizingMask = UIViewAutoresizingFlexibleHeight;
@@ -101,6 +105,7 @@
                                                                       options:nil] objectAtIndex:0];
             addedView = tapsView;
         }
+            break;
         case 3: {
             // Base
             MMSBaseView *baseView = [[[NSBundle mainBundle] loadNibNamed:@"MMSBaseView"
@@ -108,6 +113,7 @@
                                                                  options:nil] objectAtIndex:0];
             addedView = baseView;
         }
+            break;
         case 4: {
             // WhosAt
         }
@@ -125,7 +131,17 @@
     }
     
     addedView.frame = self._sideView.bounds;
+    addedView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self._sideView addSubview:addedView];
+    
+    
+    // Snap animation
+    addedView.frame = CGRectOffset(addedView.frame, self._sideView.frame.size.width, 0);
+    [self._animator removeAllBehaviors];
+    UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:addedView
+                                                    snapToPoint:CGPointMake(self._sideView.frame.size.width/2.f,
+                                                                            CGRectGetMidY(self._sideView.bounds))];
+    [self._animator addBehavior:snap];
 }
 
 @end
