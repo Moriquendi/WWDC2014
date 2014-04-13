@@ -9,7 +9,6 @@
 #import "MMSMenuView.h"
 #import "MMSStyleSheet.h"
 #import "NSTimer+Blocks.h"
-#import "MMSCubeView.h"
 
 @interface MMSMenuView ()
 @property (nonatomic) BOOL animating;
@@ -26,8 +25,50 @@
     if (self) {
         self.animating = NO;
         self._animator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
-        self.backgroundColor = [[MMSStyleSheet sharedInstance] lightBackgroundColor];
+        self.backgroundColor = [[MMSStyleSheet sharedInstance] darkBlueColor];
         
+        UIImageView *bgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bgblur.jpg"]];
+        bgView.contentMode = UIViewContentModeScaleAspectFill;
+        bgView.autoresizesSubviews = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        bgView.frame = self.bounds;
+        [self addSubview:bgView];
+        
+        
+        // Cubes bg
+        UIView *cubesBg = [[UIView alloc] initWithFrame:self.bounds];
+        cubesBg.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        for (NSInteger i=0; i<20; i++) {
+            CGFloat size = 30 + rand() % 80;
+            MMSCubeView *view = [[MMSCubeView alloc] initWithFrame:CGRectMake(0, 0,
+                                                                              size,
+                                                                              size)];
+            view.layer.shouldRasterize = YES;
+            
+            CGFloat randomAlpha = 1. / (rand() % 5 + 5);
+            view.fillColor = [[UIColor lightGrayColor] colorWithAlphaComponent:randomAlpha];
+            
+            view.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+            view.center = CGPointMake(rand() % (NSInteger)self.frame.size.width,
+                                      rand() % (NSInteger)self.frame.size.height);
+            
+            [cubesBg addSubview:view];
+        }
+        UIInterpolatingMotionEffect *effect = [[UIInterpolatingMotionEffect alloc]
+                                               initWithKeyPath:@"center.x"
+                                               type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+        UIInterpolatingMotionEffect *effect2 = [[UIInterpolatingMotionEffect alloc]
+                                                initWithKeyPath:@"center.y"
+                                                type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+        effect.minimumRelativeValue = @(-30.);
+        effect.maximumRelativeValue = @(40.);
+        effect2.minimumRelativeValue = @(-27);
+        effect2.maximumRelativeValue = @(50);
+        UIMotionEffectGroup *group = [[UIMotionEffectGroup alloc] init];
+        group.motionEffects = @[effect2, effect];
+        [cubesBg addMotionEffect:group];
+        [self addSubview:cubesBg];
+        
+        //
         MMSStyleSheet *styles = [MMSStyleSheet sharedInstance];
         NSArray *colors = @[[styles lightBlueColor],
                             [styles redColor],
@@ -36,18 +77,29 @@
         
         NSMutableArray *buttons = [[NSMutableArray alloc] initWithCapacity:4];
         for (NSInteger i=0; i<4; i++) {
-            UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-            btn.frame = CGRectMake(0, 0, 200, 200);
+            MMSCubeButton *btn = [MMSCubeButton buttonWithType:UIButtonTypeCustom];
+            btn.frame = CGRectMake(0, 0, 350, 350);
             btn.backgroundColor = [UIColor clearColor];
             [self addSubview:btn];
-         
-            // Cube
-            MMSCubeView *cube = [[MMSCubeView alloc] initWithFrame:btn.bounds];
-            cube.userInteractionEnabled = NO;
-            cube.fillColor = colors[i];
-            [btn addSubview:cube];
+            btn.bgView.fillColor = colors[i];
             
             [buttons addObject:btn];
+            
+            
+            UIInterpolatingMotionEffect *xEffect = [[UIInterpolatingMotionEffect alloc]
+                                                   initWithKeyPath:@"center.x"
+                                                   type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+            UIInterpolatingMotionEffect *yEffect = [[UIInterpolatingMotionEffect alloc]
+                                                    initWithKeyPath:@"center.y"
+                                                    type:UIInterpolatingMotionEffectTypeTiltAlongVerticalAxis];
+            xEffect.minimumRelativeValue = @(-10. - 20*i);
+            xEffect.maximumRelativeValue = @(10. + 20*i);
+            yEffect.minimumRelativeValue = @(-10 - 20*i);
+            yEffect.maximumRelativeValue = @(10 + 20*i);
+            
+            UIMotionEffectGroup *group = [[UIMotionEffectGroup alloc] init];
+            group.motionEffects = @[xEffect, yEffect];
+            [btn addMotionEffect:group];
         }
         self.buttons = [NSArray arrayWithArray:buttons];
     }
@@ -63,9 +115,11 @@
     [super layoutSubviews];
 
     [self.buttons enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
-        CGFloat x = (self.frame.size.width - 80) / [self.buttons count];
-        obj.center = CGPointMake(130 + x * idx,
-                                 CGRectGetMidY(self.bounds));
+        
+        CGFloat radius = obj.frame.size.width/2.f;
+        
+        obj.center = CGPointMake(radius * (idx + 1) + 70,
+                                 CGRectGetMidY(self.bounds) - radius/2.f + radius * 1.5 * (idx % 2) - 40);
     }];
 }
 
@@ -73,14 +127,10 @@
 
 - (void)animateButtonSelection:(UIButton *)button complection:(void (^)(void))complection
 {
+    button.selected = YES;
     self.animating = YES;
 
     [self._animator removeAllBehaviors];
-    MMSStyleSheet *styles = [MMSStyleSheet sharedInstance];
-    NSArray *colors = @[[styles lightBlueColor],
-                        [styles redColor],
-                        [styles tealColor],
-                        [styles yellowColor]];
     
     [UIView animateWithDuration:0.3 animations:^{
         [self.buttons enumerateObjectsUsingBlock:^(UIButton *obj, NSUInteger idx, BOOL *stop) {
@@ -92,11 +142,11 @@
     } completion:^(BOOL finished) {
 
         NSMutableArray *bullets = [[NSMutableArray alloc] init];
-        [self.buttons enumerateObjectsUsingBlock:^(UIButton *obj, NSUInteger idx, BOOL *stop) {
+        [self.buttons enumerateObjectsUsingBlock:^(MMSCubeButton *obj, NSUInteger idx, BOOL *stop) {
             for (NSInteger i=0; i<25; i++) {
                 // Create new bullet
                 UIView *bullet = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-                bullet.backgroundColor = colors[idx];
+                bullet.backgroundColor = obj.bgView.fillColor;
                 bullet.center = obj.center;
                 bullet.layer.cornerRadius = bullet.frame.size.width/2.f;
                 [self addSubview:bullet];
@@ -137,14 +187,44 @@
         [NSTimer scheduledTimerWithTimeInterval:0.5 block:^{
             [self._animator removeBehavior:snap];
             [UIView animateWithDuration:0.5 animations:^{
-                button.transform = CGAffineTransformScale(CGAffineTransformIdentity, 8, 8);
+                button.transform = CGAffineTransformScale(CGAffineTransformIdentity, 5, 5);
             } completion:^(BOOL finished) {
-                if (complection) {
-                    complection();
-                }
+                
+                [UIView animateWithDuration:0.3 animations:^{
+                    button.alpha = 0.f;
+                } completion:^(BOOL finished) {
+                    [self._animator removeAllBehaviors];
+                    
+                    if (complection) {
+                        complection();
+                    }
+                }];
             }];
         } repeats:NO];
-        
+    }];
+}
+
+- (void)animateButtonAppearanceComplection:(void (^)(void))complection
+{
+    [UIView animateWithDuration:1.6 animations:^{
+        [self.buttons enumerateObjectsUsingBlock:^(MMSCubeButton *obj, NSUInteger idx, BOOL *stop) {
+            if (obj.selected) {
+                obj.alpha = 1.f;
+                obj.selected = NO;
+            }
+        }];
+    } completion:^(BOOL finished) {
+        self.animating = NO;
+        [UIView animateWithDuration:0.6 animations:^{
+            [self.buttons enumerateObjectsUsingBlock:^(MMSCubeButton *obj, NSUInteger idx, BOOL *stop) {
+                obj.transform = CGAffineTransformIdentity;
+            }];
+            [self layoutSubviews];
+        } completion:^(BOOL finished) {
+            if (complection) {
+                complection();
+            }
+        }];
     }];
 }
 

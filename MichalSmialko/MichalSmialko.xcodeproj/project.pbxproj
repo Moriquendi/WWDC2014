@@ -48,6 +48,7 @@
 		903614AD18FA061E00213C3F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903614AC18FA061E00213C3F /* MapKit.framework */; };
 		903614B018FA065C00213C3F /* MMSPolandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614AF18FA065C00213C3F /* MMSPolandView.m */; };
 		903614B218FA8EC400213C3F /* MMSPolandView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903614B118FA8EC400213C3F /* MMSPolandView.xib */; };
+		903614B518FA9B6200213C3F /* MMSCubeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614B418FA9B6200213C3F /* MMSCubeButton.m */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -75,6 +76,7 @@
 		907A61EC18F1B59600273A57 /* MMSBonusNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61EB18F1B59600273A57 /* MMSBonusNode.m */; };
 		907A61EF18F1B65000273A57 /* MMSKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61EE18F1B65000273A57 /* MMSKeys.m */; };
 		907A61F218F1B6ED00273A57 /* MMSPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61F118F1B6ED00273A57 /* MMSPath.m */; };
+		90B208AF18FABE4B0097D866 /* bgblur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90B208AE18FABE4B0097D866 /* bgblur.jpg */; };
 		90C53B0F18F2C6F900E09CC6 /* MMSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */; };
 		90C53B1218F2C71800E09CC6 /* MMSStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B1118F2C71800E09CC6 /* MMSStackView.m */; };
 		90C53B1518F2CE2800E09CC6 /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B1418F2CE2800E09CC6 /* NSArray+Utils.m */; };
@@ -168,6 +170,8 @@
 		903614AE18FA065C00213C3F /* MMSPolandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSPolandView.h; path = Classes/Views/MMSPolandView.h; sourceTree = "<group>"; };
 		903614AF18FA065C00213C3F /* MMSPolandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSPolandView.m; path = Classes/Views/MMSPolandView.m; sourceTree = "<group>"; };
 		903614B118FA8EC400213C3F /* MMSPolandView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSPolandView.xib; path = Classes/Views/MMSPolandView.xib; sourceTree = "<group>"; };
+		903614B318FA9B6200213C3F /* MMSCubeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSCubeButton.h; path = Classes/Views/MMSCubeButton.h; sourceTree = "<group>"; };
+		903614B418FA9B6200213C3F /* MMSCubeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSCubeButton.m; path = Classes/Views/MMSCubeButton.m; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -209,6 +213,7 @@
 		907A61EE18F1B65000273A57 /* MMSKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKeys.m; path = Classes/KaratePanda/MMSKeys.m; sourceTree = "<group>"; };
 		907A61F018F1B6ED00273A57 /* MMSPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSPath.h; path = Classes/KaratePanda/MMSPath.h; sourceTree = "<group>"; };
 		907A61F118F1B6ED00273A57 /* MMSPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSPath.m; path = Classes/KaratePanda/MMSPath.m; sourceTree = "<group>"; };
+		90B208AE18FABE4B0097D866 /* bgblur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bgblur.jpg; path = Resources/bgblur.jpg; sourceTree = "<group>"; };
 		90C53B0D18F2C6F900E09CC6 /* MMSTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSTestViewController.h; path = Classes/Controllers/MMSTestViewController.h; sourceTree = "<group>"; };
 		90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSTestViewController.m; path = Classes/Controllers/MMSTestViewController.m; sourceTree = "<group>"; };
 		90C53B1018F2C71800E09CC6 /* MMSStackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSStackView.h; path = Classes/Views/MMSStackView.h; sourceTree = "<group>"; };
@@ -456,6 +461,8 @@
 				903614AE18FA065C00213C3F /* MMSPolandView.h */,
 				903614AF18FA065C00213C3F /* MMSPolandView.m */,
 				903614B118FA8EC400213C3F /* MMSPolandView.xib */,
+				903614B318FA9B6200213C3F /* MMSCubeButton.h */,
+				903614B418FA9B6200213C3F /* MMSCubeButton.m */,
 				90F8E6A118F6B9C600797B83 /* Hackathons */,
 			);
 			name = Views;
@@ -496,6 +503,7 @@
 		907A61D918F1729D00273A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				90B208AE18FABE4B0097D866 /* bgblur.jpg */,
 				9036149218F981D400213C3F /* Farm */,
 				9036147218F8234C00213C3F /* Events */,
 				90F8E6BA18F6D9D500797B83 /* CocoaHeads */,
@@ -706,6 +714,7 @@
 				9036149918F9AE3000213C3F /* MMSSmartTapsView.xib in Resources */,
 				9036147718F8236500213C3F /* cc2.jpg in Resources */,
 				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
+				90B208AF18FABE4B0097D866 /* bgblur.jpg in Resources */,
 				9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */,
 				90F8E6B918F6D9D300797B83 /* chBg@2x.jpeg in Resources */,
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
@@ -746,6 +755,7 @@
 				901BDD2418F59F9400723187 /* MMSAGHacksDetailsView.m in Sources */,
 				901BDD0418F4B7FD00723187 /* MMSMenuVC.m in Sources */,
 				90C53B0F18F2C6F900E09CC6 /* MMSTestViewController.m in Sources */,
+				903614B518FA9B6200213C3F /* MMSCubeButton.m in Sources */,
 				90F8E6C318F6DE8200797B83 /* UIView+Effects.m in Sources */,
 				90F8E6B118F6CEDF00797B83 /* MDMatrix.m in Sources */,
 				901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */,

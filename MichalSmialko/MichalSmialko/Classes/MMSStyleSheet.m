@@ -36,7 +36,7 @@
 
 - (UIColor *)lightBackgroundColor
 {
-    return [UIColor colorWithWhite:229./255. alpha:1.0];
+    return [UIColor colorWithWhite:220./255. alpha:1.0];
 }
 
 - (UIColor *)darkBlueColor

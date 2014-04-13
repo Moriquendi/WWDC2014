@@ -14,6 +14,7 @@
 #import "MMSAboutMeVC.h"
 
 @interface MMSMenuVC ()
+@property (nonatomic, strong) UIViewController *_visibleVC;
 @property (nonatomic, strong) MMSMenuView *_menuView;
 @end
 
@@ -29,16 +30,16 @@
     self._menuView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:self._menuView];
     
-    [self._menuView.buttons enumerateObjectsUsingBlock:^(UIButton *obj, NSUInteger idx, BOOL *stop) {
+    NSArray *titles = @[@"About Me",
+                        @"My Projects",
+                        @"Hackathons",
+                        @"Learn & Teach"];
+    
+    [self._menuView.buttons enumerateObjectsUsingBlock:^(MMSCubeButton *obj, NSUInteger idx, BOOL *stop) {
         obj.tag = idx;
         [obj addTarget:self action:@selector(_buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+        obj.largeTitleLabel.text = titles[idx];
     }];
-
-    [self._menuView.buttons[0] setTitle:@"About me" forState:UIControlStateNormal];
-    [self._menuView.buttons[1] setTitle:@"My Projects" forState:UIControlStateNormal];
-    [self._menuView.buttons[2] setTitle:@"Hackathons" forState:UIControlStateNormal];
-    [self._menuView.buttons[3] setTitle:@"Learn & Teach" forState:UIControlStateNormal];
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -66,12 +67,35 @@
                            [MMSLearnTeachVC class]];
     
     [self._menuView animateButtonSelection:sender complection:^{
-        UIViewController *vc = [[VCClasses[sender.tag] alloc] init];
-        [vc willMoveToParentViewController:self];
-        vc.view.frame = self.view.bounds;
-        [self.view addSubview:vc.view];
-        [self addChildViewController:vc];
-        [vc didMoveToParentViewController:self];
+        self._visibleVC = [[VCClasses[sender.tag] alloc] init];
+        [self._visibleVC willMoveToParentViewController:self];
+        self._visibleVC.view.frame = self.view.bounds;
+        [self.view addSubview:self._visibleVC.view];
+        [self addChildViewController:self._visibleVC];
+        [self._visibleVC didMoveToParentViewController:self];
+        
+        UIButton *dismissButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [dismissButton setTitle:@"<-" forState:UIControlStateNormal];
+        [dismissButton sizeToFit];
+        dismissButton.frame = CGRectOffset(dismissButton.frame, 70, 70);
+        [self._visibleVC.view addSubview:dismissButton];
+        [dismissButton addTarget:self
+                          action:@selector(_dismissButtonTapped:)
+                forControlEvents:UIControlEventTouchUpInside];
+    }];
+}
+
+- (void)_dismissButtonTapped:(id)sender
+{
+    [UIView animateWithDuration:0.3 animations:^{
+        self._visibleVC.view.alpha = 0.f;
+    } completion:^(BOOL finished) {
+        [self._visibleVC.view removeFromSuperview];
+        self._visibleVC = nil;
+        
+        [self._menuView animateButtonAppearanceComplection:^{
+            
+        }];
     }];
 }
 
