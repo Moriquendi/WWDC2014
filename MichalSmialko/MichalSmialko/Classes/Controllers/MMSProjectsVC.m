@@ -11,7 +11,6 @@
 #import "MMSFarmView.h"
 #import "MMSKaratePandaView.h"
 #import "MMSSmartTapsView.h"
-#import "MMSBaseView.h"
 #import "MMSBurglarsNightView.h"
 #import "MMSStyleSheet.h"
 
@@ -107,11 +106,6 @@
         }
             break;
         case 3: {
-            // Base
-            MMSBaseView *baseView = [[[NSBundle mainBundle] loadNibNamed:@"MMSBaseView"
-                                                                   owner:self
-                                                                 options:nil] objectAtIndex:0];
-            addedView = baseView;
         }
             break;
         case 4: {
