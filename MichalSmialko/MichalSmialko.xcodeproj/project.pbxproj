@@ -69,9 +69,6 @@
 		907A61CD18F1679900273A57 /* MMSKaratePandaScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61CC18F1679900273A57 /* MMSKaratePandaScene.m */; };
 		907A61D318F1684200273A57 /* MMSKaratePandaVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61D218F1684200273A57 /* MMSKaratePandaVC.m */; };
 		907A61D618F16A0B00273A57 /* MMSKaratePandaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */; };
-		907A61D818F1729A00273A57 /* bgLas.png in Resources */ = {isa = PBXBuildFile; fileRef = 907A61D718F1729A00273A57 /* bgLas.png */; };
-		907A61E318F17B8E00273A57 /* lasAtlas.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 907A61E218F17B8E00273A57 /* lasAtlas.atlas */; };
-		907A61E518F1920F00273A57 /* panda.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 907A61E418F1920F00273A57 /* panda.atlas */; };
 		907A61E818F1930400273A57 /* MMSHeroNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61E718F1930400273A57 /* MMSHeroNode.m */; };
 		907A61EC18F1B59600273A57 /* MMSBonusNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61EB18F1B59600273A57 /* MMSBonusNode.m */; };
 		907A61EF18F1B65000273A57 /* MMSKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 907A61EE18F1B65000273A57 /* MMSKeys.m */; };
@@ -87,6 +84,12 @@
 		90C53B0F18F2C6F900E09CC6 /* MMSTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B0E18F2C6F900E09CC6 /* MMSTestViewController.m */; };
 		90C53B1218F2C71800E09CC6 /* MMSStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B1118F2C71800E09CC6 /* MMSStackView.m */; };
 		90C53B1518F2CE2800E09CC6 /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C53B1418F2CE2800E09CC6 /* NSArray+Utils.m */; };
+		90CE964818FBD9B000AB4D57 /* MMSKaratePandaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CE964718FBD9B000AB4D57 /* MMSKaratePandaView.xib */; };
+		90CE964E18FBDBAF00AB4D57 /* KaratePandaTrailer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 90CE964918FBDBAF00AB4D57 /* KaratePandaTrailer.mp4 */; };
+		90CE964F18FBDBAF00AB4D57 /* panda1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90CE964A18FBDBAF00AB4D57 /* panda1@2x.jpg */; };
+		90CE965018FBDBAF00AB4D57 /* panda2@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90CE964B18FBDBAF00AB4D57 /* panda2@2x.jpg */; };
+		90CE965118FBDBAF00AB4D57 /* panda3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90CE964C18FBDBAF00AB4D57 /* panda3@2x.jpg */; };
+		90CE965218FBDBAF00AB4D57 /* panda4.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CE964D18FBDBAF00AB4D57 /* panda4.png */; };
 		90F8E6A418F6B9FF00797B83 /* MMSUSHackathonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6A318F6B9FF00797B83 /* MMSUSHackathonView.m */; };
 		90F8E6A718F6BB5200797B83 /* hacktechLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */; };
 		90F8E6A818F6BB5200797B83 /* mhacksLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6A618F6BB5200797B83 /* mhacksLogo@2x.png */; };
@@ -208,9 +211,6 @@
 		907A61D218F1684200273A57 /* MMSKaratePandaVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKaratePandaVC.m; path = Classes/Controllers/MMSKaratePandaVC.m; sourceTree = "<group>"; };
 		907A61D418F16A0B00273A57 /* MMSKaratePandaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSKaratePandaView.h; path = Classes/Views/MMSKaratePandaView.h; sourceTree = "<group>"; };
 		907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKaratePandaView.m; path = Classes/Views/MMSKaratePandaView.m; sourceTree = "<group>"; };
-		907A61D718F1729A00273A57 /* bgLas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgLas.png; path = Resources/KaratePanda/bgLas.png; sourceTree = "<group>"; };
-		907A61E218F17B8E00273A57 /* lasAtlas.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = lasAtlas.atlas; path = Resources/KaratePanda/lasAtlas.atlas; sourceTree = "<group>"; };
-		907A61E418F1920F00273A57 /* panda.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = panda.atlas; path = Resources/KaratePanda/panda.atlas; sourceTree = "<group>"; };
 		907A61E618F1930400273A57 /* MMSHeroNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSHeroNode.h; path = Classes/KaratePanda/MMSHeroNode.h; sourceTree = "<group>"; };
 		907A61E718F1930400273A57 /* MMSHeroNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSHeroNode.m; path = Classes/KaratePanda/MMSHeroNode.m; sourceTree = "<group>"; };
 		907A61EA18F1B59600273A57 /* MMSBonusNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSBonusNode.h; path = Classes/KaratePanda/MMSBonusNode.h; sourceTree = "<group>"; };
@@ -234,6 +234,12 @@
 		90C53B1118F2C71800E09CC6 /* MMSStackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSStackView.m; path = Classes/Views/MMSStackView.m; sourceTree = "<group>"; };
 		90C53B1318F2CE2800E09CC6 /* NSArray+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Utils.h"; path = "Classes/Utils/NSArray+Utils.h"; sourceTree = "<group>"; };
 		90C53B1418F2CE2800E09CC6 /* NSArray+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Utils.m"; path = "Classes/Utils/NSArray+Utils.m"; sourceTree = "<group>"; };
+		90CE964718FBD9B000AB4D57 /* MMSKaratePandaView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSKaratePandaView.xib; path = Classes/Views/MMSKaratePandaView.xib; sourceTree = "<group>"; };
+		90CE964918FBDBAF00AB4D57 /* KaratePandaTrailer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = KaratePandaTrailer.mp4; path = Resources/KaratePanda/KaratePandaTrailer.mp4; sourceTree = "<group>"; };
+		90CE964A18FBDBAF00AB4D57 /* panda1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "panda1@2x.jpg"; path = "Resources/KaratePanda/panda1@2x.jpg"; sourceTree = "<group>"; };
+		90CE964B18FBDBAF00AB4D57 /* panda2@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "panda2@2x.jpg"; path = "Resources/KaratePanda/panda2@2x.jpg"; sourceTree = "<group>"; };
+		90CE964C18FBDBAF00AB4D57 /* panda3@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "panda3@2x.jpg"; path = "Resources/KaratePanda/panda3@2x.jpg"; sourceTree = "<group>"; };
+		90CE964D18FBDBAF00AB4D57 /* panda4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = panda4.png; path = Resources/KaratePanda/panda4.png; sourceTree = "<group>"; };
 		90F8E6A218F6B9FF00797B83 /* MMSUSHackathonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSUSHackathonView.h; path = Classes/Views/MMSUSHackathonView.h; sourceTree = "<group>"; };
 		90F8E6A318F6B9FF00797B83 /* MMSUSHackathonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSUSHackathonView.m; path = Classes/Views/MMSUSHackathonView.m; sourceTree = "<group>"; };
 		90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hacktechLogo@2x.png"; path = "Resources/Hackathons/hacktechLogo@2x.png"; sourceTree = "<group>"; };
@@ -453,6 +459,7 @@
 				907A617E18F1592300273A57 /* MMSHelloView.m */,
 				907A61D418F16A0B00273A57 /* MMSKaratePandaView.h */,
 				907A61D518F16A0B00273A57 /* MMSKaratePandaView.m */,
+				90CE964718FBD9B000AB4D57 /* MMSKaratePandaView.xib */,
 				90C53B1018F2C71800E09CC6 /* MMSStackView.h */,
 				90C53B1118F2C71800E09CC6 /* MMSStackView.m */,
 				901BDD0518F4B85F00723187 /* MMSMenuView.h */,
@@ -546,9 +553,11 @@
 		907A61DA18F172A100273A57 /* KaratePanda */ = {
 			isa = PBXGroup;
 			children = (
-				907A61E418F1920F00273A57 /* panda.atlas */,
-				907A61E218F17B8E00273A57 /* lasAtlas.atlas */,
-				907A61D718F1729A00273A57 /* bgLas.png */,
+				90CE964918FBDBAF00AB4D57 /* KaratePandaTrailer.mp4 */,
+				90CE964A18FBDBAF00AB4D57 /* panda1@2x.jpg */,
+				90CE964B18FBDBAF00AB4D57 /* panda2@2x.jpg */,
+				90CE964C18FBDBAF00AB4D57 /* panda3@2x.jpg */,
+				90CE964D18FBDBAF00AB4D57 /* panda4.png */,
 			);
 			name = KaratePanda;
 			sourceTree = "<group>";
@@ -737,33 +746,36 @@
 				90F8E6A818F6BB5200797B83 /* mhacksLogo@2x.png in Resources */,
 				901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */,
 				9036149B18F9AF8900213C3F /* smart1@2x.png in Resources */,
-				907A61E518F1920F00273A57 /* panda.atlas in Resources */,
 				901BDD2018F5968600723187 /* AGHacksLogo@2x.png in Resources */,
+				90CE964818FBD9B000AB4D57 /* MMSKaratePandaView.xib in Resources */,
 				9036147E18F936CF00213C3F /* wwdc2.jpg in Resources */,
 				90F8E6CB18F812C100797B83 /* ch3.jpeg in Resources */,
 				90F8E6CD18F812C100797B83 /* ch5.jpeg in Resources */,
+				90CE964F18FBDBAF00AB4D57 /* panda1@2x.jpg in Resources */,
 				901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */,
 				90B208BB18FB33C30097D866 /* agh.jpg in Resources */,
 				90B208B718FAD9750097D866 /* mask@2x.png in Resources */,
 				901379C718F5E2D900B7434C /* krakjam@2x.png in Resources */,
+				90CE964E18FBDBAF00AB4D57 /* KaratePandaTrailer.mp4 in Resources */,
 				903614B218FA8EC400213C3F /* MMSPolandView.xib in Resources */,
 				90F8E6BC18F6DB4B00797B83 /* chLogo@2x.png in Resources */,
 				903614A518F9B78C00213C3F /* MMSBurglarsNightView.xib in Resources */,
 				907A615E18F1581C00273A57 /* Images.xcassets in Resources */,
+				90CE965018FBDBAF00AB4D57 /* panda2@2x.jpg in Resources */,
 				90B208BF18FB37470097D866 /* basek.png in Resources */,
 				9036149018F981CE00213C3F /* farm1@2x.png in Resources */,
 				9036149918F9AE3000213C3F /* MMSSmartTapsView.xib in Resources */,
 				90B208C118FB39630097D866 /* coffe.jpg in Resources */,
 				9036147718F8236500213C3F /* cc2.jpg in Resources */,
 				90B208B918FAED9B0097D866 /* back@2x.png in Resources */,
-				907A61D818F1729A00273A57 /* bgLas.png in Resources */,
 				90B208AF18FABE4B0097D866 /* bgblur.jpg in Resources */,
 				9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */,
 				90F8E6B918F6D9D300797B83 /* chBg@2x.jpeg in Resources */,
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
+				90CE965218FBDBAF00AB4D57 /* panda4.png in Resources */,
+				90CE965118FBDBAF00AB4D57 /* panda3@2x.jpg in Resources */,
 				9067AA7C18FBD64F001F7E74 /* burglars-1@2x.png in Resources */,
 				9036147818F8236500213C3F /* cc3.jpg in Resources */,
-				907A61E318F17B8E00273A57 /* lasAtlas.atlas in Resources */,
 				9036147618F8236500213C3F /* cc1.jpg in Resources */,
 				90F8E6A718F6BB5200797B83 /* hacktechLogo@2x.png in Resources */,
 				90F8E6CC18F812C100797B83 /* ch4.jpeg in Resources */,

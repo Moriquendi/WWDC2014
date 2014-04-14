@@ -89,19 +89,21 @@
         case 0: {
             MMSFarmView *farmView = [[[NSBundle mainBundle] loadNibNamed:@"MMSFarmView"
                                                                    owner:self
-                                                                 options:nil] objectAtIndex:0];
+                                                                 options:nil] firstObject];
             addedView = farmView;
         }
             break;
         case 1: {
-            MMSKaratePandaView *pandaView = [[MMSKaratePandaView alloc] initWithFrame:self._sideView.bounds];
+            MMSKaratePandaView *pandaView = [[[NSBundle mainBundle] loadNibNamed:@"MMSKaratePandaView"
+                                                                           owner:self
+                                                                         options:nil] firstObject];
             addedView = pandaView;
         }
             break;
         case 2: {
             MMSSmartTapsView *tapsView = [[[NSBundle mainBundle] loadNibNamed:@"MMSSmartTapsView"
                                                                         owner:self
-                                                                      options:nil] objectAtIndex:0];
+                                                                      options:nil] firstObject];
             addedView = tapsView;
         }
             break;

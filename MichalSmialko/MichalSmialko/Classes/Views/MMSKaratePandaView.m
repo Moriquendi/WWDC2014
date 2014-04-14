@@ -7,35 +7,59 @@
 //
 
 #import "MMSKaratePandaView.h"
-#import "MMSKaratePandaScene.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "MMSStyleSheet.h"
+
+@interface MMSKaratePandaView ()
+@property (weak, nonatomic) IBOutlet UILabel *_titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *_detailsLabel;
+@property (weak, nonatomic) IBOutlet UIView *_videoContentView;
+@property (weak, nonatomic) IBOutlet UIImageView *_img1;
+@property (weak, nonatomic) IBOutlet UIImageView *_img2;
+@property (weak, nonatomic) IBOutlet UIImageView *_img3;
+@property (weak, nonatomic) IBOutlet UIImageView *_img4;
+@property (nonatomic, strong) MPMoviePlayerController *_moviePlayerController;
+@end
 
 @implementation MMSKaratePandaView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Self
-        self.backgroundColor = [UIColor clearColor];
-        self.layer.shadowColor = [[UIColor blackColor] CGColor];
-        self.layer.shadowOpacity = 1.f;
-        self.layer.shadowOffset = CGSizeMake(0, 0);
-        self.layer.shadowRadius = 20;
-        
-        // Sk
-        SKView * skView = [[SKView alloc] initWithFrame:CGRectMake(30, 80, 560, 420)];
-        skView.layer.cornerRadius = 10.f;
-        skView.clipsToBounds = YES;
-        skView.showsFPS = YES;
-        skView.showsNodeCount = YES;
-        [self addSubview:skView];
+#pragma mark - UIView
 
-        SKScene * scene = [MMSKaratePandaScene sceneWithSize:CGSizeMake(560, 420)];
-        scene.scaleMode = SKSceneScaleModeAspectFill;
-        [skView presentScene:scene];
-    }
-    return self;
+- (void)awakeFromNib
+{
+    
+    self.backgroundColor = [[MMSStyleSheet sharedInstance] tealColor];
+    
+    // Movie
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"KaratePandaTrailer" ofType:@"mp4"];
+    NSURL *fileURL = [NSURL fileURLWithPath:filePath];
+    self._moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
+    [self._moviePlayerController prepareToPlay];
+    self._moviePlayerController.scalingMode = MPMovieScalingModeAspectFit;
+    self._moviePlayerController.controlStyle = MPMovieControlStyleEmbedded;
+    self._moviePlayerController.view.frame = self._videoContentView.bounds;
+    [self._videoContentView addSubview:self._moviePlayerController.view];
+    
+    //
+    self._titleLabel.textColor = [UIColor whiteColor];
+    self._detailsLabel.textColor = [UIColor whiteColor];
+    
+    //
+    [self _restyleImage:self._img1];
+    [self _restyleImage:self._img2];
+    [self _restyleImage:self._img3];
+    [self _restyleImage:self._img4];
+    
+    self._img1.transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_4/5);
+    self._img2.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -M_PI_4/5);
+    self._img3.transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_4/5);
+    self._img4.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -M_PI_4/5);
 }
 
+- (void)_restyleImage:(UIView *)view
+{
+    view.layer.borderColor = [[UIColor whiteColor] CGColor];
+    view.layer.borderWidth = 6;
+}
 
 @end
