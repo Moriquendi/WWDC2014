@@ -27,7 +27,10 @@
         self.detailsLabel.textColor = [UIColor whiteColor];
         self.detailsLabel.numberOfLines = 0;
         self.detailsLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:30.0];
+        self.detailsLabel.shadowOffset = CGSizeMake(1, 1);
+        self.detailsLabel.shadowColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
         [self addSubview:self.detailsLabel];
+        self.detailsLabel.textAlignment = NSTextAlignmentJustified;
     }
     return self;
 }

@@ -11,16 +11,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Farm 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BU5-sJ-Ee9">
-                    <rect key="frame" x="0.0" y="73" width="575" height="69"/>
+                    <rect key="frame" x="0.0" y="49" width="575" height="69"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gx7-HR-C2a">
-                    <rect key="frame" x="60" y="457" width="244" height="160"/>
+                    <rect key="frame" x="60" y="498" width="244" height="163"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <string key="text">Bla bla jestem bla farm 2 mala taka asdiasd i generBla bla jestem bla farm 2 mala taka asdiasd i generBla bla jestem bla farm 2 mala taka asdiasd i generBla bla jestem bla farm 2 mala taka asdiasd i generBla bla jestem bla farm 2 mala taka asdiasd i generBla bla jestem bla farm 2 mala taka asdiasd i gener</string>
+                    <string key="text">Farm 2 is a time management game published by PlayWay. Gameplay involved taking care of up to nince farms at once and hunting for angry boars! I was the only iOS programmer in a team who crafted that game.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>

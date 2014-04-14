@@ -26,9 +26,9 @@
                     <color key="backgroundColor" red="0.6840820312" green="0.0" blue="0.22031071960000001" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ec9-Np-8R8">
-                    <rect key="frame" x="250" y="425" width="330" height="298"/>
+                    <rect key="frame" x="250" y="435" width="330" height="148"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                    <string key="text">smart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart tapssmart taps</string>
+                    <string key="text">Smart Taps is an educational game for kids developed by me and my friend in several days. The game has beautifull animations and lovely sound effects.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>

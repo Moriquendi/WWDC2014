@@ -9,6 +9,7 @@
 #import "MMSAGHacksView.h"
 #import "MMSAGHacksDetailsView.h"
 #import <MediaPlayer/MediaPlayer.h>
+#import "MMSStyleSheet.h"
 
 @interface MMSAGHacksView ()
 @property (nonatomic, strong) MPMoviePlayerController *_moviePlayerController;
@@ -44,7 +45,7 @@
         //
         self.contentView = [[UIScrollView alloc] init];
         self.contentView.scrollEnabled = NO;
-        self.contentView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.3];
+        self.contentView.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.4];
         [self addSubview:self.contentView];
         
         self._logoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"AGHacksLogo"]];
@@ -54,6 +55,8 @@
         
         self._titleLabel = [[UILabel alloc] init];
         self._titleLabel.text = @"AGHacks";
+        self._titleLabel.shadowColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
+        self._titleLabel.shadowOffset = CGSizeMake(1, 1);
         self._titleLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:140];
         [self._titleLabel sizeToFit];
         self._titleLabel.textColor = [UIColor whiteColor];

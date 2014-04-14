@@ -93,7 +93,7 @@
                                           0);
     
     self._pageControl.center = CGPointMake(CGRectGetMidX(self.bounds),
-                                           self.frame.size.height - 50);
+                                           self.frame.size.height - 40);
 }
 
 #pragma mark - MMSHackathonsView ()

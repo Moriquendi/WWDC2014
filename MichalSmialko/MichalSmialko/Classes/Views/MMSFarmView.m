@@ -27,14 +27,19 @@
 {
     self.backgroundColor = [[MMSStyleSheet sharedInstance] darkRedColor];
     
+    self._titleLabel.textColor = [UIColor whiteColor];
+    self._detailsLabel.textColor = [UIColor whiteColor];
+
     // Movie
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"AGHacksPromo" ofType:@"mov"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"farmvid" ofType:@"mp4"];
     NSURL *fileURL = [NSURL fileURLWithPath:filePath];
     self._moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
     [self._moviePlayerController prepareToPlay];
     self._moviePlayerController.scalingMode = MPMovieScalingModeAspectFit;
     self._moviePlayerController.controlStyle = MPMovieControlStyleEmbedded;
     self._moviePlayerController.view.frame = self._videoContentView.bounds;
+    self._moviePlayerController.view.layer.borderColor = [[UIColor whiteColor] CGColor];
+    self._moviePlayerController.view.layer.borderWidth = 6;
     [self._videoContentView addSubview:self._moviePlayerController.view];
     
     // Stack

@@ -130,8 +130,8 @@
     
     //
     addedView.layer.shadowColor = [[UIColor blackColor] CGColor];
-    addedView.layer.shadowOpacity = 0.2;
-    addedView.layer.shadowRadius = 6;
+    addedView.layer.shadowOpacity = 0.3;
+    addedView.layer.shadowRadius = 10;
     
     // Snap animation
     addedView.frame = CGRectOffset(addedView.frame, self._sideView.frame.size.width, 0);
