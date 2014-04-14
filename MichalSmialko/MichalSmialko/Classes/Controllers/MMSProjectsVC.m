@@ -57,8 +57,8 @@
     NSArray *titles = @[@"Farm 2",
                         @"Karate Panda",
                         @"Smart Taps",
-                        @"Base",
-                        @"Burglars Night", @"", @"", @""];
+                        @"Burglars Night",
+                        @"", @"", @""];
     [self._menu.buttons enumerateObjectsUsingBlock:^(UIButton *btn, NSUInteger idx, BOOL *stop) {
         btn.tag = idx;
         [btn addTarget:self action:@selector(_menuButtonSelected:) forControlEvents:UIControlEventTouchUpInside];
@@ -108,6 +108,11 @@
         }
             break;
         case 3: {
+            // Burglars Night
+            MMSBurglarsNightView *burglarsView = [[[NSBundle mainBundle] loadNibNamed:@"MMSBurglarsNightView"
+                                                                                owner:self
+                                                                              options:nil] objectAtIndex:0];
+            addedView = burglarsView;
         }
             break;
         case 4: {
@@ -115,13 +120,6 @@
         }
         case 5: {
             // Chay
-        }
-        case 6: {
-            // Burglars Night
-            MMSBurglarsNightView *burglarsView = [[[NSBundle mainBundle] loadNibNamed:@"MMSBurglarsNightView"
-                                                                   owner:self
-                                                                 options:nil] objectAtIndex:0];
-            addedView = burglarsView;
         }
             break;
     }
