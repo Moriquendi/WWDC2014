@@ -11,14 +11,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cocoa Camp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oP-es-kaJ">
-                    <rect key="frame" x="164" y="86" width="237" height="75"/>
+                    <rect key="frame" x="192" y="86" width="237" height="75"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="sOh-Ok-i6y">
-                    <rect key="frame" x="146" y="173" width="304" height="129"/>
+                    <rect key="frame" x="158" y="173" width="304" height="129"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <string key="text">Last year I've attended Cocoa Camp - a week long training camp held in Your campus in Cupertino! Working and learning from Apple's engineers was thriling experience!</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -43,6 +43,8 @@
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <connections>
+                <outlet property="_wwdcDetailsLabel" destination="do3-qC-Ahe" id="rUm-ov-bM5"/>
+                <outlet property="_wwdcTitle" destination="Xtm-Lr-vNy" id="Y30-Pq-Zj8"/>
                 <outlet property="campDetailsLabel" destination="sOh-Ok-i6y" id="9Jr-XY-hQS"/>
                 <outlet property="campTitleLabel" destination="6oP-es-kaJ" id="vGc-VD-hBz"/>
             </connections>

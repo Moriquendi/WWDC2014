@@ -15,6 +15,8 @@
 @interface MMSEventsView () <MDScratchImageViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *campTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *campDetailsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *_wwdcTitle;
+@property (weak, nonatomic) IBOutlet UILabel *_wwdcDetailsLabel;
 @end
 
 @implementation MMSEventsView
@@ -25,8 +27,14 @@
 {
     [super awakeFromNib];
 
-    self.backgroundColor = [UIColor colorWithWhite:210./255. alpha:1.];
-    
+    self.backgroundColor = [[MMSStyleSheet sharedInstance] redColor];
+
+    //
+    self.campTitleLabel.textColor = [UIColor whiteColor];
+    self.campDetailsLabel.textColor = [UIColor whiteColor];
+    self._wwdcTitle.textColor = [UIColor whiteColor];
+    self._wwdcDetailsLabel.textColor = [UIColor whiteColor];
+
     // Cocoa camp
     NSMutableArray *photos = [NSMutableArray array];
     for (NSInteger i=0; i<3; i++) {
@@ -40,7 +48,7 @@
     MMSStackView *cocoaCampStack = [[MMSStackView alloc] initWithViews:photos
                                                            anchorPoint:CGPointMake(250, 490)];
     cocoaCampStack.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    cocoaCampStack.frame = self.bounds;
+    cocoaCampStack.frame = CGRectMake(0, 0, self.frame.size.width/2.f, self.frame.size.height);
     [self addSubview:cocoaCampStack];
     
     // WWDC
@@ -54,9 +62,12 @@
         [wwdcPhotos addObject:imageView];
     }
     MMSStackView *WWDCStack = [[MMSStackView alloc] initWithViews:wwdcPhotos
-                                                      anchorPoint:CGPointMake(750, 490)];
+                                                      anchorPoint:CGPointMake(250, 490)];
     WWDCStack.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    WWDCStack.frame = self.bounds;
+    WWDCStack.frame = CGRectMake(self.frame.size.width/2.f,
+                                 0,
+                                 self.frame.size.width/2.f,
+                                 self.frame.size.height);
     [self addSubview:WWDCStack];
     
     // Scratch overlay

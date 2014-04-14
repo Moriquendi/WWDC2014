@@ -15,5 +15,6 @@
 @property (nonatomic, strong, readonly) MMSCocoaHeadsView *cocoaHeadsView;
 @property (nonatomic, strong, readonly) MMSEventsView *eventsView;
 @property (nonatomic, strong, readonly) UIButton *nextButton;
+@property (nonatomic, strong, readonly) UIButton *previousButton;
 
 @end

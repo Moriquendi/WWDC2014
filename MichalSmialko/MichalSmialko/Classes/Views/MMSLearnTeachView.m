@@ -13,6 +13,7 @@
 @property (nonatomic, strong, readwrite) MMSCocoaHeadsView *cocoaHeadsView;
 @property (nonatomic, strong, readwrite) MMSEventsView *eventsView;
 @property (nonatomic, strong, readwrite) UIButton *nextButton;
+@property (nonatomic, strong, readwrite) UIButton *previousButton;
 @end
 
 @implementation MMSLearnTeachView
@@ -42,10 +43,16 @@
         
         // Next button
         self.nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [self.nextButton setTitle:@"Next" forState:UIControlStateNormal];
+        [self.nextButton setImage:[UIImage imageNamed:@"next"] forState:UIControlStateNormal];
         [self.nextButton sizeToFit];
         [self.nextButton addTarget:self action:@selector(_nextPage:) forControlEvents:UIControlEventTouchUpInside];
         [self._contentScrollView addSubview:self.nextButton];
+        
+        self.previousButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [self.previousButton setImage:[UIImage imageNamed:@"previous"] forState:UIControlStateNormal];
+        [self.previousButton sizeToFit];
+        [self.previousButton addTarget:self action:@selector(_previousPage:) forControlEvents:UIControlEventTouchUpInside];
+        [self._contentScrollView addSubview:self.previousButton];
     }
     return self;
 }
@@ -60,8 +67,10 @@
                                          self.cocoaHeadsView.frame.size.width,
                                          0);
     
-    self.nextButton.center = CGPointMake(self._contentScrollView.frame.size.width - 100,
+    self.nextButton.center = CGPointMake(self._contentScrollView.frame.size.width - 60,
                                          CGRectGetMidY(self._contentScrollView.bounds));
+    self.previousButton.center = CGPointMake(self._contentScrollView.frame.size.width + 60,
+                                             self.nextButton.center.y);
 }
 
 #pragma mark - MMSLearnTeachView ()
@@ -73,6 +82,14 @@
                          self._contentScrollView.contentOffset = CGPointMake(self._contentScrollView.contentOffset.x +
                                                                              self._contentScrollView.frame.size.width,
                                                                              0);
+                     }];
+}
+
+- (void)_previousPage:(UIButton *)sender
+{
+    [UIView animateWithDuration:0.6
+                     animations:^{
+                         self._contentScrollView.contentOffset = CGPointMake(0, 0);
                      }];
 }
 

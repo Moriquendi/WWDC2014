@@ -94,6 +94,8 @@
 		90CE965718FBE5C600AB4D57 /* dare2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CE965418FBE5C600AB4D57 /* dare2@2x.png */; };
 		90CE965818FBE5C600AB4D57 /* sched1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CE965518FBE5C600AB4D57 /* sched1@2x.png */; };
 		90CE965A18FBE64F00AB4D57 /* sched2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CE965918FBE64F00AB4D57 /* sched2@2x.png */; };
+		90CE965D18FBF07700AB4D57 /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CE965B18FBF07700AB4D57 /* next@2x.png */; };
+		90CE965E18FBF07700AB4D57 /* previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CE965C18FBF07700AB4D57 /* previous@2x.png */; };
 		90F8E6A418F6B9FF00797B83 /* MMSUSHackathonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6A318F6B9FF00797B83 /* MMSUSHackathonView.m */; };
 		90F8E6A718F6BB5200797B83 /* hacktechLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */; };
 		90F8E6A818F6BB5200797B83 /* mhacksLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6A618F6BB5200797B83 /* mhacksLogo@2x.png */; };
@@ -248,6 +250,8 @@
 		90CE965418FBE5C600AB4D57 /* dare2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dare2@2x.png"; path = "Resources/Hackathons/dare2@2x.png"; sourceTree = "<group>"; };
 		90CE965518FBE5C600AB4D57 /* sched1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sched1@2x.png"; path = "Resources/Hackathons/sched1@2x.png"; sourceTree = "<group>"; };
 		90CE965918FBE64F00AB4D57 /* sched2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sched2@2x.png"; path = "Resources/Hackathons/sched2@2x.png"; sourceTree = "<group>"; };
+		90CE965B18FBF07700AB4D57 /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "next@2x.png"; path = "Resources/next@2x.png"; sourceTree = "<group>"; };
+		90CE965C18FBF07700AB4D57 /* previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "previous@2x.png"; path = "Resources/previous@2x.png"; sourceTree = "<group>"; };
 		90F8E6A218F6B9FF00797B83 /* MMSUSHackathonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSUSHackathonView.h; path = Classes/Views/MMSUSHackathonView.h; sourceTree = "<group>"; };
 		90F8E6A318F6B9FF00797B83 /* MMSUSHackathonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSUSHackathonView.m; path = Classes/Views/MMSUSHackathonView.m; sourceTree = "<group>"; };
 		90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hacktechLogo@2x.png"; path = "Resources/Hackathons/hacktechLogo@2x.png"; sourceTree = "<group>"; };
@@ -537,6 +541,8 @@
 		907A61D918F1729D00273A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				90CE965B18FBF07700AB4D57 /* next@2x.png */,
+				90CE965C18FBF07700AB4D57 /* previous@2x.png */,
 				9067AA7E18FBD654001F7E74 /* Burglars */,
 				90B208C018FB39630097D866 /* coffe.jpg */,
 				90B208BE18FB37470097D866 /* basek.png */,
@@ -766,6 +772,7 @@
 				90F8E6CD18F812C100797B83 /* ch5.jpeg in Resources */,
 				90CE964F18FBDBAF00AB4D57 /* panda1@2x.jpg in Resources */,
 				901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */,
+				90CE965E18FBF07700AB4D57 /* previous@2x.png in Resources */,
 				90B208BB18FB33C30097D866 /* agh.jpg in Resources */,
 				90CE965618FBE5C600AB4D57 /* dare1@2x.png in Resources */,
 				90B208B718FAD9750097D866 /* mask@2x.png in Resources */,
@@ -782,6 +789,7 @@
 				9036149918F9AE3000213C3F /* MMSSmartTapsView.xib in Resources */,
 				90B208C118FB39630097D866 /* coffe.jpg in Resources */,
 				9036147718F8236500213C3F /* cc2.jpg in Resources */,
+				90CE965D18FBF07700AB4D57 /* next@2x.png in Resources */,
 				90B208B918FAED9B0097D866 /* back@2x.png in Resources */,
 				90B208AF18FABE4B0097D866 /* bgblur.jpg in Resources */,
 				9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */,
