@@ -35,16 +35,20 @@
     self.mapView.userInteractionEnabled = NO;
     [self _restyleView:self.mapView];
     self.mapView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_4/2.f);
+    self.mapView.autoresizingMask = UIViewAutoresizingNone;
     [self addSubview:self.mapView];
-    
+
     [self _restyleView:self._aghImageView];
     self._aghImageView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -M_PI_4/5.f);
-    
+    self._aghImageView.autoresizingMask = UIViewAutoresizingNone;
+
     [self _restyleView:self._travelImageView];
     self._travelImageView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, M_PI_4/5.f);
+    self._travelImageView.autoresizingMask = UIViewAutoresizingNone;
     
     [self _restyleView:self._coffeeImageView];
     self._coffeeImageView.transform = CGAffineTransformRotate(CGAffineTransformIdentity, -M_PI_4/5.f);
+    self._coffeeImageView.autoresizingMask = UIViewAutoresizingNone;
 
     // Add 'Cracow' pin
     MKPointAnnotation *annotatino = [[MKPointAnnotation alloc] init];

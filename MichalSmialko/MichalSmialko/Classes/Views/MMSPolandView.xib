@@ -62,15 +62,15 @@ I had great privilige to work with astounding team and craft the truly magical m
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nyc.jpg" id="MhX-KJ-jW2">
                     <rect key="frame" x="507" y="816" width="372" height="271"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="basek.png" id="aEh-o0-SuN">
                     <rect key="frame" x="125" y="1051" width="259" height="328"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffe.jpg" id="eWI-eW-g10">
                     <rect key="frame" x="485" y="1382" width="441" height="273"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -92,8 +92,8 @@ I had great privilige to work with astounding team and craft the truly magical m
     </objects>
     <resources>
         <image name="agh.jpg" width="750" height="488"/>
-        <image name="basek.png" width="1127" height="1364"/>
-        <image name="coffe.jpg" width="2048" height="1365"/>
-        <image name="nyc.jpg" width="2048" height="1536"/>
+        <image name="basek.png" width="564" height="682"/>
+        <image name="coffe.jpg" width="1024" height="683"/>
+        <image name="nyc.jpg" width="1024" height="768"/>
     </resources>
 </document>
