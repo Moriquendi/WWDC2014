@@ -37,14 +37,15 @@
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x0K-bs-Ajr">
                     <rect key="frame" x="125" y="822" width="305" height="200"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <string key="text">Whenever I can, I try to cut off from the noise of the world, pack my backpack and travel alone. Each journey, I meet extraordinary people from all around the world and sometimes get into troubles ;-)</string>
+                    <string key="text">Whenever I can, I try to cut off from the noise of the world, pack my backpack and travel alone. During each journey, I meet extraordinary people from all around the world and sometimes get into troubles ;-)</string>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9E7-So-SLe">
                     <rect key="frame" x="592" y="1125" width="297" height="215"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <string key="text">For the last year, I was working at Base CRM as an iOS Developer. I had great privilige to work with astounding team and craft the truly magical mobile experience of CRM software.</string>
+                    <string key="text">For the last year, I was working at Base CRM as an iOS Developer. 
+I had great privilige to work with astounding team and craft the truly magical mobile experience of CRM software.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>

@@ -42,18 +42,14 @@
         
         // MHacls
         self.mhacksView = [[MMSUSHackathonView alloc] init];
-        self.mhacksView.detailsLabel.text = @"Hey ha. Bla bla, we attended MHacks and it \
-        was awesome because  bla bla. We've made awesome hacks like SchedMe\
-        which let you do lots of stuff, bla bla";
+        self.mhacksView.detailsLabel.text = @"This year I've attended MHacks - probably the bigest hackahton in the world. I've been working with my friend on iOS app that let you schedule meetings with a group of people.";
         self.mhacksView.logoView.image = [UIImage imageNamed:@"mhacksLogo"];
         self.mhacksView.stackViews = [self _mhacksImagesViews];
         [self._contentView addSubview:self.mhacksView];
         
         // HackTech
         self.hackTech = [[MMSUSHackathonView alloc] init];
-        self.hackTech.detailsLabel.text = @"Hey ha. Bla bla, we attended HackTech and it \
-        was awesome because  bla bla. We've made awesome hacks like SchedMe\
-        which let you do lots of stuff, bla bla";
+        self.hackTech.detailsLabel.text = @"After MHacks, we went to HackTech. After drinking lots of coffee, we've been crafting an iPhone app that lets you challenge your friends to do crazy tasks!";
         self.hackTech.logoView.image = [UIImage imageNamed:@"hacktechLogo"];
         self.hackTech.backgroundColor = [UIColor colorWithRed:1. green:132./255. blue:0 alpha:1.0];
         self.hackTech.stackViews = [self _hackTechImageViews];

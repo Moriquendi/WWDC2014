@@ -57,8 +57,7 @@
     self._titleLabel.textColor = [UIColor colorWithWhite:230./255. alpha:1.];
     [self._titleLabel sizeToFit];
     [self addSubview:self._titleLabel];
-    
-    self._detailsLabel.text = @"So I am Michal Smialko and I live in Krakow. Blah blah. I've started programming in secondary school and bla bla";
+
     [self _restyleLabel:self._detailsLabel];
     self._detailsLabel.numberOfLines = 0;
     [self addSubview:self._detailsLabel];

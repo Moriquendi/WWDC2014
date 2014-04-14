@@ -23,7 +23,7 @@
         self.backgroundColor = [UIColor clearColor];
         
         self.detailsLabel = [[UILabel alloc] init];
-        self.detailsLabel.text = @"I'm the main organizer of AGHacks - first students hackathon in Poland of this scale. We plan to gather hundreds of students from all around the country so they can learn, teach, make friends and experiment in a great atmosphere.";
+        self.detailsLabel.text = @"I'm the main organizer of AGHacks - first students hackathon in Kraków. We plan to gather hundreds of students from all around the country so they can learn, teach, make friends and experiment with new technology.";
         self.detailsLabel.textColor = [UIColor whiteColor];
         self.detailsLabel.numberOfLines = 0;
         self.detailsLabel.font = [UIFont fontWithName:@"Helvetica-Light" size:30.0];
