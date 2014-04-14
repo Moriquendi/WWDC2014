@@ -47,6 +47,8 @@
 		903614B018FA065C00213C3F /* MMSPolandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614AF18FA065C00213C3F /* MMSPolandView.m */; };
 		903614B218FA8EC400213C3F /* MMSPolandView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 903614B118FA8EC400213C3F /* MMSPolandView.xib */; };
 		903614B518FA9B6200213C3F /* MMSCubeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 903614B418FA9B6200213C3F /* MMSCubeButton.m */; };
+		9067AA7C18FBD64F001F7E74 /* burglars-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9067AA7A18FBD64F001F7E74 /* burglars-1@2x.png */; };
+		9067AA7D18FBD64F001F7E74 /* burglars-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9067AA7B18FBD64F001F7E74 /* burglars-2@2x.png */; };
 		907A614618F1581C00273A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614518F1581C00273A57 /* Foundation.framework */; };
 		907A614818F1581C00273A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614718F1581C00273A57 /* CoreGraphics.framework */; };
 		907A614A18F1581C00273A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907A614918F1581C00273A57 /* UIKit.framework */; };
@@ -174,6 +176,8 @@
 		903614B118FA8EC400213C3F /* MMSPolandView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MMSPolandView.xib; path = Classes/Views/MMSPolandView.xib; sourceTree = "<group>"; };
 		903614B318FA9B6200213C3F /* MMSCubeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSCubeButton.h; path = Classes/Views/MMSCubeButton.h; sourceTree = "<group>"; };
 		903614B418FA9B6200213C3F /* MMSCubeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSCubeButton.m; path = Classes/Views/MMSCubeButton.m; sourceTree = "<group>"; };
+		9067AA7A18FBD64F001F7E74 /* burglars-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "burglars-1@2x.png"; path = "Resources/BurglarsNight/burglars-1@2x.png"; sourceTree = "<group>"; };
+		9067AA7B18FBD64F001F7E74 /* burglars-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "burglars-2@2x.png"; path = "Resources/BurglarsNight/burglars-2@2x.png"; sourceTree = "<group>"; };
 		907A614218F1581C00273A57 /* MichalSmialko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichalSmialko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907A614518F1581C00273A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		907A614718F1581C00273A57 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -345,6 +349,15 @@
 			name = Farm;
 			sourceTree = "<group>";
 		};
+		9067AA7E18FBD654001F7E74 /* Burglars */ = {
+			isa = PBXGroup;
+			children = (
+				9067AA7A18FBD64F001F7E74 /* burglars-1@2x.png */,
+				9067AA7B18FBD64F001F7E74 /* burglars-2@2x.png */,
+			);
+			name = Burglars;
+			sourceTree = "<group>";
+		};
 		907A613918F1581C00273A57 = {
 			isa = PBXGroup;
 			children = (
@@ -509,6 +522,7 @@
 		907A61D918F1729D00273A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9067AA7E18FBD654001F7E74 /* Burglars */,
 				90B208C018FB39630097D866 /* coffe.jpg */,
 				90B208BE18FB37470097D866 /* basek.png */,
 				90B208BC18FB34FB0097D866 /* nyc.jpg */,
@@ -718,6 +732,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9067AA7D18FBD64F001F7E74 /* burglars-2@2x.png in Resources */,
 				90B208BD18FB34FB0097D866 /* nyc.jpg in Resources */,
 				90F8E6A818F6BB5200797B83 /* mhacksLogo@2x.png in Resources */,
 				901BDD1E18F5850A00723187 /* AGHacksPromo.mov in Resources */,
@@ -746,6 +761,7 @@
 				9028214C18F6A16200FD9A26 /* ggj@2x.png in Resources */,
 				90F8E6B918F6D9D300797B83 /* chBg@2x.jpeg in Resources */,
 				907A615018F1581C00273A57 /* InfoPlist.strings in Resources */,
+				9067AA7C18FBD64F001F7E74 /* burglars-1@2x.png in Resources */,
 				9036147818F8236500213C3F /* cc3.jpg in Resources */,
 				907A61E318F17B8E00273A57 /* lasAtlas.atlas in Resources */,
 				9036147618F8236500213C3F /* cc1.jpg in Resources */,

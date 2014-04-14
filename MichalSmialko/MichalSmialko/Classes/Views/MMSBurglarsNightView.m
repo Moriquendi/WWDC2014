@@ -7,25 +7,41 @@
 //
 
 #import "MMSBurglarsNightView.h"
+#import "MMSStackView.h"
+#import "MMSStyleSheet.h"
+
+@interface MMSBurglarsNightView ()
+@property (nonatomic, strong) MMSStackView *_stack;
+@property (weak, nonatomic) IBOutlet UILabel *_detailsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *_titleLabel;
+@end
 
 @implementation MMSBurglarsNightView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
+#pragma mark - UIView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)awakeFromNib
 {
-    // Drawing code
+    //
+    self.backgroundColor = [[MMSStyleSheet sharedInstance] darkRedColor];
+    
+    self._titleLabel.textColor = [UIColor whiteColor];
+    self._detailsLabel.textColor = [UIColor whiteColor];
+    
+    // Stack
+    NSMutableArray *views = [NSMutableArray array];
+    for (NSInteger i=0; i<2; i++) {
+        NSString *imgName = [@"burglars-" stringByAppendingString:[NSString stringWithFormat:@"%li", i+1]];
+        
+        UIImageView *imgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imgName]];
+        imgView.contentMode = UIViewContentModeScaleAspectFit;
+        imgView.userInteractionEnabled = YES;
+        [views addObject:imgView];
+    }
+    
+    self._stack = [[MMSStackView alloc] initWithViews:[NSArray arrayWithArray:views] anchorPoint:CGPointMake(300, 550)];
+    self._stack.frame = self.bounds;
+    [self addSubview:self._stack];
 }
-*/
 
 @end
