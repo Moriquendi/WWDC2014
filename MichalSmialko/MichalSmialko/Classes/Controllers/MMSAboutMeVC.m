@@ -32,6 +32,7 @@
     [super viewDidAppear:animated];
 
     [self performSelector:@selector(_zoomMapToCracow) withObject:nil afterDelay:1.0];
+    [self._aboutView.contentView performSelector:@selector(flashScrollIndicators) withObject:nil afterDelay:0.5];
 }
 
 #pragma mark - MMSAboutMeVC

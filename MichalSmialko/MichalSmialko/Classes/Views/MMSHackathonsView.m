@@ -11,6 +11,7 @@
 
 @interface MMSHackathonsView () <UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *_contentView;
+@property (nonatomic, strong) UIPageControl *_pageControl;
 @property (nonatomic, strong, readwrite) MMSAGHacksView *aghacksView;
 @property (nonatomic, strong, readwrite) MMSKrakJamView *krakJamView;
 @property (nonatomic, strong, readwrite) MMSUSHackathonView *mhacksView;
@@ -27,6 +28,7 @@
     if (self) {
         self.backgroundColor = [[MMSStyleSheet sharedInstance] tealColor];
         
+        // Content view
         self._contentView = [[UIScrollView alloc] initWithFrame:self.bounds];
         self._contentView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         self._contentView.alwaysBounceHorizontal = YES;
@@ -60,6 +62,14 @@
         // AGHacks
         self.aghacksView = [[MMSAGHacksView alloc] init];
         [self._contentView addSubview:self.aghacksView];
+        
+        // Page control
+        self._pageControl = [[UIPageControl alloc] init];
+        self._pageControl.numberOfPages = 8;
+        [self._pageControl sizeToFit];
+        self._pageControl.pageIndicatorTintColor = [[UIColor whiteColor] colorWithAlphaComponent:0.8];
+        self._pageControl.currentPageIndicatorTintColor = [[MMSStyleSheet sharedInstance] redColor];
+        [self addSubview:self._pageControl];
     }
     return self;
 }
@@ -81,6 +91,9 @@
     self.aghacksView.frame = CGRectOffset(self.hackTech.frame,
                                           self.hackTech.frame.size.width * 2,
                                           0);
+    
+    self._pageControl.center = CGPointMake(CGRectGetMidX(self.bounds),
+                                           self.frame.size.height - 50);
 }
 
 #pragma mark - MMSHackathonsView ()
@@ -110,6 +123,12 @@
 }
 
 #pragma mark - <UIScrollViewDelegate>
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    NSInteger page = scrollView.contentOffset.x / scrollView.frame.size.width;
+    [self._pageControl setCurrentPage:page];
+}
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {

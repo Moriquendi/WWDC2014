@@ -18,9 +18,9 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xZm-7D-hIt">
-                    <rect key="frame" x="125" y="213" width="286" height="151"/>
+                    <rect key="frame" x="125" y="213" width="286" height="174"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <string key="text">Sa im michalSa im michalSa im michalSa im michalSa im michalSa im michalSa im michalSa im michalSa im michalSa im michalSa im michal</string>
+                    <string key="text">Hey! I'm Michal and I'm living in an astounding city Kraków in Poland. It's probably the most wonderful and vibrant city in the country where thousands of students live.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -28,31 +28,30 @@
                     <rect key="frame" x="548" y="121" width="358" height="274"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </mapView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6OC-Y2-Nqo">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm studying Computer Science at AGH University which is the best technical university in Central Europe." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6OC-Y2-Nqo">
                     <rect key="frame" x="624" y="577" width="265" height="215"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <string key="text">I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. I study at AGH. </string>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x0K-bs-Ajr">
                     <rect key="frame" x="125" y="822" width="305" height="200"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <string key="text">I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. I love traveling alone. </string>
+                    <string key="text">Whenever I can, I try to cut off from the noise of the world, pack my backpack and travel alone. Each journey, I meet extraordinary people from all around the world and sometimes get into troubles ;-)</string>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9E7-So-SLe">
                     <rect key="frame" x="592" y="1125" width="297" height="215"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <string key="text">Working at Base. Working at Base. Working at Base. Working at Base. Working at Base. Working at Base. Working at Base. Working at Base. Working at Base. Working at Base. Working at Base. Working at Base. Working at Base. Working at Base. </string>
+                    <string key="text">For the last year, I was working at Base CRM as an iOS Developer. I had great privilige to work with astounding team and craft the truly magical mobile experience of CRM software.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ptL-p0-zgR">
                     <rect key="frame" x="125" y="1410" width="291" height="239"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <string key="text">Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...Kawa.. Kawa...</string>
+                    <string key="text">Everyone loves coffee and so do I! I adore brewing coffee and experiment with different grains. One day, I hope to get Barista's certificate and learn how to make latte art!</string>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <nil key="highlightedColor"/>
                 </label>

@@ -35,9 +35,10 @@
         
         // Details
         self._detailsLabel = [[UILabel alloc] init];
-        self._detailsLabel.text = @"Four years ago, I attended first 48-hours hackathon in my life - Global Game Jam. I have experimented with writing games on iPad and fell in love in iOS ecosystem. Back then, me and my friends knew almost nothing about programming. Even though, we've managed to finish simple and funny game.";
+        self._detailsLabel.text = @"Four years ago, I attended my first 48-hours hackathon - Global Game Jam. Back then, me and my friends knew almost nothing about programming. Even though, we've managed to finish simple and funny iOS game.";
         self._detailsLabel.backgroundColor = [UIColor clearColor];
         self._detailsLabel.textColor = [UIColor whiteColor];
+        self._detailsLabel.font = [UIFont systemFontOfSize:22.];
         self._detailsLabel.numberOfLines = 0;
         [self addSubview:self._detailsLabel];
 
@@ -74,9 +75,9 @@
     self._logoView.center = CGPointMake(self.frame.size.width - self.frame.size.width/4.,
                                         self.frame.size.height/4);
     
-    self._detailsLabel.frame = CGRectMake(self.frame.size.width - 400,
-                                          self.frame.size.height/2.f - 50,
-                                          300,
+    self._detailsLabel.frame = CGRectMake(self.frame.size.width - 450,
+                                          self.frame.size.height/2.f - 30,
+                                          350,
                                           300);
     
     self._stackView.frame = self.bounds;

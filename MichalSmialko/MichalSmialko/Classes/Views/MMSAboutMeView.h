@@ -11,6 +11,7 @@
 
 @interface MMSAboutMeView : UIView
 
+@property (nonatomic, strong, readonly) UIScrollView *contentView;
 @property (nonatomic, strong, readonly) MMSPolandView *polandView;
 
 @end
