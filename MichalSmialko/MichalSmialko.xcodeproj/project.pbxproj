@@ -97,6 +97,8 @@
 		90CE965D18FBF07700AB4D57 /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CE965B18FBF07700AB4D57 /* next@2x.png */; };
 		90CE965E18FBF07700AB4D57 /* previous@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90CE965C18FBF07700AB4D57 /* previous@2x.png */; };
 		90CE966018FC01FA00AB4D57 /* farmvid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 90CE965F18FC01FA00AB4D57 /* farmvid.mp4 */; };
+		90CE966218FC080A00AB4D57 /* ping.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 90CE966118FC080A00AB4D57 /* ping.aifc */; };
+		90CE966418FC086A00AB4D57 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CE966318FC086A00AB4D57 /* AVFoundation.framework */; };
 		90F8E6A418F6B9FF00797B83 /* MMSUSHackathonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F8E6A318F6B9FF00797B83 /* MMSUSHackathonView.m */; };
 		90F8E6A718F6BB5200797B83 /* hacktechLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */; };
 		90F8E6A818F6BB5200797B83 /* mhacksLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F8E6A618F6BB5200797B83 /* mhacksLogo@2x.png */; };
@@ -254,6 +256,8 @@
 		90CE965B18FBF07700AB4D57 /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "next@2x.png"; path = "Resources/next@2x.png"; sourceTree = "<group>"; };
 		90CE965C18FBF07700AB4D57 /* previous@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "previous@2x.png"; path = "Resources/previous@2x.png"; sourceTree = "<group>"; };
 		90CE965F18FC01FA00AB4D57 /* farmvid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = farmvid.mp4; path = Resources/Farm2/farmvid.mp4; sourceTree = "<group>"; };
+		90CE966118FC080A00AB4D57 /* ping.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; name = ping.aifc; path = Resources/Sounds/ping.aifc; sourceTree = "<group>"; };
+		90CE966318FC086A00AB4D57 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		90F8E6A218F6B9FF00797B83 /* MMSUSHackathonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSUSHackathonView.h; path = Classes/Views/MMSUSHackathonView.h; sourceTree = "<group>"; };
 		90F8E6A318F6B9FF00797B83 /* MMSUSHackathonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSUSHackathonView.m; path = Classes/Views/MMSUSHackathonView.m; sourceTree = "<group>"; };
 		90F8E6A518F6BB5200797B83 /* hacktechLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hacktechLogo@2x.png"; path = "Resources/Hackathons/hacktechLogo@2x.png"; sourceTree = "<group>"; };
@@ -288,6 +292,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90CE966418FC086A00AB4D57 /* AVFoundation.framework in Frameworks */,
 				901BDD1C18F582DD00723187 /* QuartzCore.framework in Frameworks */,
 				901BDD1A18F5829F00723187 /* MediaPlayer.framework in Frameworks */,
 				907A618218F166F300273A57 /* SpriteKit.framework in Frameworks */,
@@ -401,6 +406,7 @@
 		907A614418F1581C00273A57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90CE966318FC086A00AB4D57 /* AVFoundation.framework */,
 				903614AC18FA061E00213C3F /* MapKit.framework */,
 				901BDD1B18F582DD00723187 /* QuartzCore.framework */,
 				901BDD1918F5829F00723187 /* MediaPlayer.framework */,
@@ -544,6 +550,7 @@
 		907A61D918F1729D00273A57 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				90CE966118FC080A00AB4D57 /* ping.aifc */,
 				90CE965B18FBF07700AB4D57 /* next@2x.png */,
 				90CE965C18FBF07700AB4D57 /* previous@2x.png */,
 				9067AA7E18FBD654001F7E74 /* Burglars */,
@@ -812,6 +819,7 @@
 				9036149418F9825600213C3F /* MMSFarmView.xib in Resources */,
 				9036149118F981CE00213C3F /* farm2@2x.png in Resources */,
 				9036147A18F9304400213C3F /* MMSEventsView.xib in Resources */,
+				90CE966218FC080A00AB4D57 /* ping.aifc in Resources */,
 				90F8E6C918F812C100797B83 /* ch1.jpeg in Resources */,
 				901379C818F5E2D900B7434C /* KrakJamTrailer.m4v in Resources */,
 				90F8E6CA18F812C100797B83 /* ch2.jpeg in Resources */,

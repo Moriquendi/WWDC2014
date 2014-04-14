@@ -9,10 +9,12 @@
 #import "MMSMenuView.h"
 #import "MMSStyleSheet.h"
 #import "NSTimer+Blocks.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface MMSMenuView ()
 @property (nonatomic) BOOL animating;
 @property (nonatomic, strong) UIDynamicAnimator *_animator;
+@property (nonatomic, strong) AVAudioPlayer *_audioPlayer;
 @end
 
 @implementation MMSMenuView
@@ -186,6 +188,9 @@
                                                                                 CGRectGetMidY(self.bounds))];
         [self._animator addBehavior:snap];
         
+        // Play sound
+        [self _playSnapSound];
+        
         [NSTimer scheduledTimerWithTimeInterval:0.5 block:^{
             [self._animator removeBehavior:snap];
             [UIView animateWithDuration:0.5 animations:^{
@@ -244,6 +249,18 @@
     [bullets enumerateObjectsUsingBlock:^(UIView *obj, NSUInteger idx, BOOL *stop) {
         [obj removeFromSuperview];
     }];
+}
+
+- (void)_playSnapSound
+{
+    if (!self._audioPlayer) {
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"ping" ofType:@"aifc"];
+        NSURL *soundFileURL = [NSURL fileURLWithPath:filePath];
+        self._audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundFileURL
+                                                                   error:nil];
+    }
+    
+    [self._audioPlayer play];
 }
 
 @end
