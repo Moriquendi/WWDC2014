@@ -89,7 +89,7 @@
 {
     NSMutableArray *views = [NSMutableArray array];
     for (NSInteger i=0; i<count; i++) {
-        NSString *imageName = [name stringByAppendingString:[NSString stringWithFormat:@"%li.jpg", i+1]];
+        NSString *imageName = [name stringByAppendingString:[NSString stringWithFormat:@"%li", i+1]];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
         imageView.userInteractionEnabled = YES;
@@ -101,12 +101,12 @@
 
 - (NSArray *)_mhacksImagesViews
 {
-    return [self _imageViewsWithName:@"wwdc" count:2];
+    return [self _imageViewsWithName:@"sched" count:2];
 }
 
 - (NSArray *)_hackTechImageViews
 {
-    return [self _imageViewsWithName:@"wwdc" count:2];
+    return [self _imageViewsWithName:@"dare" count:2];
 }
 
 #pragma mark - <UIScrollViewDelegate>

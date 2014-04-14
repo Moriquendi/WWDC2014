@@ -52,7 +52,7 @@
                                                                 0,
                                                                 300,
                                                                 self.view.frame.size.height)
-                                        buttonsCount:6];
+                                        buttonsCount:4];
     self._menu.autoresizingMask = UIViewAutoresizingFlexibleHeight;
     NSArray *titles = @[@"Farm 2",
                         @"Karate Panda",
