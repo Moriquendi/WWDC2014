@@ -37,6 +37,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="_detailsLabel" destination="Ec9-Np-8R8" id="fZL-sl-Tz4"/>
+                <outlet property="_titleLabel" destination="ErG-RS-Ua0" id="gYE-tt-emt"/>
                 <outlet property="_videoContentView" destination="YuE-b4-D8w" id="6Ns-WJ-Lzb"/>
             </connections>
         </view>

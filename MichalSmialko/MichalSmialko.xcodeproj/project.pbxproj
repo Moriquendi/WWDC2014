@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		901379C418F5B9D700B7434C /* MMSKrakJamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901379C318F5B9D700B7434C /* MMSKrakJamView.m */; };
 		901379C718F5E2D900B7434C /* krakjam@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 901379C518F5E2D900B7434C /* krakjam@2x.png */; };
-		901379C818F5E2D900B7434C /* KrakJamTrailer.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 901379C618F5E2D900B7434C /* KrakJamTrailer.m4v */; };
 		901379CB18F5E2F900B7434C /* SmartCatchPromo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 901379CA18F5E2F900B7434C /* SmartCatchPromo.m4v */; };
 		901BDD0418F4B7FD00723187 /* MMSMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0318F4B7FD00723187 /* MMSMenuVC.m */; };
 		901BDD0718F4B85F00723187 /* MMSMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 901BDD0618F4B85F00723187 /* MMSMenuView.m */; };
@@ -133,7 +132,6 @@
 		901379C218F5B9D700B7434C /* MMSKrakJamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSKrakJamView.h; path = Classes/Views/MMSKrakJamView.h; sourceTree = "<group>"; };
 		901379C318F5B9D700B7434C /* MMSKrakJamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSKrakJamView.m; path = Classes/Views/MMSKrakJamView.m; sourceTree = "<group>"; };
 		901379C518F5E2D900B7434C /* krakjam@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "krakjam@2x.png"; path = "Resources/KrakJam/krakjam@2x.png"; sourceTree = "<group>"; };
-		901379C618F5E2D900B7434C /* KrakJamTrailer.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = KrakJamTrailer.m4v; path = Resources/KrakJam/KrakJamTrailer.m4v; sourceTree = "<group>"; };
 		901379CA18F5E2F900B7434C /* SmartCatchPromo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = SmartCatchPromo.m4v; path = Resources/SmartTaps/SmartCatchPromo.m4v; sourceTree = "<group>"; };
 		901BDD0218F4B7FD00723187 /* MMSMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSMenuVC.h; path = Classes/Controllers/MMSMenuVC.h; sourceTree = "<group>"; };
 		901BDD0318F4B7FD00723187 /* MMSMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMSMenuVC.m; path = Classes/Controllers/MMSMenuVC.m; sourceTree = "<group>"; };
@@ -321,7 +319,6 @@
 			children = (
 				9028214B18F6A16200FD9A26 /* ggj@2x.png */,
 				901379C518F5E2D900B7434C /* krakjam@2x.png */,
-				901379C618F5E2D900B7434C /* KrakJamTrailer.m4v */,
 			);
 			name = KrakJam;
 			sourceTree = "<group>";
@@ -821,7 +818,6 @@
 				9036147A18F9304400213C3F /* MMSEventsView.xib in Resources */,
 				90CE966218FC080A00AB4D57 /* ping.aifc in Resources */,
 				90F8E6C918F812C100797B83 /* ch1.jpeg in Resources */,
-				901379C818F5E2D900B7434C /* KrakJamTrailer.m4v in Resources */,
 				90F8E6CA18F812C100797B83 /* ch2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

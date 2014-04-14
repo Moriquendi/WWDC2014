@@ -8,11 +8,10 @@
 
 #import "MMSAGHacksView.h"
 #import "MMSAGHacksDetailsView.h"
-#import <MediaPlayer/MediaPlayer.h>
 #import "MMSStyleSheet.h"
 
 @interface MMSAGHacksView ()
-@property (nonatomic, strong) MPMoviePlayerController *_moviePlayerController;
+@property (nonatomic, strong, readwrite) MPMoviePlayerController *moviePlayerController;
 
 @property (nonatomic, strong, readwrite) UIScrollView *contentView;
 @property (nonatomic, strong) UIImageView *_logoView;
@@ -32,14 +31,14 @@
 
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"AGHacksPromo" ofType:@"mov"];
         NSURL *fileURL = [NSURL fileURLWithPath:filePath];
-        self._moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
-        [self._moviePlayerController prepareToPlay];
-        self._moviePlayerController.scalingMode = MPMovieScalingModeAspectFill;
-        self._moviePlayerController.controlStyle = MPMovieControlStyleEmbedded;
-        self._moviePlayerController.view.frame = self.bounds;
-        self._moviePlayerController.view.userInteractionEnabled = NO;
-        self._moviePlayerController.repeatMode = MPMovieRepeatModeOne;
-        [self addSubview:self._moviePlayerController.view];
+        self.moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
+        [self.moviePlayerController prepareToPlay];
+        self.moviePlayerController.scalingMode = MPMovieScalingModeAspectFill;
+        self.moviePlayerController.controlStyle = MPMovieControlStyleEmbedded;
+        self.moviePlayerController.view.frame = self.bounds;
+        self.moviePlayerController.view.userInteractionEnabled = NO;
+        self.moviePlayerController.repeatMode = MPMovieRepeatModeOne;
+        [self addSubview:self.moviePlayerController.view];
         
 
         //
@@ -71,14 +70,14 @@
 - (void)didMoveToSuperview
 {
     [super didMoveToSuperview];
-    [self._moviePlayerController performSelector:@selector(play) withObject:nil afterDelay:0.2];
+    [self.moviePlayerController performSelector:@selector(play) withObject:nil afterDelay:0.2];
 }
 
 - (void)layoutSubviews
 {
     [super layoutSubviews];
     
-    self._moviePlayerController.view.frame = self.bounds;
+    self.moviePlayerController.view.frame = self.bounds;
     
     CGFloat height = 500;
     self.contentView.frame = CGRectMake(0,

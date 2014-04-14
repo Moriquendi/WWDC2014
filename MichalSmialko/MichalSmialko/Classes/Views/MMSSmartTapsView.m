@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIView *_videoContentView;
 @property (nonatomic, strong) MPMoviePlayerController *_moviePlayerController;
 @property (weak, nonatomic) IBOutlet UILabel *_detailsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *_titleLabel;
 
 @end
 
@@ -39,6 +40,7 @@
     
     // Label
     self._detailsLabel.textColor = [UIColor whiteColor];
+    self._titleLabel.textColor = [UIColor whiteColor];
 }
 
 @end

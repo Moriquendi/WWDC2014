@@ -9,13 +9,10 @@
 #import "MMSKrakJamView.h"
 #import "MMSStyleSheet.h"
 #import "MMSStackView.h"
-#import <MediaPlayer/MediaPlayer.h>
 
 @interface MMSKrakJamView ()
 @property (nonatomic, strong) UIImageView *_logoView;
 @property (nonatomic, strong) UILabel *_detailsLabel;
-@property (nonatomic, strong) MMSStackView *_stackView;
-@property (nonatomic, strong) MPMoviePlayerController *_moviePlayerController;
 @end
 
 @implementation MMSKrakJamView
@@ -44,26 +41,9 @@
 
         //
         UIImageView *photoView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"krakjam"]];
+        photoView.center = CGPointMake(300, 350);
         [photoView sizeToFit];
-        
-        NSString *filePath = [[NSBundle mainBundle] pathForResource:@"KrakJamTrailer" ofType:@"m4v"];
-        NSURL *fileURL = [NSURL fileURLWithPath:filePath];
-        self._moviePlayerController = [[MPMoviePlayerController alloc] initWithContentURL:fileURL];
-        self._moviePlayerController.scalingMode = MPMovieScalingModeAspectFill;
-        self._moviePlayerController.controlStyle = MPMovieControlStyleEmbedded;
-        self._moviePlayerController.view.frame = self.bounds;
-        self._moviePlayerController.view.userInteractionEnabled = NO;
-        self._moviePlayerController.repeatMode = MPMovieRepeatModeOne;
-        self._moviePlayerController.view.frame = CGRectMake(0, 0, 300, 200);
-        
-        photoView.userInteractionEnabled = YES;
-        self._moviePlayerController.view.userInteractionEnabled = YES;
-        
-        self._stackView = [[MMSStackView alloc] initWithViews:@[self._moviePlayerController.view,
-                                                                photoView]
-                                                        anchorPoint:CGPointMake(300,
-                                                                                400)];
-        [self addSubview:self._stackView];
+        [self addSubview:photoView];
     }
     return self;
 }
@@ -79,8 +59,6 @@
                                           self.frame.size.height/2.f - 30,
                                           350,
                                           300);
-    
-    self._stackView.frame = self.bounds;
 }
 
 @end

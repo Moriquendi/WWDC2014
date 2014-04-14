@@ -165,6 +165,7 @@
                                                                 0);
         self.aghacksView.contentView.contentOffset = CGPointMake(delta, 0);
     }
+    
 }
 
 @end

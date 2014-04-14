@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface MMSAGHacksView : UIView
 
 @property (nonatomic, strong, readonly) UIScrollView *contentView;
+@property (nonatomic, strong, readonly) MPMoviePlayerController *moviePlayerController;
 
 @end
